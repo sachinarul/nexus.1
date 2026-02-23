@@ -156,7 +156,7 @@ const Services = () => {
                                 ${!service.popular && !service.isContact
                                     ? 'bg-[#111827]/60 border-white/5 hover:border-white/10 hover:bg-[#111827]/80'
                                     : ''}
-                            `}
+                            `}E
                         >
                             {service.isContact ? (
                                 <div className="flex flex-col h-full justify-center text-left">
@@ -229,18 +229,6 @@ const Services = () => {
                                     </div>
 
                                     <div className="space-y-3 mt-auto">
-                                        <button className={`w-full py-3 rounded-xl font-bold text-sm transition-all duration-300 shadow-lg flex items-center justify-center gap-2
-                                            ${service.popular
-                                                ? `bg-gradient-to-r ${service.gradient} text-white hover:shadow-${service.shadow} hover:scale-[1.02]`
-                                                : 'bg-white/5 text-white hover:bg-white/10 hover:scale-[1.02] border border-white/5'
-                                            }`}
-                                        >
-                                            Explore Solution <ArrowRight size={16} />
-                                        </button>
-
-                                        <button className="w-full py-3 rounded-xl font-medium text-sm text-gray-500 hover:text-white transition-colors flex items-center justify-center gap-2 hover:bg-white/5">
-                                            <ViewDemoButton />
-                                        </button>
                                     </div>
                                 </>
                             )}
