@@ -24,8 +24,8 @@ const Navbar = () => {
         <nav
             className={`fixed w-full z-50 transition-all duration-300 ease-out border-b border-white/5 backdrop-blur-3xl
             ${scrolled
-                    ? 'bg-navy-900/80 shadow-[0_4px_30px_rgba(0,0,0,0.5)]'
-                    : 'bg-navy-900/40 border-transparent py-4'
+                    ? 'bg-[#050816]/90 shadow-[0_4px_30px_rgba(0,0,0,0.5)]'
+                    : 'bg-[#050816]/40 border-transparent py-4'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -152,7 +152,7 @@ const Navbar = () => {
                                         <p className="text-[10px] text-gray-400 uppercase tracking-wider font-semibold">Dashboard</p>
                                     </div>
                                     <div className="w-10 h-10 rounded-full bg-gradient-to-br from-teal to-blue-600 p-[2px]">
-                                        <div className="w-full h-full rounded-full bg-navy-900 flex items-center justify-center text-white font-bold text-sm">
+                                        <div className="w-full h-full rounded-full bg-[#050816] flex items-center justify-center text-white font-bold text-sm">
                                             {currentUser.displayName ? currentUser.displayName.charAt(0) : <UserCircle size={20} />}
                                         </div>
                                     </div>
@@ -182,7 +182,7 @@ const Navbar = () => {
 
             {/* Mobile Menu Overlay */}
             {isOpen && (
-                <div className="md:hidden fixed inset-0 z-40 bg-navy-900/95 backdrop-blur-xl animate-fade-in-down overflow-y-auto pt-24 border-t border-white/10 flex flex-col min-h-screen">
+                <div className="md:hidden fixed inset-0 z-40 bg-[#050816]/98 backdrop-blur-xl animate-fade-in-down overflow-y-auto pt-24 border-t border-white/10 flex flex-col min-h-screen">
                     <div className="px-6 pb-8 flex-1 flex flex-col space-y-4">
                         <div className="space-y-2 mt-2">
                             <Link to="/why-noble-nexus" onClick={() => setIsOpen(false)} className="block flex items-center justify-between py-4 px-4 text-lg font-medium text-white hover:bg-white/5 rounded-2xl transition-all border border-transparent hover:border-white/10">
