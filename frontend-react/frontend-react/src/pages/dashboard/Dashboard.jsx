@@ -26,20 +26,20 @@ const Dashboard = () => {
 
             <div className="container mx-auto px-4 py-8 relative z-10">
                 {/* Header */}
-                <header className="flex justify-between items-center mb-12">
-                    <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal to-blue-600 flex items-center justify-center text-white shadow-lg shadow-teal/20">
+                <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-8 sm:mb-12">
+                    <div className="flex items-center gap-4 w-full sm:w-auto">
+                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal to-blue-600 flex items-center justify-center text-white shadow-lg shadow-teal/20 shrink-0">
                             <span className="font-bold text-xl">{currentUser?.displayName?.charAt(0) || currentUser?.email?.charAt(0).toUpperCase()}</span>
                         </div>
-                        <div>
-                            <h1 className="text-2xl font-bold font-display">Welcome Back, {currentUser?.displayName || 'User'}</h1>
+                        <div className="flex-1 min-w-0">
+                            <h1 className="text-xl sm:text-2xl font-bold font-display truncate">Welcome Back, {currentUser?.displayName || 'User'}</h1>
                             <p className="text-gray-400 text-sm">Dashboard Overview</p>
                         </div>
                     </div>
 
                     <button
                         onClick={handleLogout}
-                        className="flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-red-500/10 border border-white/10 hover:border-red-500/30 rounded-xl text-gray-300 hover:text-red-400 transition-all group"
+                        className="flex justify-center items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-red-500/10 border border-white/10 hover:border-red-500/30 rounded-xl text-gray-300 hover:text-red-400 transition-all group w-full sm:w-auto"
                     >
                         <LogOut size={18} className="group-hover:-translate-x-1 transition-transform" />
                         <span>Sign Out</span>
@@ -65,22 +65,22 @@ const Dashboard = () => {
                             <div className="space-y-6">
                                 <div className="group">
                                     <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 block">Full Name</label>
-                                    <p className="text-lg text-white font-medium pl-3 border-l-2 border-teal/50 group-hover:border-teal transition-colors">
+                                    <p className="text-base sm:text-lg text-white font-medium pl-3 border-l-2 border-teal/50 group-hover:border-teal transition-colors truncate">
                                         {currentUser?.displayName || 'Not Set'}
                                     </p>
                                 </div>
                                 <div className="group">
                                     <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 block">Email Address</label>
                                     <div className="flex items-center gap-3 pl-3 border-l-2 border-purple-500/50 group-hover:border-purple-500 transition-colors">
-                                        <Mail size={16} className="text-gray-400" />
-                                        <p className="text-lg text-white font-medium">{currentUser?.email}</p>
+                                        <Mail size={16} className="text-gray-400 shrink-0" />
+                                        <p className="text-base sm:text-lg text-white font-medium break-all">{currentUser?.email}</p>
                                     </div>
                                 </div>
                                 <div className="group">
                                     <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 block">Member Since</label>
                                     <div className="flex items-center gap-3 pl-3 border-l-2 border-blue-500/50 group-hover:border-blue-500 transition-colors">
-                                        <Calendar size={16} className="text-gray-400" />
-                                        <p className="text-lg text-white font-medium">
+                                        <Calendar size={16} className="text-gray-400 shrink-0" />
+                                        <p className="text-base sm:text-lg text-white font-medium">
                                             {currentUser?.metadata?.creationTime ? new Date(currentUser.metadata.creationTime).toLocaleDateString() : 'N/A'}
                                         </p>
                                     </div>
@@ -133,11 +133,11 @@ const Dashboard = () => {
                             transition={{ duration: 0.5, delay: 0.3 }}
                             className="md:col-span-2 bg-navy-900/30 border border-white/5 rounded-3xl p-8"
                         >
-                            <div className="flex justify-between items-center mb-6">
+                            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
                                 <h3 className="text-lg font-bold text-white flex items-center gap-2">
                                     <Bell size={20} className="text-amber-400" /> Recent Notifications
                                 </h3>
-                                <button className="text-xs text-teal hover:text-white transition-colors uppercase font-bold tracking-wider">Mark all read</button>
+                                <button className="text-xs text-teal hover:text-white transition-colors uppercase font-bold tracking-wider self-end sm:self-auto">Mark all read</button>
                             </div>
 
                             <div className="space-y-4">
@@ -146,12 +146,12 @@ const Dashboard = () => {
                                     { title: "Profile setup incomplete", time: "2 hours ago", type: "alert" },
                                     { title: "New course available: Digital Leadership", time: "1 day ago", type: "info" }
                                 ].map((notif, i) => (
-                                    <div key={i} className="flex items-center gap-4 p-4 rounded-2xl bg-black/20 hover:bg-black/40 transition-colors border border-white/5">
-                                        <div className={`w-2 h-2 rounded-full ${notif.type === 'alert' ? 'bg-red-500' : notif.type === 'info' ? 'bg-blue-500' : 'bg-green-500'}`}></div>
-                                        <div className="flex-1">
-                                            <h4 className="text-sm font-medium text-white">{notif.title}</h4>
-                                            <p className="text-xs text-gray-500">{notif.time}</p>
+                                    <div key={i} className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 p-4 rounded-2xl bg-black/20 hover:bg-black/40 transition-colors border border-white/5">
+                                        <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
+                                            <div className={`w-2 h-2 rounded-full shrink-0 ${notif.type === 'alert' ? 'bg-red-500' : notif.type === 'info' ? 'bg-blue-500' : 'bg-green-500'}`}></div>
+                                            <h4 className="text-sm font-medium text-white flex-1">{notif.title}</h4>
                                         </div>
+                                        <p className="text-xs text-gray-500 sm:ml-auto pl-5 sm:pl-0">{notif.time}</p>
                                     </div>
                                 ))}
                             </div>
