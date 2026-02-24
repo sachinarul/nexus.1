@@ -12,6 +12,7 @@ import Services from './components/Services';
 import Products from './components/Products';
 import Solutions from './components/Solutions';
 import Testimonials from './components/Testimonials';
+import ContactCTA from './components/ContactCTA';
 import Contact from './components/Contact';
 import Login from './components/Login';
 import Signup from './components/Signup';
@@ -46,6 +47,7 @@ const Home = () => (
     <Services />
     <SocialSection />
     <Testimonials />
+    <ContactCTA />
     <Feedback />
   </>
 );
