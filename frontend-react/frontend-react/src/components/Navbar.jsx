@@ -182,62 +182,93 @@ const Navbar = () => {
 
             {/* Mobile Menu Overlay */}
             {isOpen && (
-                <div className="md:hidden fixed inset-0 z-40 bg-navy-900/95 backdrop-blur-xl animate-fade-in-down overflow-y-auto pt-24 border-t border-white/10">
-                    <div className="px-6 pb-12 space-y-4">
-                        <Link to="/why-noble-nexus" className="block text-xl font-medium text-gray-300 hover:text-white transition-colors px-2">
-                            Why Noble Nexus
-                        </Link>
+                <div className="md:hidden fixed inset-0 z-40 bg-navy-900/95 backdrop-blur-xl animate-fade-in-down overflow-y-auto pt-24 border-t border-white/10 flex flex-col min-h-screen">
+                    <div className="px-6 pb-8 flex-1 flex flex-col space-y-4">
+                        <div className="space-y-2 mt-2">
+                            <Link to="/why-noble-nexus" onClick={() => setIsOpen(false)} className="block flex items-center justify-between py-4 px-4 text-lg font-medium text-white hover:bg-white/5 rounded-2xl transition-all border border-transparent hover:border-white/10">
+                                Why Noble Nexus
+                                <ChevronDown size={18} className="-rotate-90 text-gray-500" />
+                            </Link>
 
-                        <div className="py-4 border-t border-white/10 border-b border-white/10">
-                            <span className="text-xs font-bold text-gray-500 uppercase tracking-widest block mb-4 px-2">Solutions</span>
-                            <div className="space-y-4">
-                                <Link to="/services/k12" className="flex items-center gap-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-all">
-                                    <div className="w-10 h-10 rounded-lg bg-teal/20 flex items-center justify-center text-teal">
-                                        <BookOpen size={20} />
-                                    </div>
-                                    <span className="text-lg font-medium text-white">K-12 Education</span>
-                                </Link>
-                                <Link to="/services/higher-education" className="flex items-center gap-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-all">
-                                    <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400">
-                                        <GraduationCap size={20} />
-                                    </div>
-                                    <span className="text-lg font-medium text-white">Higher Education</span>
-                                </Link>
-                                <Link to="/services/corporate-learning" className="flex items-center gap-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-all">
-                                    <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400">
-                                        <Briefcase size={20} />
-                                    </div>
-                                    <span className="text-lg font-medium text-white">Corporate Learning</span>
-                                </Link>
+                            {/* Products Section */}
+                            <div className="py-2 bg-white/5 rounded-2xl border border-white/5">
+                                <span className="block px-5 py-3 text-xs font-bold text-teal uppercase tracking-widest border-b border-white/5">Products</span>
+                                <div className="p-2 space-y-1">
+                                    <Link to="/products/lms" onClick={() => setIsOpen(false)} className="flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 transition-all">
+                                        <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center text-teal shadow-inner shadow-teal/20">
+                                            <LayoutDashboard size={20} />
+                                        </div>
+                                        <div className="flex-1">
+                                            <span className="block text-base font-semibold text-gray-200">LMS Platform</span>
+                                            <span className="block text-xs text-gray-400 mt-0.5">Core education platform</span>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* Services Section */}
+                            <div className="py-2 bg-white/5 rounded-2xl border border-white/5">
+                                <span className="block px-5 py-3 text-xs font-bold text-teal uppercase tracking-widest border-b border-white/5">Services</span>
+                                <div className="p-2 space-y-1">
+                                    <Link to="/services/k12" onClick={() => setIsOpen(false)} className="flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 transition-all">
+                                        <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center text-teal shadow-inner shadow-teal/20">
+                                            <BookOpen size={20} />
+                                        </div>
+                                        <div className="flex-1">
+                                            <span className="block text-base font-semibold text-gray-200">K-12 Education</span>
+                                            <span className="block text-xs text-gray-400 mt-0.5">Digital classrooms</span>
+                                        </div>
+                                    </Link>
+                                    <Link to="/services/higher-education" onClick={() => setIsOpen(false)} className="flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 transition-all">
+                                        <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400 shadow-inner shadow-blue-500/20">
+                                            <GraduationCap size={20} />
+                                        </div>
+                                        <div className="flex-1">
+                                            <span className="block text-base font-semibold text-gray-200">Higher Education</span>
+                                            <span className="block text-xs text-gray-400 mt-0.5">University ERP</span>
+                                        </div>
+                                    </Link>
+                                    <Link to="/services/corporate-learning" onClick={() => setIsOpen(false)} className="flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 transition-all">
+                                        <div className="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 shadow-inner shadow-purple-500/20">
+                                            <Briefcase size={20} />
+                                        </div>
+                                        <div className="flex-1">
+                                            <span className="block text-base font-semibold text-gray-200">Corporate Learning</span>
+                                            <span className="block text-xs text-gray-400 mt-0.5">Workforce platforms</span>
+                                        </div>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
 
-                        <div className="py-2 border-b border-white/10">
-                            <span className="text-xs font-bold text-gray-500 uppercase tracking-widest block mb-4 px-2">Products</span>
-                            <div className="space-y-4">
-                                <Link to="/products/lms" className="flex items-center gap-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-all">
-                                    <div className="w-10 h-10 rounded-lg bg-teal/20 flex items-center justify-center text-teal">
-                                        <LayoutDashboard size={20} />
-                                    </div>
-                                    <span className="text-lg font-medium text-white">LMS Platform</span>
-                                </Link>
-                            </div>
-                        </div>
-
-
-                        <div className="pt-8 flex flex-col gap-4">
+                        {/* Mobile Actions Bottom */}
+                        <div className="mt-8 pt-6 border-t border-white/10 space-y-4 pb-20">
                             <button
                                 onClick={() => { setIsHelpOpen(true); setIsOpen(false); }}
-                                className="w-full py-4 border border-white/20 rounded-full text-white font-semibold hover:bg-white/5 transition-colors text-center"
+                                className="w-full py-3.5 flex items-center justify-center gap-2 bg-white/5 border border-white/10 rounded-2xl text-white font-medium hover:bg-white/10 transition-colors"
                             >
-                                Help
+                                <HelpCircle size={18} className="text-gray-400" /> Help & Support
                             </button>
-                            <Link to="/login" className="w-full py-4 border border-white/20 rounded-full text-white font-semibold hover:bg-white/5 transition-colors text-center">
-                                Log in
-                            </Link>
-                            <Link to="/signup" className="w-full py-4 bg-teal hover:bg-teal-400 text-navy-900 font-bold rounded-full shadow-lg transition-colors text-center">
-                                Sign Up
-                            </Link>
+
+                            {!currentUser ? (
+                                <div className="grid grid-cols-2 gap-3">
+                                    <Link to="/login" onClick={() => setIsOpen(false)} className="py-3.5 px-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl text-white font-semibold transition-colors text-center">
+                                        Log in
+                                    </Link>
+                                    <Link to="/signup" onClick={() => setIsOpen(false)} className="py-3.5 px-4 bg-gradient-to-r from-teal to-cyan-600 hover:from-teal-400 hover:to-cyan-500 text-white font-bold rounded-2xl shadow-lg transition-transform active:scale-95 text-center">
+                                        Sign Up
+                                    </Link>
+                                </div>
+                            ) : (
+                                <div className="grid grid-cols-2 gap-3">
+                                    <Link to="/dashboard" onClick={() => setIsOpen(false)} className="py-3.5 px-4 bg-teal/10 hover:bg-teal/20 border border-teal/20 rounded-2xl text-teal font-semibold transition-colors text-center flex justify-center items-center">
+                                        Dashboard
+                                    </Link>
+                                    <button onClick={() => { logout(); setIsOpen(false); }} className="py-3.5 px-4 bg-white/5 hover:bg-red-500/10 border border-white/10 rounded-2xl text-gray-300 font-semibold transition-colors text-center flex justify-center items-center">
+                                        Sign Out
+                                    </button>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
