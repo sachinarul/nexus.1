@@ -56,12 +56,12 @@ const Hero = () => {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <button className="group relative px-8 py-4 bg-gradient-to-r from-teal to-blue-600 text-white font-bold rounded-full shadow-[0_0_20px_rgba(20,184,166,0.5)] hover:shadow-[0_0_30px_rgba(20,184,166,0.8)] transition-all transform hover:-translate-y-1 active:scale-95 min-w-[200px] overflow-hidden">
+                    <Link to="/why-noble-nexus" className="group relative px-8 py-4 bg-gradient-to-r from-teal to-blue-600 text-white font-bold rounded-full shadow-[0_0_20px_rgba(20,184,166,0.5)] hover:shadow-[0_0_30px_rgba(20,184,166,0.8)] transition-all transform hover:-translate-y-1 active:scale-95 min-w-[200px] overflow-hidden flex items-center justify-center">
                         <div className="absolute inset-0 bg-white/20 group-hover:translate-x-full transition-transform duration-500 ease-out -skew-x-12 origin-left"></div>
                         <span className="relative z-10 flex items-center justify-center gap-2">
-                            Get Started Free <span className="group-hover:translate-x-1 transition-transform">→</span>
+                            Why Noble Nexus <span className="group-hover:translate-x-1 transition-transform">→</span>
                         </span>
-                    </button>
+                    </Link>
 
                     <Link to="/contact" className="group px-8 py-4 bg-navy-900 border-2 border-teal/50 text-white font-bold rounded-full transition-all min-w-[180px] hover:shadow-[0_0_20px_rgba(20,184,166,0.3)] hover:bg-teal hover:text-navy-900 flex items-center justify-center">
                         Contact Us
