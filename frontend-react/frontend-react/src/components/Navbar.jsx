@@ -22,7 +22,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 ease-out border-b border-white/5 backdrop-blur-3xl
+            className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-out border-b border-white/5 backdrop-blur-3xl
             ${scrolled
                     ? 'bg-[#050816]/90 shadow-[0_4px_30px_rgba(0,0,0,0.5)]'
                     : 'bg-[#050816]/40 border-transparent py-4'
@@ -32,8 +32,8 @@ const Navbar = () => {
                 <div className="flex items-center justify-between h-20">
 
                     {/* Brand Logo - Premium Effect */}
-                    <Link to="/" className="flex-shrink-0 flex items-center gap-3 group relative overflow-hidden">
-                        <img src="/logo.png" alt="Noble Nexus" className="w-10 h-10 object-contain group-hover:scale-105 transition-transform duration-500" />
+                    <Link to="/" className="flex-shrink-0 flex items-center gap-3 group relative">
+                        <img src="/logo.png" alt="Noble Nexus" className="w-30 h-20 object-contain group-hover:scale-110 transition-transform duration-500 bg-transparent border-none" />
                         <span className="text-xl font-bold font-sans tracking-tight text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-teal group-hover:to-cyan-400 transition-all duration-300">
                             Noble Nexus
                         </span>
@@ -172,7 +172,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Mobile Menu Button */}
-                    <div className="md:hidden">
+                    <div className="md:hidden flex-shrink-0">
                         <button onClick={() => setIsOpen(!isOpen)} className="text-gray-300 hover:text-white p-2 focus:outline-none">
                             {isOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
