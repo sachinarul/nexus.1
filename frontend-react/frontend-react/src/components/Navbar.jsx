@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, BookOpen, GraduationCap, Building2, UserCircle, Briefcase, BarChart, LayoutDashboard, HelpCircle } from 'lucide-react';
+import { Menu, X, ChevronDown, BookOpen, GraduationCap, Building2, UserCircle, Briefcase, BarChart, LayoutDashboard, HelpCircle, LogOut } from 'lucide-react';
 import HelpBot from './HelpBot';
 import { useAuth } from '../context/AuthContext';
 
@@ -157,6 +157,13 @@ const Navbar = () => {
                                         </div>
                                     </div>
                                 </Link>
+                                <button 
+                                    onClick={() => logout()} 
+                                    className="p-2 ml-2 text-gray-400 hover:text-red-400 hover:bg-white/5 rounded-full transition-all" 
+                                    title="Sign Out"
+                                >
+                                    <LogOut size={18} />
+                                </button>
                             </div>
                         ) : (
                             <>
