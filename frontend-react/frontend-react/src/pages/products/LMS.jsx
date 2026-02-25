@@ -59,9 +59,7 @@ const LMS = () => {
                                 <Link to="/" onClick={() => window.scrollTo(0, 0)} className="px-8 py-4 bg-gradient-to-r from-teal-500 to-emerald-600 text-white font-bold rounded-full shadow-[0_0_15px_rgba(20,184,166,0.5)] hover:shadow-[0_0_25px_rgba(20,184,166,0.8)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2 group">
                                     Home <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                                 </Link>
-                                <Link to="/contact" className="px-8 py-4 bg-navy-800 border-2 border-teal/50 text-white font-bold rounded-full hover:bg-teal hover:text-navy-900 shadow-[0_0_10px_rgba(20,184,166,0.3)] transition-all">
-                                    Request Proposal
-                                </Link>
+
                             </div>
                         </motion.div>
 
