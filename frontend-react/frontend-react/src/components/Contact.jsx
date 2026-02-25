@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { db } from '../firebase';
+import toast from 'react-hot-toast';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -16,29 +19,20 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            // Combine name for backend
-            const payload = {
-                name: `${formData.firstName} ${formData.lastName}`.trim(),
+            await addDoc(collection(db, 'contact'), {
+                firstName: formData.firstName,
+                lastName: formData.lastName,
                 email: formData.email,
-                subject: formData.institution, // Using institution as subject context
-                message: formData.message
-            };
-
-            const response = await fetch('http://localhost:5000/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload)
+                institution: formData.institution,
+                message: formData.message,
+                createdAt: serverTimestamp()
             });
 
-            if (response.ok) {
-                alert('Message sent successfully!');
-                setFormData({ firstName: '', lastName: '', email: '', institution: '', message: '' });
-            } else {
-                alert('Failed to send message.');
-            }
+            toast.success('Message sent successfully!');
+            setFormData({ firstName: '', lastName: '', email: '', institution: '', message: '' });
         } catch (error) {
-            console.error(error);
-            alert('Error sending message. Ensure backend is running.');
+            console.error('Contact submission error:', error);
+            toast.error('Error sending message. Please try again.');
         }
     };
 

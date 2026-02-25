@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { AlertCircle, Loader2, Eye, EyeOff } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -58,7 +59,7 @@ const Login = () => {
             setError('');
             setLoading(true);
             await resetPassword(email);
-            alert('Password reset email sent! Check your inbox.');
+            toast.success('Password reset email sent! Check your inbox.');
         } catch (err) {
             setError('Failed to send reset email. ' + err.message);
         }

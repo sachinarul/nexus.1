@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, X, Send, MapPin, Building, Briefcase } from "lucide-react";
 import PremiumSelect from "./ui/PremiumSelect";
+import toast from 'react-hot-toast';
 
 const cityOptions = [
     { value: "Dublin", label: "Dublin" },
@@ -60,7 +61,7 @@ const WhatsAppChatWidget = () => {
 
         // Form Validation
         if (!formData.city || !formData.institutionType || !formData.service) {
-            alert("Please fill in all required fields.");
+            toast.error("Please fill in all required fields.");
             return;
         }
 
