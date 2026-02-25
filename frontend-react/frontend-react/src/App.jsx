@@ -30,7 +30,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 
 // Layout Wrapper
 const Layout = ({ children }) => (
-  <div className="bg-navy min-h-screen text-white font-body selection:bg-teal selection:text-navy relative">
+  <div className="bg-navy min-h-screen text-white font-body selection:bg-teal selection:text-navy relative overflow-x-hidden">
     {children}
     <WhatsAppChatWidget />
   </div>

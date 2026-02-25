@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, Send, CheckCircle2, MessageSquare } from 'lucide-react';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { db } from '../firebase';
 
 const Feedback = () => {
     const [rating, setRating] = useState(0);
@@ -9,6 +11,7 @@ const Feedback = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitError, setSubmitError] = useState('');
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,26 +20,19 @@ const Feedback = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setSubmitError('');
         try {
-            const response = await fetch('http://localhost:5000/api/feedback', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    name: formData.name,
-                    email: formData.email,
-                    message: formData.message,
-                    rating
-                })
+            await addDoc(collection(db, 'feedback'), {
+                name: formData.name,
+                email: formData.email,
+                message: formData.message,
+                rating,
+                createdAt: serverTimestamp()
             });
-
-            if (response.ok) {
-                setIsSubmitted(true);
-            } else {
-                alert('Feedback submission failed');
-            }
+            setIsSubmitted(true);
         } catch (error) {
-            console.error(error);
-            alert('Error submitting feedback');
+            console.error('Feedback submission error:', error);
+            setSubmitError('Failed to submit feedback. Please try again.');
         } finally {
             setIsSubmitting(false);
         }
@@ -100,7 +96,7 @@ const Feedback = () => {
                                         <h3 className="text-2xl font-bold text-white mb-2">Thank You!</h3>
                                         <p className="text-gray-400">Your feedback has been successfully sent.</p>
                                         <button
-                                            onClick={() => { setIsSubmitted(false); setRating(0); setFormData({ name: '', email: '', message: '' }); }}
+                                            onClick={() => { setIsSubmitted(false); setRating(0); setFormData({ name: '', email: '', message: '' }); setSubmitError(''); }}
                                             className="mt-8 text-teal hover:text-white font-medium transition-colors"
                                         >
                                             Send another response
@@ -175,6 +171,13 @@ const Feedback = () => {
                                                 required
                                             ></textarea>
                                         </div>
+
+                                        {submitError && (
+                                            <div className="bg-red-500/10 border border-red-500/50 rounded-lg p-3 flex items-center gap-3 text-red-200 text-sm">
+                                                <svg className="w-4 h-4 text-red-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                                {submitError}
+                                            </div>
+                                        )}
 
                                         <button
                                             type="submit"
