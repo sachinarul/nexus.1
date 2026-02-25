@@ -64,7 +64,7 @@ const WhatsAppChatWidget = () => {
             return;
         }
 
-        const phoneNumber = "353899732737";  // Replace with your actual support number
+        const phoneNumber = "353871700653";  // Replace with your actual support number
         const text = `Hello Noble Nexus, I'm from ${formData.city}. I represent a ${formData.institutionType} and I'm interested in ${formData.service}. ${formData.message ? `Message: ${formData.message}` : ""}`;
 
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;

@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import TrustedBy from './components/TrustedBy';
+import DashboardPreview from './components/DashboardPreview';
 import Features from './components/Features';
 import Stats from './components/Stats';
 import About from './components/About';
@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
 const Home = () => (
   <>
     <Hero />
-    <TrustedBy />
+    <DashboardPreview />
     <Features />
     <Stats />
     <About />
