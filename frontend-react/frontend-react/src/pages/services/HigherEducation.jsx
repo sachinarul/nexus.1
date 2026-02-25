@@ -56,9 +56,7 @@ const HigherEducation = () => {
                                 <Link to="/" onClick={() => window.scrollTo(0, 0)} className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-full shadow-[0_0_15px_rgba(37,99,235,0.5)] hover:shadow-[0_0_25px_rgba(37,99,235,0.8)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2 group">
                                     Home <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                                 </Link>
-                                <Link to="/contact" className="px-8 py-4 bg-navy-800 border-2 border-blue-500/50 text-white font-bold rounded-full hover:bg-blue-600 shadow-[0_0_10px_rgba(37,99,235,0.3)] transition-all">
-                                    Book Consultation
-                                </Link>
+
                             </div>
                         </motion.div>
 
@@ -261,12 +259,7 @@ const HigherEducation = () => {
                         >
                             Home
                         </Link>
-                        <Link
-                            to="/contact"
-                            className="w-full sm:w-auto px-10 py-5 bg-navy-900 border-2 border-blue-500/50 text-white font-bold text-lg rounded-full hover:bg-blue-600 transition-all shadow-lg"
-                        >
-                            Book Consultation
-                        </Link>
+
                     </div>
                 </div>
             </section>
