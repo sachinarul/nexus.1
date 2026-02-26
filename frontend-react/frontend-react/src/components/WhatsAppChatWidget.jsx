@@ -83,7 +83,7 @@ const WhatsAppChatWidget = () => {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 20, scale: 0.95 }}
                         transition={{ duration: 0.2 }}
-                        className="bg-navy-900/95 backdrop-blur-xl border border-teal/20 w-[360px] max-w-[90vw] rounded-2xl shadow-2xl overflow-visible ring-1 ring-white/10"
+                        className="bg-white backdrop-blur-xl border border-gray-200 w-[360px] max-w-[90vw] rounded-2xl shadow-2xl overflow-visible ring-1 ring-black/5"
                     >
                         {/* Header */}
                         <div className="bg-gradient-to-r from-teal-600 to-emerald-600 p-5 relative overflow-hidden rounded-t-2xl">
@@ -140,9 +140,9 @@ const WhatsAppChatWidget = () => {
 
                             {/* Optional Message */}
                             <div className="space-y-2">
-                                <label className="text-xs text-gray-300 font-semibold ml-1">Message (Optional)</label>
+                                <label className="text-xs text-gray-700 font-semibold ml-1">Message (Optional)</label>
                                 <textarea
-                                    className="w-full bg-navy-800/50 backdrop-blur-md border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-teal/50 focus:ring-2 focus:ring-teal/50 min-h-[80px] resize-none font-medium custom-scrollbar transition-all hover:bg-navy-800/80 hover:border-teal/30"
+                                    className="w-full bg-gray-50 backdrop-blur-md border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/50 min-h-[80px] resize-none font-medium custom-scrollbar transition-all hover:bg-gray-100 hover:border-emerald-300"
                                     placeholder="How can we help you?"
                                     value={formData.message}
                                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -161,7 +161,7 @@ const WhatsAppChatWidget = () => {
 
                             <div className="text-center pt-2">
                                 <p className="text-[10px] text-gray-500 font-medium">
-                                    Powered by <span className="text-gray-400 font-bold">Noble Nexus Support</span>
+                                    Powered by <span className="text-gray-700 font-bold">Noble Nexus Support</span>
                                 </p>
                             </div>
                         </form>
