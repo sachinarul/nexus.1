@@ -4,13 +4,13 @@ import { Cpu, Network, GraduationCap } from "lucide-react";
 const DashboardPreview = () => {
     return (
         <section className="relative z-20 px-4 -mt-10 mb-10">
-            <div className="container mx-auto max-w-4xl flex justify-center">
+            <div className="container mx-auto max-w-[90%] lg:max-w-6xl flex justify-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="relative rounded-2xl overflow-hidden border border-teal/20 bg-navy-900/50 backdrop-blur-md shadow-[0_0_30px_rgba(20,184,166,0.1)] group flex items-center justify-center min-h-[160px] h-40 sm:h-48 w-full max-w-2xl"
+                    className="relative rounded-2xl overflow-hidden border border-teal/20 bg-navy-900/50 backdrop-blur-md shadow-[0_0_30px_rgba(20,184,166,0.1)] group flex items-center justify-center min-h-[160px] h-40 sm:h-48 md:h-56 lg:h-64 w-full max-w-2xl lg:max-w-5xl xl:max-w-6xl"
                 >
                     {/* Glowing effect behind image */}
                     <div className="absolute inset-0 bg-gradient-to-tr from-teal/20 via-purple-500/10 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
