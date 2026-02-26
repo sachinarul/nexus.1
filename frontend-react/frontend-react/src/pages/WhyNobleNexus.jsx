@@ -355,7 +355,7 @@ const WhyNobleNexus = () => {
             {/* --- Impact & Trust Section --- */}
             <section className="py-20 bg-gradient-to-r from-teal-900/10 to-purple-900/10 border-y border-white/5 relative overflow-hidden">
                 <div className="container mx-auto px-4 max-w-7xl relative z-10">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mb-16">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         {[
                             { value: "500+", label: "Institutions" },
                             { value: "2M+", label: "Learners" },
@@ -367,21 +367,6 @@ const WhyNobleNexus = () => {
                                 <p className="text-teal font-medium uppercase tracking-widest text-xs">{stat.label}</p>
                             </div>
                         ))}
-                    </div>
-
-                    {/* Simple Testimonial Slider Placeholder */}
-                    <div className="max-w-4xl mx-auto bg-navy-900/80 border border-white/10 rounded-3xl p-8 md:p-12 text-center backdrop-blur-md relative">
-                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal via-purple-500 to-teal"></div>
-                        <p className="text-2xl md:text-3xl font-light text-white italic mb-8">
-                            "Noble Nexus transformed our campus into a digital powerhouse. The students are more engaged, and our administration is seamless."
-                        </p>
-                        <div className="flex items-center justify-center gap-4">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="User" className="w-12 h-12 rounded-full object-cover border-2 border-teal" />
-                            <div className="text-left">
-                                <h5 className="font-bold text-white">Sarah Jenkins</h5>
-                                <p className="text-sm text-gray-400">Dean of Technology, Westford University</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>

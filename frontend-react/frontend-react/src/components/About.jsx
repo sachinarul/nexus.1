@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -28,9 +29,9 @@ const About = () => {
                             </div>
                         </div>
 
-                        <button className="text-teal hover:text-white font-semibold flex items-center gap-2 group transition-colors">
-                            More About Us <span className="text-xl groyp-hover:translate-x-1 transition-transform">→</span>
-                        </button>
+                        <Link to="/why-noble-nexus" onClick={() => window.scrollTo(0, 0)} className="text-teal hover:text-white font-semibold flex items-center w-fit gap-2 group transition-colors">
+                            More About Us <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
+                        </Link>
                     </div>
 
                     {/* Visual */}

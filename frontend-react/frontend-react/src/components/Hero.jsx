@@ -50,7 +50,7 @@ const Hero = () => {
                 </h1>
 
                 {/* Subtext */}
-                <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed font-light tracking-wide opacity-90">
+                <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-12 leading-relaxed font-light tracking-wide">
                     Noble Nexus brings together AI-powered LMS, ERP, and digital classroom tools into one unified, enterprise-grade platform.
                 </p>
 
