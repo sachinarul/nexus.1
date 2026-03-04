@@ -1,7 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { JitsiMeeting } from '@jitsi/react-sdk';
-import { ArrowLeft, Loader2 } from 'lucide-react';
-import toast from 'react-hot-toast';
+import { ArrowLeft } from 'lucide-react';
 
 const MeetingRoom = () => {
     const { roomName } = useParams();
@@ -33,64 +31,14 @@ const MeetingRoom = () => {
                 </div>
             </div>
 
-            {/* Jitsi Wrapper */}
+            {/* Robust IFrame Wrapper */}
             <div className="flex-1 w-full relative bg-[#000000]">
-                <JitsiMeeting
-                    domain="meet.jit.si"
-                    roomName={`NobleNexus-${roomName}`}
-                    configOverwrite={{
-                        startWithAudioMuted: false,
-                        startWithVideoMuted: false,
-                        requireDisplayName: false,
-                        disableModeratorIndicator: true,
-                        enableEmailInStats: false,
-                        prejoinPageEnabled: true,
-                        resolution: 720,
-                        constraints: {
-                            video: {
-                                height: {
-                                    ideal: 720,
-                                    max: 720,
-                                    min: 240
-                                }
-                            }
-                        }
-                    }}
-                    interfaceConfigOverwrite={{
-                        DISABLE_JOIN_LEAVE_NOTIFICATIONS: false,
-                        SHOW_BRAND_WATERMARK: false,
-                        SHOW_JITSI_WATERMARK: false,
-                        SHOW_PROMOTIONAL_CLOSE_PAGE: false
-                    }}
-                    userInfo={{
-                        displayName: 'Participant'
-                    }}
-                    spinner={
-                        <div className="absolute inset-0 flex flex-col justify-center items-center bg-[#111111]">
-                            <Loader2 size={40} className="text-[#0F766E] animate-spin mb-4" />
-                            <p className="text-[#E5E7EB] font-medium">Securing Meeting Room...</p>
-                        </div>
-                    }
-                    onApiReady={(externalApi) => {
-                        externalApi.addListener('cameraError', () => {
-                            toast.error(
-                                "Camera permission denied. Please enable it in your browser settings to be seen.",
-                                { duration: 6000 }
-                            );
-                        });
-                        externalApi.addListener('micError', () => {
-                            toast.error(
-                                "Microphone permission denied. Please enable it in your browser settings to speak.",
-                                { duration: 6000 }
-                            );
-                        });
-                    }}
-                    getIFrameRef={(iframeRef) => {
-                        iframeRef.style.height = '100%';
-                        iframeRef.style.width = '100%';
-                        iframeRef.style.border = 'none';
-                    }}
-                />
+                <iframe
+                    src={`https://meet.jit.si/NobleNexus-${roomName}#config.prejoinPageEnabled=true&config.disableModeratorIndicator=true`}
+                    allow="camera; microphone; fullscreen; display-capture; autoplay"
+                    style={{ width: '100%', height: '100%', border: 'none' }}
+                    title="Noble Nexus Meeting"
+                ></iframe>
             </div>
         </div>
     );
