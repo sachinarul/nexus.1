@@ -71,25 +71,25 @@ const Signup = () => {
     };
 
     return (
-        <section className="min-h-screen bg-navy-950 flex items-center justify-center relative overflow-hidden py-20">
+        <section className="min-h-screen bg-[#F8FAFC] flex items-center justify-center relative overflow-hidden py-20">
             {/* Background Effects */}
-            <div className="absolute inset-0 bg-gradient-to-br from-navy-950 via-black to-navy-900 pointer-events-none"></div>
-            <div className="absolute w-[800px] h-[800px] bg-teal/5 rounded-full blur-[120px] top-[-200px] right-[-200px] animate-pulse-slow"></div>
-            <div className="absolute w-[600px] h-[600px] bg-purple-500/5 rounded-full blur-[100px] bottom-[-100px] left-[-100px] animate-pulse-slow delay-1000"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 pointer-events-none"></div>
+            <div className="absolute w-[800px] h-[800px] bg-teal-50 rounded-full blur-[120px] top-[-200px] right-[-200px] animate-pulse-slow"></div>
+            <div className="absolute w-[600px] h-[600px] bg-blue-50 rounded-full blur-[100px] bottom-[-100px] left-[-100px] animate-pulse-slow delay-1000"></div>
 
             <div className="container mx-auto px-4 relative z-10 flex justify-center">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
-                    className="w-full max-w-5xl bg-navy-900/50 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl overflow-hidden flex flex-col lg:flex-row"
+                    className="w-full max-w-5xl bg-[#FFFFFF] backdrop-blur-2xl border border-gray-200 rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row"
                 >
                     {/* Left Side - Visuals */}
-                    <div className="hidden lg:flex flex-col justify-center p-12 bg-gradient-to-br from-teal/20 to-blue-600/20 relative w-1/2">
-                        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+                    <div className="hidden lg:flex flex-col justify-center p-12 bg-gradient-to-br from-teal-50 to-blue-50 relative w-1/2">
+                        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center mix-blend-overlay opacity-10"></div>
                         <div className="relative z-10">
-                            <h2 className="text-4xl font-display font-bold text-white mb-6">Join the Future of Learning</h2>
-                            <p className="text-gray-300 text-lg mb-8 leading-relaxed">
+                            <h2 className="text-4xl font-display font-bold text-[#111111] mb-6">Join the Future of Learning</h2>
+                            <p className="text-[#555555] text-lg mb-8 leading-relaxed font-medium">
                                 Create an account to access our comprehensive suite of educational tools, ERP solutions, and digital learning resources.
                             </p>
                             <div className="space-y-4">
@@ -99,8 +99,8 @@ const Signup = () => {
                                     "Institution-wide Analytics",
                                     "24/7 Dedicated Support"
                                 ].map((item, i) => (
-                                    <div key={i} className="flex items-center gap-3 text-gray-200">
-                                        <div className="w-6 h-6 rounded-full bg-teal/20 flex items-center justify-center text-teal">
+                                    <div key={i} className="flex items-center gap-3 text-[#111111] font-medium">
+                                        <div className="w-6 h-6 rounded-full bg-[#0F766E]/20 flex items-center justify-center text-[#0F766E]">
                                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                                         </div>
                                         <span>{item}</span>
@@ -113,8 +113,8 @@ const Signup = () => {
                     {/* Right Side - Form */}
                     <div className="w-full lg:w-1/2 p-8 md:p-12">
                         <div className="text-center mb-6 lg:text-left">
-                            <h3 className="text-2xl font-bold text-white mb-2">Create your account</h3>
-                            <p className="text-gray-400 text-sm">Start your journey with Noble Nexus today.</p>
+                            <h3 className="text-2xl font-bold text-[#111111] mb-2">Create your account</h3>
+                            <p className="text-[#555555] font-medium text-sm">Start your journey with Noble Nexus today.</p>
                         </div>
 
                         {/* Error Message */}
@@ -139,7 +139,7 @@ const Signup = () => {
                                 type="button"
                                 onClick={() => handleSocialSignup(googleLogin)}
                                 disabled={loading}
-                                className="w-full bg-white text-gray-900 font-bold py-3.5 rounded-lg shadow-lg hover:bg-gray-100 transition-all transform active:scale-95 flex items-center justify-center gap-3 disabled:opacity-70 disabled:cursor-not-allowed"
+                                className="w-full bg-[#F8FAFC] border border-gray-200 text-[#111111] font-bold py-3.5 rounded-lg hover:bg-gray-50 transition-all transform active:scale-95 flex items-center justify-center gap-3 disabled:opacity-70 disabled:cursor-not-allowed shadow-sm"
                             >
                                 <svg className="w-5 h-5" viewBox="0 0 24 24">
                                     <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
@@ -152,16 +152,16 @@ const Signup = () => {
                         </div>
 
                         <div className="relative flex items-center justify-center mb-6">
-                            <div className="flex-grow border-t border-white/10"></div>
-                            <span className="px-4 text-xs text-gray-500 uppercase tracking-wider font-semibold">Or continue with email</span>
-                            <div className="flex-grow border-t border-white/10"></div>
+                            <div className="flex-grow border-t border-gray-200"></div>
+                            <span className="px-4 text-xs text-[#555555] uppercase tracking-wider font-bold">Or continue with email</span>
+                            <div className="flex-grow border-t border-gray-200"></div>
                         </div>
 
                         <form onSubmit={handleSubmit} className="space-y-5">
                             <div>
-                                <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Full Name</label>
+                                <label className="block text-xs font-bold text-[#555555] uppercase tracking-wider mb-2">Full Name</label>
                                 <div className="relative">
-                                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-500">
+                                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
                                         <UserPlus size={18} />
                                     </div>
                                     <input
@@ -169,16 +169,16 @@ const Signup = () => {
                                         name="fullName"
                                         value={formData.fullName}
                                         onChange={handleChange}
-                                        className="w-full bg-black/20 border border-white/10 rounded-lg pl-10 pr-4 py-3 text-white focus:border-teal focus:ring-1 focus:ring-teal outline-none transition-colors"
+                                        className="w-full bg-[#FFFFFF] border border-gray-200 rounded-lg pl-10 pr-4 py-3 text-[#111111] focus:border-[#0F766E] focus:ring-1 focus:ring-[#0F766E] outline-none transition-colors shadow-sm placeholder:text-gray-400"
                                         placeholder="John Doe"
                                     />
                                 </div>
                             </div>
 
                             <div>
-                                <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Email Address</label>
+                                <label className="block text-xs font-bold text-[#555555] uppercase tracking-wider mb-2">Email Address</label>
                                 <div className="relative">
-                                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-500">
+                                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
                                         <Mail size={18} />
                                     </div>
                                     <input
@@ -186,7 +186,7 @@ const Signup = () => {
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className="w-full bg-black/20 border border-white/10 rounded-lg pl-10 pr-4 py-3 text-white focus:border-teal focus:ring-1 focus:ring-teal outline-none transition-colors"
+                                        className="w-full bg-[#FFFFFF] border border-gray-200 rounded-lg pl-10 pr-4 py-3 text-[#111111] focus:border-[#0F766E] focus:ring-1 focus:ring-[#0F766E] outline-none transition-colors shadow-sm placeholder:text-gray-400"
                                         placeholder="john@example.com"
                                     />
                                 </div>
@@ -194,9 +194,9 @@ const Signup = () => {
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                 <div>
-                                    <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Password</label>
+                                    <label className="block text-xs font-bold text-[#555555] uppercase tracking-wider mb-2">Password</label>
                                     <div className="relative">
-                                        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-500">
+                                        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
                                             <Lock size={18} />
                                         </div>
                                         <input
@@ -204,22 +204,22 @@ const Signup = () => {
                                             name="password"
                                             value={formData.password}
                                             onChange={handleChange}
-                                            className="w-full bg-black/20 border border-white/10 rounded-lg pl-10 pr-10 py-3 text-white focus:border-teal focus:ring-1 focus:ring-teal outline-none transition-colors"
+                                            className="w-full bg-[#FFFFFF] border border-gray-200 rounded-lg pl-10 pr-10 py-3 text-[#111111] focus:border-[#0F766E] focus:ring-1 focus:ring-[#0F766E] outline-none transition-colors shadow-sm placeholder:text-gray-400"
                                             placeholder="••••••••"
                                         />
                                         <button
                                             type="button"
                                             onClick={() => setShowPassword(!showPassword)}
-                                            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white transition-colors"
+                                            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#111111] transition-colors"
                                         >
                                             {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                                         </button>
                                     </div>
                                 </div>
                                 <div>
-                                    <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Confirm Password</label>
+                                    <label className="block text-xs font-bold text-[#555555] uppercase tracking-wider mb-2">Confirm Password</label>
                                     <div className="relative">
-                                        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-500">
+                                        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
                                             <Lock size={18} />
                                         </div>
                                         <input
@@ -227,13 +227,13 @@ const Signup = () => {
                                             name="confirmPassword"
                                             value={formData.confirmPassword}
                                             onChange={handleChange}
-                                            className="w-full bg-black/20 border border-white/10 rounded-lg pl-10 pr-10 py-3 text-white focus:border-teal focus:ring-1 focus:ring-teal outline-none transition-colors"
+                                            className="w-full bg-[#FFFFFF] border border-gray-200 rounded-lg pl-10 pr-10 py-3 text-[#111111] focus:border-[#0F766E] focus:ring-1 focus:ring-[#0F766E] outline-none transition-colors shadow-sm placeholder:text-gray-400"
                                             placeholder="••••••••"
                                         />
                                         <button
                                             type="button"
                                             onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                                            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white transition-colors"
+                                            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#111111] transition-colors"
                                         >
                                             {showConfirmPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                                         </button>
@@ -244,7 +244,7 @@ const Signup = () => {
                             <button
                                 type="submit"
                                 disabled={loading}
-                                className="w-full bg-gradient-to-r from-teal to-blue-600 hover:from-teal/90 hover:to-blue-600/90 text-white font-bold py-3.5 rounded-lg shadow-lg hover:shadow-teal/20 transition-all transform active:scale-95 flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed"
+                                className="w-full bg-[#0F766E] hover:bg-teal-700 text-white font-bold py-3.5 rounded-lg shadow-md transition-all transform active:scale-95 flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed"
                             >
                                 {loading ? (
                                     <Loader2 className="animate-spin" size={20} />
@@ -257,8 +257,8 @@ const Signup = () => {
                             </button>
                         </form>
 
-                        <div className="mt-8 text-center text-sm text-gray-400">
-                            Already have an account? <Link to="/login" className="text-teal hover:text-white font-medium transition-colors">Log in</Link>
+                        <div className="mt-8 text-center text-sm text-[#555555] font-medium">
+                            Already have an account? <Link to="/login" className="text-[#0F766E] hover:text-[#2563EB] font-bold transition-colors">Log in</Link>
                         </div>
                     </div>
                 </motion.div>

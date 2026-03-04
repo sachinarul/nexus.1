@@ -26,13 +26,12 @@ const HigherEducation = () => {
     };
 
     return (
-        <div className="bg-navy-950 min-h-screen font-sans text-white selection:bg-blue-500 selection:text-white overflow-hidden">
+        <div className="bg-[#F8FAFC] min-h-screen font-sans text-[#111111] selection:bg-blue-50 selection:text-[#111111] overflow-hidden">
 
             {/* --- Hero Section --- */}
-            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
-                <div className="absolute inset-0 bg-navy-950/40 z-0"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-transparent to-navy-950"></div>
+            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#FFFFFF]">
+                <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-10 z-0"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF]/0 to-[#FFFFFF] z-0"></div>
 
                 <div className="container mx-auto px-4 max-w-7xl relative z-10">
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -42,18 +41,18 @@ const HigherEducation = () => {
                             variants={fadeInUp}
                             className="text-left"
                         >
-                            <span className="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-6">
+                            <span className="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-200 text-[#2563EB] text-xs font-bold tracking-widest uppercase mb-6">
                                 Advanced Academic Solutions
                             </span>
-                            <h1 className="text-5xl lg:text-7xl font-display font-bold leading-tight mb-6">
+                            <h1 className="text-5xl lg:text-7xl font-display font-bold leading-tight mb-6 text-[#111111]">
                                 Transforming <br />
-                                <span className="bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 bg-clip-text text-transparent">Higher Education</span>
+                                <span className="text-[#2563EB]">Higher Education</span>
                             </h1>
-                            <p className="text-xl text-gray-300 mb-8 leading-relaxed font-light">
+                            <p className="text-xl text-[#555555] font-medium mb-8 leading-relaxed">
                                 Future-proof your institution with cutting-edge learning solutions. We redefine academic experiences through digital innovation and instructional excellence.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <Link to="/" onClick={() => window.scrollTo(0, 0)} className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-full shadow-[0_0_15px_rgba(37,99,235,0.5)] hover:shadow-[0_0_25px_rgba(37,99,235,0.8)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2 group">
+                                <Link to="/" onClick={() => window.scrollTo(0, 0)} className="px-8 py-4 bg-[#2563EB] text-[#FFFFFF] font-bold rounded-full shadow-md hover:bg-blue-700 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 group">
                                     Home <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                                 </Link>
 
@@ -66,14 +65,14 @@ const HigherEducation = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="relative perspective-1000 group"
                         >
-                            <div className="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-navy-900/50 backdrop-blur-xl transform transition-transform duration-500 hover:rotate-y-2 hover:rotate-x-2">
+                            <div className="relative z-10 rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-[#FFFFFF] backdrop-blur-xl transform transition-transform duration-500 hover:rotate-y-2 hover:rotate-x-2">
                                 <img
                                     src="https://images.unsplash.com/photo-1592280771190-3e2e4d571952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
                                     alt="Futuristic University Campus"
-                                    className="w-full h-auto object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+                                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
                                 {/* Floating Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-60"></div>
+                                
                             </div>
 
                             {/* Decorative Elements */}
@@ -85,7 +84,7 @@ const HigherEducation = () => {
             </section>
 
             {/* --- About Section --- */}
-            <section className="py-24 bg-navy-900/30 relative">
+            <section className="py-24 bg-[#FFFFFF] relative">
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <motion.div
@@ -94,13 +93,13 @@ const HigherEducation = () => {
                             viewport={{ once: true }}
                             className="relative"
                         >
-                            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                            <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-xl">
                                 <img
                                     src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
                                     alt="University Smart Classroom"
                                     className="w-full h-auto object-cover"
                                 />
-                                <div className="absolute inset-0 bg-blue-900/20 mix-blend-overlay"></div>
+                                <div className="absolute inset-0 bg-blue-100/20 mix-blend-overlay"></div>
                             </div>
                         </motion.div>
 
@@ -110,23 +109,23 @@ const HigherEducation = () => {
                             viewport={{ once: true }}
                             variants={fadeInUp}
                         >
-                            <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
-                                Modernizing <span className="text-blue-400">Legacy Systems</span>
+                            <h2 className="text-3xl md:text-5xl font-display font-bold text-[#111111] mb-6">
+                                Modernizing <span className="text-[#2563EB]">Legacy Systems</span>
                             </h2>
-                            <p className="text-gray-400 text-lg leading-relaxed mb-6">
+                            <p className="text-[#555555] font-medium text-lg leading-relaxed mb-6">
                                 From comprehensive courseware development to accessibility and DEI integration, we equip institutions with scalable, technology-driven solutions.
                             </p>
-                            <p className="text-gray-400 text-lg leading-relaxed mb-8">
+                            <p className="text-[#555555] font-medium text-lg leading-relaxed mb-8">
                                 Our mission is to enhance learning outcomes and modernize legacy content, giving universities the tools they need to stay competitive in a rapidly evolving global educational landscape.
                             </p>
 
                             <ul className="space-y-4">
                                 {["Scalable Digital Infrastructure", "Inclusive Learning Environments", "Data-Driven Academic Insights"].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
+                                        <div className="w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-[#2563EB]">
                                             <CheckCircle2 size={14} />
                                         </div>
-                                        <span className="text-gray-300 font-medium">{item}</span>
+                                        <span className="text-[#111111] font-bold">{item}</span>
                                     </li>
                                 ))}
                             </ul>
@@ -136,12 +135,12 @@ const HigherEducation = () => {
             </section>
 
             {/* --- Solutions Grid --- */}
-            <section className="py-24 relative overflow-hidden">
+            <section className="py-24 relative overflow-hidden bg-[#F8FAFC]">
                 <div className="container mx-auto px-4 max-w-7xl relative z-10">
                     <div className="text-center mb-16">
-                        <span className="text-blue-400 font-medium tracking-widest text-sm uppercase mb-4 block">Holistic Offerings</span>
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-                            Comprehensive <span className="text-indigo-400">Higher-Ed Solutions</span>
+                        <span className="text-[#2563EB] font-bold tracking-widest text-sm uppercase mb-4 block">Holistic Offerings</span>
+                        <h2 className="text-4xl md:text-5xl font-display font-bold text-[#111111] mb-6">
+                            Comprehensive <span className="text-[#2563EB]">Higher-Ed Solutions</span>
                         </h2>
                     </div>
 
@@ -190,21 +189,21 @@ const HigherEducation = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.1 }}
-                                className="group relative overflow-hidden rounded-2xl bg-navy-900 border border-white/5 hover:border-blue-500/30 transition-all h-[360px]"
+                                className="group relative overflow-hidden rounded-2xl bg-[#FFFFFF] border border-gray-200 hover:border-[#2563EB] hover:shadow-lg transition-all flex flex-col"
                             >
-                                <img
-                                    src={item.image}
-                                    alt={item.title}
-                                    className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-10 group-hover:scale-105 transition-all duration-700"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-900/80 to-transparent"></div>
-
-                                <div className="absolute bottom-0 left-0 p-8 w-full z-10">
-                                    <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform backdrop-blur-sm">
+                                <div className="h-48 relative overflow-hidden bg-gray-100 shrink-0">
+                                    <img
+                                        src={item.image}
+                                        alt={item.title}
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    />
+                                </div>
+                                <div className="p-6 relative z-10 bg-[#FFFFFF] flex-grow flex flex-col">
+                                    <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-[#2563EB] mb-4 group-hover:scale-110 transition-transform shadow-sm">
                                         <item.icon size={24} />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">{item.title}</h3>
-                                    <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+                                    <h3 className="text-xl font-bold text-[#111111] mb-2 group-hover:text-[#2563EB] transition-colors">{item.title}</h3>
+                                    <p className="text-[#555555] font-medium text-sm leading-relaxed">{item.desc}</p>
                                 </div>
                             </motion.div>
                         ))}
@@ -213,10 +212,9 @@ const HigherEducation = () => {
             </section>
 
             {/* --- Why Noble Nexus --- */}
-            <section className="py-24 bg-gradient-to-br from-navy-900 to-black relative">
-                <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5"></div>
+            <section className="py-24 bg-gray-50 border-y border-gray-200 relative">
                 <div className="container mx-auto px-4 max-w-7xl text-center relative z-10">
-                    <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-16">Why Noble Nexus?</h2>
+                    <h2 className="text-4xl md:text-5xl font-display font-bold text-[#111111] mb-16">Why Noble Nexus?</h2>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
@@ -228,13 +226,13 @@ const HigherEducation = () => {
                             <motion.div
                                 key={i}
                                 whileHover={{ y: -5 }}
-                                className="p-8 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 shadow-lg"
+                                className="p-8 rounded-2xl bg-[#FFFFFF] border border-gray-200 hover:border-[#2563EB] hover:bg-gray-50 transition-all duration-300 shadow-sm hover:shadow-lg"
                             >
-                                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white mb-6 mx-auto shadow-lg shadow-blue-500/20">
+                                <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-[#2563EB] mb-6 mx-auto shadow-sm">
                                     <Lightbulb size={24} />
                                 </div>
-                                <h4 className="text-lg font-bold text-white mb-3">{feat.title}</h4>
-                                <p className="text-gray-400 text-sm">{feat.desc}</p>
+                                <h4 className="text-lg font-bold text-[#111111] mb-3">{feat.title}</h4>
+                                <p className="text-[#555555] font-medium text-sm">{feat.desc}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -242,20 +240,19 @@ const HigherEducation = () => {
             </section>
 
             {/* --- CTA Section --- */}
-            <section className="py-32 relative overflow-hidden">
-                <div className="absolute inset-0 bg-blue-900/10"></div>
+            <section className="py-32 relative overflow-hidden bg-[#FFFFFF]">
                 <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl">
-                    <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-8">
+                    <h2 className="text-4xl md:text-6xl font-display font-bold text-[#111111] mb-8">
                         Upgrade Your <br /> Institution Today
                     </h2>
-                    <p className="text-xl text-gray-300 mb-12">
+                    <p className="text-xl text-[#555555] font-medium mb-12">
                         Partner with Noble Nexus to build a future-ready academic environment.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                         <Link
                             to="/"
                             onClick={() => window.scrollTo(0, 0)}
-                            className="w-full sm:w-auto px-10 py-5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-lg rounded-full shadow-[0_0_20px_rgba(37,99,235,0.5)] hover:shadow-[0_0_30px_rgba(37,99,235,0.8)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center"
+                            className="w-full sm:w-auto px-10 py-5 bg-[#2563EB] text-[#FFFFFF] font-bold text-lg rounded-full shadow-md hover:bg-blue-700 hover:scale-105 active:scale-95 transition-all flex items-center justify-center"
                         >
                             Home
                         </Link>
@@ -269,3 +266,4 @@ const HigherEducation = () => {
 };
 
 export default HigherEducation;
+

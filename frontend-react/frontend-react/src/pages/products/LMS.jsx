@@ -28,13 +28,13 @@ const LMS = () => {
     };
 
     return (
-        <div className="bg-navy-950 min-h-screen font-sans text-white selection:bg-teal selection:text-navy-900 overflow-hidden">
+        <div className="bg-[#ffffff] min-h-screen font-sans text-gray-900 selection:bg-teal-200 selection:text-teal-900 overflow-hidden">
 
             {/* --- Hero Section --- */}
-            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-                {/* Background Elements & Dark Overlays */}
-                <div className="absolute inset-0 bg-navy-950/40 z-0"></div>
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-teal/10 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-slow"></div>
+            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#FFFFFF]">
+                {/* Background Elements & Overlays */}
+                <div className="absolute inset-0 bg-[#FFFFFF] z-0"></div>
+                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-teal-50 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-slow"></div>
                 <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple/10 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-slow delay-1000"></div>
 
                 <div className="container mx-auto px-4 max-w-7xl relative z-10">
@@ -45,18 +45,18 @@ const LMS = () => {
                             variants={fadeInUp}
                             className="text-left"
                         >
-                            <span className="inline-block py-1 px-3 rounded-full bg-teal/10 border border-teal/20 text-teal text-xs font-bold tracking-widest uppercase mb-6">
+                            <span className="inline-block py-1 px-3 rounded-full bg-teal-100 border border-teal-200 text-teal-700 text-xs font-bold tracking-widest uppercase mb-6">
                                 Next-Gen EdTech
                             </span>
-                            <h1 className="text-5xl lg:text-7xl font-display font-bold leading-tight mb-6">
-                                Smart <span className="bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">LMS</span> <br />
+                            <h1 className="text-5xl lg:text-7xl font-display font-bold leading-tight mb-6 text-[#111111]">
+                                Smart <span className="text-[#0F766E]">LMS</span> <br />
                                 for Modern Schools
                             </h1>
-                            <p className="text-xl text-gray-300 mb-8 leading-relaxed font-light">
+                            <p className="text-xl text-[#555555] mb-8 leading-relaxed font-medium">
                                 Enrich your institution with intelligent management tools. A comprehensive Learning Management System designed for seamless collaboration, tracking, and growth.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <Link to="/" onClick={() => window.scrollTo(0, 0)} className="px-8 py-4 bg-gradient-to-r from-teal-500 to-emerald-600 text-white font-bold rounded-full shadow-[0_0_15px_rgba(20,184,166,0.5)] hover:shadow-[0_0_25px_rgba(20,184,166,0.8)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2 group">
+                                <Link to="/" onClick={() => window.scrollTo(0, 0)} className="px-8 py-4 bg-[#0F766E] text-[#FFFFFF] font-bold rounded-full shadow-md hover:bg-teal-700 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 group">
                                     Home <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                                 </Link>
 
@@ -69,25 +69,25 @@ const LMS = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="relative perspective-1000 group"
                         >
-                            <div className="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-navy-900/50 backdrop-blur-xl transform transition-transform duration-500 hover:rotate-y-2 hover:rotate-x-2">
+                            <div className="relative z-10 rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-[#FFFFFF] backdrop-blur-xl transform transition-transform duration-500 hover:rotate-y-2 hover:rotate-x-2">
                                 <img
                                     src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
                                     alt="Futuristic Classroom Dashboard"
-                                    className="w-full h-auto object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+                                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
                                 {/* Floating UI Elements */}
                                 <motion.div
                                     animate={{ y: [0, -10, 0] }}
                                     transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-                                    className="absolute top-10 -left-10 bg-navy-800/90 backdrop-blur-md border border-teal/30 p-4 rounded-xl shadow-xl hidden lg:block"
+                                    className="absolute top-10 -left-10 bg-[#FFFFFF] backdrop-blur-md border border-gray-200 p-4 rounded-xl shadow-lg hidden lg:block"
                                 >
                                     <div className="flex items-center gap-3">
-                                        <div className="w-10 h-10 rounded-full bg-teal/20 flex items-center justify-center text-teal">
+                                        <div className="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center text-[#0F766E]">
                                             <BarChart3 size={20} />
                                         </div>
                                         <div>
-                                            <p className="text-xs text-gray-400">Student Engagement</p>
-                                            <p className="text-lg font-bold text-white">+24% <span className="text-xs font-normal text-emerald-400">vs last month</span></p>
+                                            <p className="text-xs text-[#555555] font-bold">Student Engagement</p>
+                                            <p className="text-lg font-bold text-[#111111]">+24% <span className="text-xs font-normal text-[#0F766E]">vs last month</span></p>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -101,7 +101,7 @@ const LMS = () => {
             </section>
 
             {/* --- What is LMS Section --- */}
-            <section className="py-24 bg-navy-900/50 relative">
+            <section className="py-24 bg-[#F8FAFC] relative">
                 <div className="container mx-auto px-4 max-w-5xl text-center">
                     <motion.div
                         initial="hidden"
@@ -109,8 +109,8 @@ const LMS = () => {
                         viewport={{ once: true }}
                         variants={fadeInUp}
                     >
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">What is a <span className="text-teal">Learning Management System?</span></h2>
-                        <p className="text-lg text-gray-400 leading-relaxed max-w-3xl mx-auto mb-12">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-[#111111] mb-6">What is a <span className="text-teal-600">Learning Management System?</span></h2>
+                        <p className="text-lg text-[#555555] leading-relaxed font-medium max-w-3xl mx-auto mb-12">
                             A Learning Management System (LMS) is a powerful software application for the administration, documentation, tracking, reporting, automation, and delivery of educational courses, training programs, or learning and development programs. It is the central nervous system of modern education.
                         </p>
                     </motion.div>
@@ -120,17 +120,55 @@ const LMS = () => {
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={fadeInUp}
-                        className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-black/40"
+                        className="grid lg:grid-cols-2 rounded-3xl overflow-hidden shadow-2xl border border-gray-200 bg-[#FFFFFF]"
                     >
-                        <img
-                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-                            alt="LMS Dashboard Interface"
-                            className="w-full h-auto object-cover opacity-80 hover:opacity-100 transition-opacity duration-700"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-80"></div>
-                        <div className="absolute bottom-0 left-0 right-0 p-8 text-left">
-                            <h3 className="text-2xl font-bold text-white mb-2">Centralized Command Center</h3>
-                            <p className="text-gray-300">Monitor progress, manage content, and analyze performance from a single intuitive dashboard.</p>
+                        {/* Premium Dashboard Mockup Container */}
+                        <div className="h-full min-h-[450px] relative overflow-hidden group bg-[#F8FAFC] flex items-center justify-center p-6 lg:p-12">
+                            {/* Animated Background Gradients */}
+                            <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-teal-50 to-transparent opacity-60"></div>
+
+                            {/* Floating Browser Mockup */}
+                            <div className="relative z-10 w-full aspect-video rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-200 group-hover:-translate-y-2 transition-transform duration-500">
+                                {/* Browser Header */}
+                                <div className="h-6 bg-gray-100 border-b border-gray-200 flex items-center px-3 gap-1.5">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-red-400"></div>
+                                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-400"></div>
+                                    <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div>
+                                </div>
+
+                                <img
+                                    src="/modern_lms_dashboard_mockup_1772614506644.png"
+                                    alt="Centralized LMS Dashboard"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+
+                            {/* Decorative Accent */}
+                            <div className="absolute bottom-10 right-10 w-32 h-32 bg-teal-500/10 rounded-full blur-3xl group-hover:bg-teal-500/20 transition-colors"></div>
+                        </div>
+
+                        {/* Text Content Column */}
+                        <div className="p-10 lg:p-16 flex flex-col justify-center bg-gray-50/30">
+                            <div className="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-[#0F766E] mb-6 shadow-sm">
+                                <LayoutDashboard size={24} />
+                            </div>
+                            <h3 className="text-3xl lg:text-4xl font-display font-bold text-[#111111] mb-6 leading-tight">
+                                Centralized <br />
+                                <span className="text-teal-600">Command Center</span>
+                            </h3>
+                            <p className="text-xl text-[#555555] font-medium leading-relaxed mb-8">
+                                Monitor progress, manage content, and analyze performance from a single intuitive dashboard. All your education data, unified in one place.
+                            </p>
+                            <div className="space-y-4">
+                                {["Real-time Analytics", "Seamless Content Control", "Intuitive User Design"].map((item, i) => (
+                                    <div key={i} className="flex items-center gap-3 text-[#333333] font-semibold">
+                                        <div className="w-5 h-5 rounded-full bg-teal-100 flex items-center justify-center">
+                                            <CheckCircle2 size={12} className="text-[#0F766E]" />
+                                        </div>
+                                        {item}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </motion.div>
 
@@ -149,10 +187,10 @@ const LMS = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.1 }}
-                                className="p-6 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 hover:border-teal/30 transition-all group"
+                                className="p-6 bg-gray-50 border border-gray-200 rounded-xl hover:bg-teal-50 hover:border-teal-200 transition-all group shadow-sm"
                             >
-                                <item.icon className="w-8 h-8 text-teal mb-4 mx-auto group-hover:scale-110 transition-transform" />
-                                <h4 className="font-semibold text-gray-200 group-hover:text-white">{item.title}</h4>
+                                <item.icon className="w-8 h-8 text-teal-600 mb-4 mx-auto group-hover:scale-110 transition-transform" />
+                                <h4 className="font-bold text-[#111111] group-hover:text-teal-700">{item.title}</h4>
                             </motion.div>
                         ))}
                     </div>
@@ -163,9 +201,9 @@ const LMS = () => {
             <section className="py-24 relative overflow-hidden">
                 <div className="container mx-auto px-4 max-w-7xl relative z-10">
                     <div className="text-center mb-16">
-                        <span className="text-teal font-medium tracking-widest text-sm uppercase mb-4 block">Holistic Ecosystem</span>
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-                            Complete <span className="bg-gradient-to-r from-teal to-purple bg-clip-text text-transparent">Educational Management</span>
+                        <span className="text-teal-600 font-bold tracking-widest text-sm uppercase mb-4 block">Holistic Ecosystem</span>
+                        <h2 className="text-4xl md:text-5xl font-display font-bold text-[#111111] mb-6">
+                            Complete <span className="text-teal-600">Educational Management</span>
                         </h2>
                     </div>
 
@@ -208,16 +246,16 @@ const LMS = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                className="p-8 bg-navy-900 border border-white/5 rounded-2xl hover:border-teal/50 hover:shadow-[0_0_30px_rgba(20,184,166,0.1)] transition-all group relative overflow-hidden"
+                                className="p-8 bg-gray-50 border border-gray-200 rounded-2xl hover:border-teal-300 hover:shadow-lg transition-all group relative overflow-hidden"
                             >
-                                <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                                    <service.icon size={100} />
+                                <div className="absolute top-0 right-0 p-4 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+                                    <service.icon size={100} className="text-black" />
                                 </div>
-                                <div className="w-14 h-14 bg-teal/10 rounded-xl flex items-center justify-center text-teal mb-6 group-hover:scale-110 transition-transform">
+                                <div className="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center text-teal-600 mb-6 group-hover:scale-110 transition-transform">
                                     <service.icon size={28} />
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-teal transition-colors">{service.title}</h3>
-                                <p className="text-gray-400 text-sm leading-relaxed">{service.desc}</p>
+                                <h3 className="text-xl font-bold text-[#111111] mb-3 group-hover:text-teal-700 transition-colors">{service.title}</h3>
+                                <p className="text-[#555555] font-medium text-sm leading-relaxed">{service.desc}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -270,7 +308,7 @@ const LMS = () => {
                 }
 
             ].map((section, idx) => (
-                <section key={idx} className={`py-20 lg:py-32 ${idx % 2 === 1 ? 'bg-navy-900/30' : 'bg-transparent'}`}>
+                <section key={idx} className={`py-20 lg:py-32 ${idx % 2 === 1 ? 'bg-[#F8FAFC]' : 'bg-[#FFFFFF]'}`}>
                     <div className="container mx-auto px-4 max-w-7xl">
                         <div className={`grid lg:grid-cols-2 gap-16 items-center ${section.align === 'right' ? 'lg:flex-row-reverse' : ''}`}>
                             <motion.div
@@ -279,14 +317,14 @@ const LMS = () => {
                                 viewport={{ once: true }}
                                 className={section.align === 'right' ? 'lg:order-2' : ''}
                             >
-                                <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">{section.title}</h3>
-                                <p className="text-gray-400 text-lg mb-8 leading-relaxed">
+                                <h3 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6">{section.title}</h3>
+                                <p className="text-[#555555] font-medium text-lg mb-8 leading-relaxed">
                                     {section.desc}
                                 </p>
                                 <ul className="space-y-4">
                                     {section.features.map((feat, i) => (
-                                        <li key={i} className="flex items-center gap-3 text-gray-300">
-                                            <div className="p-1 rounded-full bg-teal/20 text-teal">
+                                        <li key={i} className="flex items-center gap-3 text-[#111111] font-bold">
+                                            <div className="w-6 h-6 rounded-full bg-teal-50 flex items-center justify-center text-[#0F766E]">
                                                 <CheckCircle2 size={16} />
                                             </div>
                                             {feat}
@@ -299,13 +337,13 @@ const LMS = () => {
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
-                                className={`relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group ${section.align === 'right' ? 'lg:order-1' : ''}`}
+                                className={`relative rounded-2xl overflow-hidden border border-gray-200 shadow-xl group ${section.align === 'right' ? 'lg:order-1' : ''}`}
                             >
-                                <div className="absolute inset-0 bg-gradient-to-tr from-teal/20 to-purple/20 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none"></div>
+                                <div className="absolute inset-0 bg-teal-100/10 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none"></div>
                                 <img
                                     src={section.image}
                                     alt={section.title}
-                                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 hover:grayscale-0 grayscale lg:grayscale-[0.3]"
+                                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 />
                             </motion.div>
                         </div>
@@ -314,31 +352,30 @@ const LMS = () => {
             ))}
 
             {/* --- CTA Section --- */}
-            <section className="py-32 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-navy-950 to-teal/90 opacity-20"></div>
+            <section className="py-32 relative overflow-hidden bg-gray-50 border-t border-gray-200">
                 <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-4xl md:text-6xl font-display font-bold text-white mb-8"
+                        className="text-4xl md:text-6xl font-display font-bold text-[#111111] mb-8"
                     >
                         Ready to Transform Your Institution?
                     </motion.h2>
-                    <p className="text-xl text-gray-300 mb-12">
+                    <p className="text-xl text-[#555555] font-medium mb-12">
                         Join hundreds of forward-thinking schools using Noble Nexus to power their future.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                         <Link
                             to="/"
                             onClick={() => window.scrollTo(0, 0)}
-                            className="w-full sm:w-auto px-10 py-5 bg-gradient-to-r from-teal-500 to-blue-600 text-white font-bold text-lg rounded-full shadow-[0_0_20px_rgba(20,184,166,0.5)] hover:shadow-[0_0_30px_rgba(20,184,166,0.8)] hover:scale-105 active:scale-95 transition-all"
+                            className="w-full sm:w-auto px-10 py-5 bg-[#0F766E] text-[#FFFFFF] font-bold text-lg rounded-full shadow-md hover:bg-teal-700 hover:scale-105 active:scale-95 transition-all"
                         >
                             Home
                         </Link>
                         <Link
                             to="/contact"
-                            className="w-full sm:w-auto px-10 py-5 bg-navy-900 border-2 border-teal/50 text-white font-bold text-lg rounded-full hover:bg-teal-500 hover:text-white transition-all shadow-lg"
+                            className="w-full sm:w-auto px-10 py-5 bg-[#FFFFFF] border border-gray-200 text-[#111111] font-bold text-lg rounded-full hover:bg-gray-50 shadow-sm hover:shadow-md transition-all"
                         >
                             Contact Sales
                         </Link>
@@ -350,3 +387,5 @@ const LMS = () => {
 };
 
 export default LMS;
+
+

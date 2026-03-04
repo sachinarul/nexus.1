@@ -67,28 +67,28 @@ const HelpBot = ({ isOpen, onClose }) => {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 50, scale: 0.9 }}
                         transition={{ type: "spring", damping: 25, stiffness: 300 }}
-                        className="fixed bottom-6 right-6 md:bottom-10 md:right-10 w-[90vw] md:w-[400px] h-[600px] max-h-[85vh] bg-navy-900 border border-white/10 rounded-3xl shadow-2xl z-[9999] flex flex-col overflow-hidden font-sans ring-1 ring-white/10"
+                        className="fixed bottom-6 right-6 md:bottom-10 md:right-10 w-[90vw] md:w-[400px] h-[600px] max-h-[85vh] bg-[#FFFFFF] border border-gray-200 rounded-3xl shadow-2xl z-[9999] flex flex-col overflow-hidden font-sans ring-1 ring-black/5"
                     >
                         {/* Premium Background Effects */}
-                        <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-teal/10 rounded-full blur-[80px] pointer-events-none"></div>
-                        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-purple-500/10 rounded-full blur-[80px] pointer-events-none"></div>
+                        <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-teal-50 rounded-full blur-[80px] pointer-events-none"></div>
+                        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-50 rounded-full blur-[80px] pointer-events-none"></div>
 
                         {/* Header */}
-                        <div className="relative bg-white/5 backdrop-blur-md border-b border-white/10 p-5 flex items-center justify-between shrink-0 z-10">
+                        <div className="relative bg-gray-50 backdrop-blur-md border-b border-gray-200 p-5 flex items-center justify-between shrink-0 z-10">
                             <div className="flex items-center gap-4">
                                 <div className="relative">
-                                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal to-blue-600 p-[2px]">
-                                        <div className="w-full h-full rounded-full bg-navy-900 flex items-center justify-center overflow-hidden">
-                                            <Bot size={24} className="text-teal" />
+                                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#0F766E] to-[#2563EB] p-[2px]">
+                                        <div className="w-full h-full rounded-full bg-[#FFFFFF] flex items-center justify-center overflow-hidden">
+                                            <Bot size={24} className="text-[#0F766E]" />
                                         </div>
                                     </div>
-                                    <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-navy-900 rounded-full animate-pulse"></span>
+                                    <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full animate-pulse"></span>
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-white text-lg tracking-tight flex items-center gap-2">
-                                        Nexus AI <Sparkles size={14} className="text-amber-400" />
+                                    <h3 className="font-bold text-[#111111] text-lg tracking-tight flex items-center gap-2">
+                                        Nexus AI <Sparkles size={14} className="text-amber-500" />
                                     </h3>
-                                    <p className="text-xs text-teal/80 font-medium tracking-wider uppercase">Premium Support</p>
+                                    <p className="text-xs text-[#0F766E] font-bold tracking-wider uppercase">Premium Support</p>
                                 </div>
                             </div>
                             <button
@@ -101,21 +101,21 @@ const HelpBot = ({ isOpen, onClose }) => {
                         </div>
 
                         {/* Messages Area */}
-                        <div className="relative flex-1 overflow-y-auto p-5 space-y-6 z-10 scrollbar-thin scrollbar-thumb-white/10 hover:scrollbar-thumb-white/20">
+                        <div className="relative flex-1 overflow-y-auto p-5 space-y-6 z-10 scrollbar-thin scrollbar-thumb-gray-200 hover:scrollbar-thumb-gray-300">
                             {messages.map((msg) => (
                                 <div
                                     key={msg.id}
                                     className={`flex w-full items-end gap-2 ${msg.type === 'user' ? 'justify-end' : 'justify-start'}`}
                                 >
                                     {msg.type === 'bot' && (
-                                        <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
-                                            <Bot size={14} className="text-teal" />
+                                        <div className="w-8 h-8 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center shrink-0">
+                                            <Bot size={14} className="text-[#0F766E]" />
                                         </div>
                                     )}
 
-                                    <div className={`max-w-[80%] p-4 text-sm leading-relaxed shadow-lg backdrop-blur-sm ${msg.type === 'user'
-                                            ? 'bg-gradient-to-br from-teal to-blue-600 text-white rounded-2xl rounded-tr-none border border-white/10'
-                                            : 'bg-white/5 text-gray-200 rounded-2xl rounded-tl-none border border-white/10 hover:border-white/20 transition-colors'
+                                    <div className={`max-w-[80%] p-4 text-sm font-medium leading-relaxed shadow-sm backdrop-blur-sm ${msg.type === 'user'
+                                        ? 'bg-gradient-to-br from-[#0F766E] to-[#2563EB] text-white rounded-2xl rounded-tr-none border border-transparent'
+                                        : 'bg-[#F8FAFC] text-[#111111] rounded-2xl rounded-tl-none border border-gray-200 hover:border-teal-300 transition-colors'
                                         }`}>
                                         {msg.text}
                                     </div>
@@ -130,13 +130,13 @@ const HelpBot = ({ isOpen, onClose }) => {
 
                             {isTyping && (
                                 <div className="flex items-end gap-2">
-                                    <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
-                                        <Bot size={14} className="text-teal" />
+                                    <div className="w-8 h-8 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center shrink-0">
+                                        <Bot size={14} className="text-[#0F766E]" />
                                     </div>
-                                    <div className="bg-white/5 border border-white/10 px-4 py-3 rounded-2xl rounded-tl-none flex items-center gap-1.5">
-                                        <span className="w-1.5 h-1.5 bg-teal rounded-full animate-bounce"></span>
-                                        <span className="w-1.5 h-1.5 bg-teal rounded-full animate-bounce delay-100"></span>
-                                        <span className="w-1.5 h-1.5 bg-teal rounded-full animate-bounce delay-200"></span>
+                                    <div className="bg-[#F8FAFC] border border-gray-200 px-4 py-3 rounded-2xl rounded-tl-none flex items-center gap-1.5 shadow-sm">
+                                        <span className="w-1.5 h-1.5 bg-[#0F766E] rounded-full animate-bounce"></span>
+                                        <span className="w-1.5 h-1.5 bg-[#0F766E] rounded-full animate-bounce delay-100"></span>
+                                        <span className="w-1.5 h-1.5 bg-[#0F766E] rounded-full animate-bounce delay-200"></span>
                                     </div>
                                 </div>
                             )}
@@ -144,27 +144,27 @@ const HelpBot = ({ isOpen, onClose }) => {
                         </div>
 
                         {/* Input Area */}
-                        <div className="relative bg-white/5 backdrop-blur-md border-t border-white/10 p-5 shrink-0 z-10">
+                        <div className="relative bg-[#FFFFFF] border-t border-gray-200 p-5 shrink-0 z-10">
                             <form onSubmit={handleSend} className="relative flex items-center group">
-                                <div className="absolute inset-0 bg-gradient-to-r from-teal/20 to-purple/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="absolute inset-0 bg-gradient-to-r from-teal-50 to-blue-50 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 <input
                                     type="text"
                                     value={inputValue}
                                     onChange={(e) => setInputValue(e.target.value)}
                                     placeholder="Type your message..."
-                                    className="relative w-full bg-black/40 border border-white/10 rounded-xl pl-5 pr-14 py-4 text-sm text-white focus:outline-none focus:border-teal/50 focus:ring-1 focus:ring-teal/50 transition-all placeholder:text-gray-500"
+                                    className="relative w-full bg-[#F8FAFC] border border-gray-200 rounded-xl pl-5 pr-14 py-4 text-sm font-medium text-[#111111] focus:outline-none focus:border-[#0F766E] focus:ring-1 focus:ring-[#0F766E] transition-all placeholder:text-[#555555]"
                                 />
                                 <button
                                     type="submit"
                                     disabled={!inputValue.trim()}
-                                    className="absolute right-2 p-2.5 bg-gradient-to-r from-teal to-blue-600 text-white rounded-lg hover:shadow-[0_0_15px_rgba(20,184,166,0.5)] disabled:opacity-30 disabled:cursor-not-allowed transition-all transform active:scale-95"
+                                    className="absolute right-2 p-2.5 bg-gradient-to-r from-[#0F766E] to-[#2563EB] text-white rounded-lg hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed transition-all transform active:scale-95"
                                 >
                                     <Send size={16} />
                                 </button>
                             </form>
 
                             <div className="flex justify-between items-center mt-4 px-1">
-                                <p className="text-[10px] text-gray-500 font-medium tracking-widest uppercase flex items-center gap-1.5">
+                                <p className="text-[10px] text-[#555555] font-bold tracking-widest uppercase flex items-center gap-1.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
                                     Noble Nexus Intelligence
                                 </p>

@@ -91,10 +91,10 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="py-32 bg-[#0a0f1d] relative overflow-hidden">
+        <section id="services" className="py-32 bg-[#ffffff] relative overflow-hidden">
             {/* Background Grid Pattern */}
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),linear-gradient(to_bottom,#00000008_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
 
             <div className="container mx-auto px-4 max-w-7xl relative z-10">
                 <div className="text-center mb-20 max-w-3xl mx-auto">
@@ -111,7 +111,7 @@ const Services = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight"
+                        className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-[#000000] mb-6 leading-tight"
                     >
                         Architecting the <br />
                         <span className="bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Future of Education</span>
@@ -121,7 +121,7 @@ const Services = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="text-gray-400 text-lg leading-relaxed"
+                        className="text-gray-600 text-lg leading-relaxed font-medium"
                     >
                         Comprehensive EdTech solutions designed to empower institutions, educators, and learners through innovation and scalable technology.
                     </motion.p>
@@ -138,13 +138,13 @@ const Services = () => {
                             whileHover={{ y: -10, transition: { duration: 0.3 } }}
                             className={`relative p-8 rounded-3xl border transition-all duration-300 group flex flex-col h-full
                                 ${service.popular
-                                    ? 'bg-[#111827] border-teal/50 shadow-2xl shadow-teal/10 lg:-mt-8 lg:mb-8 z-10 scale-105'
-                                    : 'bg-[#111827]/60 border-white/5 hover:border-white/10 hover:bg-[#111827]/80'}
+                                    ? 'bg-[#111827] border-teal-500/50 shadow-2xl shadow-teal-500/10 lg:-mt-8 lg:mb-8 z-10 scale-105'
+                                    : 'bg-[#111827] border-gray-800 hover:border-gray-700 shadow-xl shadow-black/10'}
                             `}
                         >
                             {/* Popular Badge */}
                             {service.popular && (
-                                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-amber-400 to-orange-500 text-black text-xs font-bold px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1">
+                                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-amber-400 to-orange-500 text-[#000000] text-xs font-bold px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1">
                                     <Star size={12} fill="currentColor" /> MOST POPULAR
                                 </div>
                             )}
@@ -161,21 +161,21 @@ const Services = () => {
                                 </div>
                             </div>
 
-                            <h3 className="text-xl font-bold text-white mb-4 group-hover:text-teal-400 transition-colors">
+                            <h3 className="text-xl font-bold text-[#ffffff] mb-4 group-hover:text-teal-400 transition-colors">
                                 {service.title}
                             </h3>
 
-                            <p className="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+                            <p className="text-[#9ca3af] text-sm leading-relaxed mb-8 flex-grow">
                                 {service.desc}
                             </p>
 
                             <div className="space-y-3 mb-8">
                                 {service.features.map((feature, i) => (
                                     <div key={i} className="flex items-start gap-3">
-                                        <div className={`mt-0.5 p-0.5 rounded-full bg-gradient-to-br ${service.gradient} opacity-80`}>
-                                            <Check size={10} className="text-black stroke-[3]" />
+                                        <div className={`mt-0.5 p-0.5 rounded-full bg-gradient-to-br ${service.gradient} opacity-90`}>
+                                            <Check size={10} className="text-[#111827] stroke-[3]" />
                                         </div>
-                                        <span className="text-sm text-gray-300">{feature}</span>
+                                        <span className="text-sm text-[#d1d5db]">{feature}</span>
                                     </div>
                                 ))}
                             </div>

@@ -12,9 +12,9 @@ const partners = [
 
 const TrustedBy = () => {
     return (
-        <div className="py-16 bg-navy relative border-y border-white/5 overflow-hidden">
+        <div className="py-16 bg-[#F8FAFC] relative border-y border-gray-200 overflow-hidden">
             {/* Subtle background glow */}
-            
+
         </div>
     );
 };

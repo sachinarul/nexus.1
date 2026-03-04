@@ -83,7 +83,7 @@ const WhatsAppChatWidget = () => {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 20, scale: 0.95 }}
                         transition={{ duration: 0.2 }}
-                        className="bg-white backdrop-blur-xl border border-gray-200 w-[360px] max-w-[90vw] rounded-2xl shadow-2xl overflow-visible ring-1 ring-black/5"
+                        className="bg-[#111111] backdrop-blur-xl border border-[#333333] w-[360px] max-w-[90vw] rounded-2xl shadow-2xl overflow-visible ring-1 ring-white/5"
                     >
                         {/* Header */}
                         <div className="bg-gradient-to-r from-teal-600 to-emerald-600 p-5 relative overflow-hidden rounded-t-2xl">
@@ -140,19 +140,18 @@ const WhatsAppChatWidget = () => {
 
                             {/* Optional Message */}
                             <div className="space-y-2">
-                                <label className="text-xs text-gray-700 font-semibold ml-1">Message (Optional)</label>
+                                <label className="text-xs text-[#E5E7EB] font-semibold ml-1">Message (Optional)</label>
                                 <textarea
-                                    className="w-full bg-gray-50 backdrop-blur-md border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/50 min-h-[80px] resize-none font-medium custom-scrollbar transition-all hover:bg-gray-100 hover:border-emerald-300"
+                                    className="w-full bg-[#FFFFFF] backdrop-blur-md border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#111111] placeholder-[#9CA3AF] focus:outline-none focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/50 min-h-[80px] resize-none font-medium custom-scrollbar transition-all hover:bg-gray-50 hover:border-[#0F766E]/50"
                                     placeholder="How can we help you?"
                                     value={formData.message}
                                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                 ></textarea>
                             </div>
 
-                            {/* Submit Button */}
                             <button
                                 type="submit"
-                                className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3.5 rounded-xl shadow-lg hover:shadow-[#25D366]/30 transition-all flex items-center justify-center gap-2 group transform active:scale-[0.98] mt-2"
+                                className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 rounded-xl shadow-lg hover:shadow-green-500/30 transition-all flex items-center justify-center gap-2 group transform active:scale-[0.98] mt-2"
                             >
                                 <MessageCircle size={20} className="fill-current" />
                                 Start Chat on WhatsApp
@@ -160,8 +159,8 @@ const WhatsAppChatWidget = () => {
                             </button>
 
                             <div className="text-center pt-2">
-                                <p className="text-[10px] text-gray-500 font-medium">
-                                    Powered by <span className="text-gray-700 font-bold">Noble Nexus Support</span>
+                                <p className="text-[10px] text-[#D1D5DB] font-medium">
+                                    Powered by <span className="font-bold">Noble Nexus Support</span>
                                 </p>
                             </div>
                         </form>
@@ -179,7 +178,7 @@ const WhatsAppChatWidget = () => {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         onClick={() => setIsOpen(true)}
-                        className="relative group p-4 bg-[#25D366] text-white rounded-full shadow-[0_0_20px_rgba(37,211,102,0.4)] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] transition-all z-50 flex items-center justify-center"
+                        className="relative group p-4 bg-green-600 hover:bg-green-700 text-white rounded-full shadow-lg hover:shadow-green-600/50 transition-all z-50 flex items-center justify-center"
                     >
                         <MessageCircle size={32} className="fill-current" />
 

@@ -16,7 +16,7 @@ const SocialDashboard = () => {
     };
 
     return (
-        <div className="flex flex-col h-full bg-navy-900/50">
+        <div className="flex flex-col h-full bg-[#FFFFFF]">
             {/* Dashboard Header */}
             <div className="flex items-center justify-between mb-8 px-2">
                 <div className="flex items-center gap-3">
@@ -27,9 +27,9 @@ const SocialDashboard = () => {
                     <span className="text-sm text-green-400 font-semibold tracking-wide uppercase">Live Connections</span>
                 </div>
 
-                <div className="flex items-center gap-4 text-xs text-gray-400">
+                <div className="flex items-center gap-4 text-xs text-[#555555] font-medium">
                     <span>Synced: {lastUpdated.toLocaleTimeString()}</span>
-                    <button onClick={refreshFeed} className="p-1.5 hover:bg-white/10 rounded-full transition-colors" title="Refresh Feed">
+                    <button onClick={refreshFeed} className="p-1.5 hover:bg-gray-100 rounded-full transition-colors" title="Refresh Feed">
                         <RefreshCw size={14} className={loading ? "animate-spin" : ""} />
                     </button>
                 </div>
@@ -46,22 +46,22 @@ const SocialDashboard = () => {
                                 <Instagram size={20} />
                             </div>
                             <div>
-                                <h3 className="text-white font-bold text-sm">Instagram</h3>
+                                <h3 className="text-[#111111] font-bold text-sm">Instagram</h3>
                                 <p className="text-xs text-[#C13584] font-medium">@nexus_noble</p>
                             </div>
                         </div>
-                        <a href="https://www.instagram.com/nexus_noble" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-white/10 rounded-full text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.instagram.com/nexus_noble" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-[#C13584]/10 rounded-full text-[#555555] hover:text-[#C13584] transition-colors">
                             <ExternalLink size={16} />
                         </a>
                     </div>
 
                     {/* Instagram Embed Placeholder / Wrapper */}
-                    <div className="flex-1 bg-black/20 border border-white/5 rounded-2xl overflow-hidden relative group">
+                    <div className="flex-1 bg-[#F8FAFC] border border-gray-200 rounded-2xl overflow-hidden relative group">
                         {/* Note: Instagram Basic Display API required for real feed */}
-                        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-gradient-to-b from-transparent to-black/80">
-                            <Instagram size={48} className="text-gray-600 mb-4 group-hover:text-[#C13584] transition-colors" />
-                            <h4 className="text-gray-300 font-medium mb-2">Instagram Feed Integration</h4>
-                            <p className="text-xs text-gray-500 max-w-[200px] mb-6">
+                        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-gradient-to-b from-transparent to-gray-50/80">
+                            <Instagram size={48} className="text-[#555555] mb-4 group-hover:text-[#C13584] transition-colors" />
+                            <h4 className="text-[#111111] font-bold mb-2">Instagram Feed Integration</h4>
+                            <p className="text-xs text-[#555555] max-w-[200px] mb-6 font-medium">
                                 Connect the Instagram Basic Display API to stream your latest photos and reels here.
                             </p>
                             <a
@@ -84,20 +84,20 @@ const SocialDashboard = () => {
                                 <Facebook size={20} />
                             </div>
                             <div>
-                                <h3 className="text-white font-bold text-sm">Facebook</h3>
+                                <h3 className="text-[#111111] font-bold text-sm">Facebook</h3>
                                 <p className="text-xs text-[#1877F2] font-medium">Noble Nexus Page</p>
                             </div>
                         </div>
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-white/10 rounded-full text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-[#1877F2]/10 rounded-full text-[#555555] hover:text-[#1877F2] transition-colors">
                             <ExternalLink size={16} />
                         </a>
                     </div>
 
-                    <div className="flex-1 bg-black/20 border border-white/5 rounded-2xl overflow-hidden relative group">
-                        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-gradient-to-b from-transparent to-black/80">
-                            <Facebook size={48} className="text-gray-600 mb-4 group-hover:text-[#1877F2] transition-colors" />
-                            <h4 className="text-gray-300 font-medium mb-2">Facebook Page Integration</h4>
-                            <p className="text-xs text-gray-500 max-w-[200px] mb-6">
+                    <div className="flex-1 bg-[#F8FAFC] border border-gray-200 rounded-2xl overflow-hidden relative group">
+                        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-gradient-to-b from-transparent to-gray-50/80">
+                            <Facebook size={48} className="text-[#555555] mb-4 group-hover:text-[#1877F2] transition-colors" />
+                            <h4 className="text-[#111111] font-bold mb-2">Facebook Page Integration</h4>
+                            <p className="text-xs text-[#555555] max-w-[200px] mb-6 font-medium">
                                 Connect the Facebook Graph API to stream your latest posts and updates here.
                             </p>
                             <a
@@ -120,21 +120,21 @@ const SocialDashboard = () => {
                                 <Linkedin size={20} />
                             </div>
                             <div>
-                                <h3 className="text-white font-bold text-sm">LinkedIn</h3>
+                                <h3 className="text-[#111111] font-bold text-sm">LinkedIn</h3>
                                 <p className="text-xs text-[#0A66C2] font-medium">noblenexus-ie</p>
                             </div>
                         </div>
-                        <a href="https://www.linkedin.com/company/noblenexus-ie/" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-white/10 rounded-full text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.linkedin.com/company/noblenexus-ie/" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-[#0A66C2]/10 rounded-full text-[#555555] hover:text-[#0A66C2] transition-colors">
                             <ExternalLink size={16} />
                         </a>
                     </div>
 
                     {/* LinkedIn Placeholder */}
-                    <div className="flex-1 bg-black/20 border border-white/5 rounded-2xl overflow-hidden relative group">
-                        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-gradient-to-b from-transparent to-black/80">
-                            <Linkedin size={48} className="text-gray-600 mb-4 group-hover:text-[#0A66C2] transition-colors" />
-                            <h4 className="text-gray-300 font-medium mb-2">Company Updates</h4>
-                            <p className="text-xs text-gray-500 max-w-[200px] mb-6">
+                    <div className="flex-1 bg-[#F8FAFC] border border-gray-200 rounded-2xl overflow-hidden relative group">
+                        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-gradient-to-b from-transparent to-gray-50/80">
+                            <Linkedin size={48} className="text-[#555555] mb-4 group-hover:text-[#0A66C2] transition-colors" />
+                            <h4 className="text-[#111111] font-bold mb-2">Company Updates</h4>
+                            <p className="text-xs text-[#555555] max-w-[200px] mb-6 font-medium">
                                 Integrate the LinkedIn Marketing Developer Platform to display company posts.
                             </p>
                             <a

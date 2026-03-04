@@ -1,6 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import Hero from './components/Hero';
 import DashboardPreview from './components/DashboardPreview';
 import Features from './components/Features';
@@ -22,6 +23,9 @@ import CorporateLearning from './pages/services/CorporateLearning';
 import LMS from './pages/products/LMS';
 import WhyNobleNexus from './pages/WhyNobleNexus';
 
+import MeetingLobby from './pages/meeting/MeetingLobby';
+import MeetingRoom from './pages/meeting/MeetingRoom';
+
 import SocialSection from './components/SocialSection';
 
 import WhatsAppChatWidget from './components/WhatsAppChatWidget';
@@ -32,7 +36,7 @@ import { Toaster } from 'react-hot-toast';
 
 // Layout Wrapper
 const Layout = ({ children }) => (
-  <div className="bg-navy min-h-screen text-white font-body selection:bg-teal selection:text-navy relative overflow-x-hidden">
+  <div className="bg-[#FFFFFF] min-h-screen text-[#111111] font-body selection:bg-[#0F766E] selection:text-white relative overflow-x-hidden">
     {children}
     <WhatsAppChatWidget />
     <Toaster position="top-right" />
@@ -57,6 +61,7 @@ const Home = () => (
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Layout>
         <Navbar />
         <Routes>
@@ -73,6 +78,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+
+          <Route path="/meet" element={<MeetingLobby />} />
+          <Route path="/meet/:roomName" element={<MeetingRoom />} />
 
           {/* Protected Routes */}
           <Route path="/dashboard" element={

@@ -41,7 +41,7 @@ const Stats = () => {
     ];
 
     return (
-        <section ref={ref} className="py-20 bg-gradient-to-br from-navy to-black border-y border-white/5 relative z-10">
+        <section ref={ref} className="py-20 bg-[#F8FAFC] border-y border-gray-200 relative z-10">
             <div className="container mx-auto px-4 grid md:grid-cols-4 gap-12 text-center">
                 {stats.map((stat, idx) => (
                     <motion.div
@@ -49,15 +49,15 @@ const Stats = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ delay: idx * 0.1, duration: 0.6 }}
-                        className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-teal/20 transition-all hover:-translate-y-2"
+                        className="p-6 rounded-2xl bg-[#FFFFFF] border border-gray-200 hover:border-teal-300 transition-all hover:-translate-y-2 shadow-sm"
                     >
-                        <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal to-purple">
+                        <div className="text-4xl md:text-5xl font-display font-bold text-[#111111] mb-2">
+                            <span className="text-[#0F766E]">
                                 {isInView ? <CountUp end={stat.value} duration={2} /> : 0}
                             </span>
                             {stat.suffix}
                         </div>
-                        <p className="text-gray-400 font-medium tracking-widest text-xs uppercase mt-2">
+                        <p className="text-[#555555] font-bold tracking-widest text-xs uppercase mt-2">
                             {stat.label}
                         </p>
                     </motion.div>
