@@ -283,7 +283,7 @@ const Navbar = () => {
                                     <Video size={18} /> Meetings
                                 </Link>
                                 <button
-                                    onClick={() => { setIsHelpOpen(true); setIsOpen(false); }}
+                                    onClick={() => { setIsChatOpen(true); setIsOpen(false); }}
                                     className="w-full py-3.5 flex items-center justify-center gap-2 bg-transparent border-2 border-[#0F766E] rounded-2xl text-[#0F766E] font-bold hover:bg-teal-50 transition-colors shadow-sm"
                                 >
                                     <HelpCircle size={18} /> Support
