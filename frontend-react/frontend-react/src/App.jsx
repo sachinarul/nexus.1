@@ -20,7 +20,7 @@ import Signup from './components/Signup';
 import K12 from './pages/services/K12';
 import HigherEducation from './pages/services/HigherEducation';
 import CorporateLearning from './pages/services/CorporateLearning';
-import MathAcademy from './pages/MathAcademy';
+import GeneralTutor from './pages/GeneralTutor';
 import LMS from './pages/products/LMS';
 import WhyNobleNexus from './pages/WhyNobleNexus';
 import AdaptiveNeuralNetworks from './pages/capabilities/AdaptiveNeuralNetworks';
@@ -72,7 +72,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/why-noble-nexus" element={<WhyNobleNexus />} />
-          <Route path="/math-academy" element={<MathAcademy />} />
+          <Route path="/general-tutor" element={<GeneralTutor />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/k12" element={<K12 />} />
           <Route path="/services/higher-education" element={<HigherEducation />} />

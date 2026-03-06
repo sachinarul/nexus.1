@@ -67,18 +67,19 @@ const Login = () => {
     };
 
     return (
-        <section className="min-h-screen bg-[#F8FAFC] flex items-center justify-center relative overflow-hidden">
+        <section className="min-h-screen bg-[#F8FAFC] flex pt-28 pb-12 lg:pt-32 relative overflow-hidden">
             {/* Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 pointer-events-none"></div>
             <div className="absolute w-[500px] h-[500px] bg-teal-50 rounded-full blur-[120px] top-[-100px] right-[-100px]"></div>
             <div className="absolute w-[500px] h-[500px] bg-blue-50 rounded-full blur-[120px] bottom-[-100px] left-[-100px]"></div>
 
-            <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="relative z-10 w-full max-w-md p-8 bg-[#FFFFFF] backdrop-blur-xl border border-gray-200 rounded-2xl shadow-xl"
-            >
+            <div className="container mx-auto px-4 relative z-10 flex flex-1">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="m-auto w-full max-w-md p-8 bg-[#FFFFFF] backdrop-blur-xl border border-gray-200 rounded-2xl shadow-xl"
+                >
                 <div className="text-center mb-10">
                     <div className="inline-block p-4 rounded-full bg-teal-50 mb-4 border border-teal-100">
                         <svg className="w-8 h-8 text-[#0F766E]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
@@ -174,6 +175,7 @@ const Login = () => {
                     Don't have an account? <Link to="/signup" className="text-[#0F766E] hover:text-[#2563EB] font-bold transition-colors">Request Access</Link>
                 </div>
             </motion.div>
+            </div>
         </section>
     );
 };

@@ -6,7 +6,7 @@ import { X, Send, Sparkles, Bot, User } from 'lucide-react';
 
 const HelpBot = ({ isOpen, onClose }) => {
     const [messages, setMessages] = useState([
-        { id: 1, type: 'bot', text: 'Hello! I am Nexus AI. How can I assist you in transforming your education journey today?' }
+        { id: 1, type: 'bot', text: 'Hello! I am SmartTutor. How can I assist you in transforming your education journey today?' }
     ]);
     const [inputValue, setInputValue] = useState('');
     const [isTyping, setIsTyping] = useState(false);
@@ -86,7 +86,7 @@ const HelpBot = ({ isOpen, onClose }) => {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-[#111111] text-lg tracking-tight flex items-center gap-2">
-                                        Nexus AI <Sparkles size={14} className="text-amber-500" />
+                                        SmartTutor <Sparkles size={14} className="text-amber-500" />
                                     </h3>
                                     <p className="text-xs text-[#0F766E] font-bold tracking-wider uppercase">Premium Support</p>
                                 </div>

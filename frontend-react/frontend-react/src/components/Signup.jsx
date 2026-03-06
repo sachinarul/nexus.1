@@ -71,18 +71,18 @@ const Signup = () => {
     };
 
     return (
-        <section className="min-h-screen bg-[#F8FAFC] flex items-center justify-center relative overflow-hidden py-20">
+        <section className="min-h-screen bg-[#F8FAFC] flex pt-28 pb-12 lg:pt-32 relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 pointer-events-none"></div>
             <div className="absolute w-[800px] h-[800px] bg-teal-50 rounded-full blur-[120px] top-[-200px] right-[-200px] animate-pulse-slow"></div>
             <div className="absolute w-[600px] h-[600px] bg-blue-50 rounded-full blur-[100px] bottom-[-100px] left-[-100px] animate-pulse-slow delay-1000"></div>
 
-            <div className="container mx-auto px-4 relative z-10 flex justify-center">
+            <div className="container mx-auto px-4 relative z-10 flex">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
-                    className="w-full max-w-5xl bg-[#FFFFFF] backdrop-blur-2xl border border-gray-200 rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row"
+                    className="m-auto w-full max-w-5xl bg-[#FFFFFF] backdrop-blur-2xl border border-gray-200 rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row"
                 >
                     {/* Left Side - Visuals */}
                     <div className="hidden lg:flex flex-col justify-center p-12 bg-gradient-to-br from-teal-50 to-blue-50 relative w-1/2">

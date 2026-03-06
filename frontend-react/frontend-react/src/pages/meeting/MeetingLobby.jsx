@@ -132,11 +132,11 @@ const MeetingLobby = () => {
                         className="w-full lg:w-1/2"
                     >
                         <h1 className="text-4xl md:text-5xl font-display font-bold text-[#111111] leading-tight mb-6">
-                            Premium Video Meetings. <br />
-                            <span className="text-[#0F766E]">Built for Education.</span>
+                            Welcome to <br />
+                            <span className="text-[#0F766E]">Noble Nexus Meeting</span>
                         </h1>
                         <p className="text-lg text-[#555555] font-medium leading-relaxed mb-10">
-                            Connect, collaborate, and celebrate from anywhere with Noble Nexus Meet. Secure virtual classrooms and corporate consultations made simple.
+                            Experience high-quality, seamless video conferencing. Instantly create or join meeting rooms, invite colleagues via a simple link, and collaborate efficiently in our secure and reliable virtual environment.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center gap-4">
@@ -187,9 +187,9 @@ const MeetingLobby = () => {
                         <div className="bg-[#FFFFFF] p-4 rounded-3xl shadow-xl border border-gray-200 relative overflow-hidden group">
                             <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800" alt="Video Conference" className="rounded-2xl w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
-                            <div className="absolute bottom-8 left-8 text-[#FFFFFF] pointer-events-none">
-                                <h3 className="text-xl font-bold mb-1">Interactive Classrooms</h3>
-                                <p className="text-sm font-medium text-gray-200">Connect with students and colleagues instantly.</p>
+                            <div className="absolute bottom-8 left-8 text-[#FFFFFF] pointer-events-none z-10">
+                                <h3 className="text-xl font-bold mb-1">Seamless Connectivity</h3>
+                                <p className="text-sm font-medium text-gray-200">Start instant meetings and share ideas globally.</p>
                             </div>
                         </div>
                     </motion.div>

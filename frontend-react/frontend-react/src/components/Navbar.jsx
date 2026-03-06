@@ -75,9 +75,9 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        {/* Math Academy Link */}
-                        <Link to="/math-academy" className="relative text-[#111111] hover:text-[#0F766E] transition-colors text-sm font-bold tracking-wide group py-2 drop-shadow-sm">
-                            Math Academy
+                        {/* General Tutor Link */}
+                        <Link to="/general-tutor" className="relative text-[#111111] hover:text-[#0F766E] transition-colors text-sm font-bold tracking-wide group py-2 drop-shadow-sm">
+                            General Tutor
                             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0F766E] to-blue-600 transition-all duration-300 group-hover:w-full opacity-80"></span>
                         </Link>
 
@@ -227,9 +227,9 @@ const Navbar = () => {
                                 </div>
                             </div>
 
-                            {/* Math Academy Link */}
-                            <Link to="/math-academy" onClick={() => setIsOpen(false)} className="block flex items-center justify-between py-4 px-4 text-lg font-bold text-[#111111] hover:bg-gray-50 rounded-2xl transition-all border border-transparent hover:border-gray-200">
-                                Math Academy
+                            {/* General Tutor Link */}
+                            <Link to="/general-tutor" onClick={() => setIsOpen(false)} className="block flex items-center justify-between py-4 px-4 text-lg font-bold text-[#111111] hover:bg-gray-50 rounded-2xl transition-all border border-transparent hover:border-gray-200">
+                                General Tutor
                                 <span className="w-[18px]"></span>
                             </Link>
 
@@ -266,6 +266,7 @@ const Navbar = () => {
                                     </Link>
                                 </div>
                             </div>
+
                         </div>
 
                         {/* Mobile Actions Bottom */}
