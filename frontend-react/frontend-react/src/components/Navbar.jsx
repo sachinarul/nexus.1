@@ -281,15 +281,15 @@ const Navbar = () => {
                                 </Link>
                                 <button
                                     onClick={() => { setIsHelpOpen(true); setIsOpen(false); }}
-                                    className="w-full py-3.5 flex items-center justify-center gap-2 bg-white border border-gray-300 rounded-2xl text-[#111111] font-bold hover:bg-gray-50 transition-colors shadow-sm"
+                                    className="w-full py-3.5 flex items-center justify-center gap-2 bg-transparent border-2 border-[#0F766E] rounded-2xl text-[#0F766E] font-bold hover:bg-teal-50 transition-colors shadow-sm"
                                 >
-                                    <HelpCircle size={18} className="text-[#444444]" /> Support
+                                    <HelpCircle size={18} /> Support
                                 </button>
                             </div>
 
                             {!currentUser ? (
                                 <div className="grid grid-cols-2 gap-3">
-                                    <Link to="/login" onClick={() => setIsOpen(false)} className="py-3.5 px-4 bg-white hover:bg-gray-50 border border-gray-300 rounded-2xl text-[#111111] font-bold transition-colors text-center shadow-sm">
+                                    <Link to="/login" onClick={() => setIsOpen(false)} className="py-3.5 px-4 bg-transparent border-2 border-[#0F766E] hover:bg-teal-50 rounded-2xl text-[#0F766E] font-bold transition-colors text-center shadow-sm">
                                         Log in
                                     </Link>
                                     <Link to="/signup" onClick={() => setIsOpen(false)} className="py-3.5 px-4 bg-[#0F766E] hover:bg-teal-700 text-white font-bold rounded-2xl shadow-md transition-transform active:scale-95 text-center">
@@ -301,7 +301,7 @@ const Navbar = () => {
                                     <Link to="/dashboard" onClick={() => setIsOpen(false)} className="py-3.5 px-4 bg-teal-50 hover:bg-teal-100 border border-teal-200 rounded-2xl text-[#0F766E] font-bold transition-colors text-center flex justify-center items-center shadow-sm">
                                         Dashboard
                                     </Link>
-                                    <button onClick={() => { logout(); setIsOpen(false); }} className="py-3.5 px-4 bg-white hover:bg-red-50 border border-gray-300 rounded-2xl text-[#111111] hover:text-red-600 font-bold transition-colors text-center flex justify-center items-center shadow-sm">
+                                    <button onClick={() => { logout(); setIsOpen(false); }} className="py-3.5 px-4 bg-transparent hover:bg-red-50 border-2 border-red-500 rounded-2xl text-red-500 font-bold transition-colors text-center flex justify-center items-center shadow-sm">
                                         Sign Out
                                     </button>
                                 </div>
