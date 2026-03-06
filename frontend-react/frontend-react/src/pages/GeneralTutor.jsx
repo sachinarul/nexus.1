@@ -1,7 +1,10 @@
 import { useState } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
-import { CheckCircle2, User, Mail, Phone, Clock, GraduationCap, ArrowRight, BookOpen, Calculator, Atom, FlaskConical, Dna, Code } from 'lucide-react';
+import { CheckCircle2, User, Mail, Phone, Clock, GraduationCap, ArrowRight, BookOpen, Calculator, Atom, FlaskConical, Dna, Code, Loader2 } from 'lucide-react';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { db } from '../firebase';
+import toast from 'react-hot-toast';
 
 const GeneralTutor = () => {
     const [formData, setFormData] = useState({
@@ -13,15 +16,38 @@ const GeneralTutor = () => {
         preferredTime: ''
     });
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setIsSubmitted(true);
+        setIsLoading(true);
+        try {
+            await addDoc(collection(db, 'demo_bookings'), {
+                ...formData,
+                createdAt: serverTimestamp(),
+                status: 'pending'
+            });
+            setIsSubmitted(true);
+            toast.success('Demo class booked successfully!');
+            setFormData({
+                studentName: '',
+                classGrade: '',
+                subject: '',
+                parentPhone: '',
+                email: '',
+                preferredTime: ''
+            });
+        } catch (error) {
+            console.error('Error saving booking:', error);
+            toast.error('Failed to book demo. Please try again.');
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     const subjects = [
@@ -411,10 +437,20 @@ const GeneralTutor = () => {
 
                                 <button
                                     type="submit"
-                                    className="w-full py-4 bg-[#0F766E] hover:bg-teal-600 text-white font-bold rounded-xl shadow-md transition-all active:scale-95 flex items-center justify-center gap-2 group mt-6"
+                                    disabled={isLoading}
+                                    className="w-full py-4 bg-[#0F766E] hover:bg-teal-600 text-white font-bold rounded-xl shadow-md transition-all active:scale-95 flex items-center justify-center gap-2 group mt-6 disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
-                                    Book Free Demo
-                                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                    {isLoading ? (
+                                        <>
+                                            <Loader2 className="w-5 h-5 animate-spin" />
+                                            Booking...
+                                        </>
+                                    ) : (
+                                        <>
+                                            Book Free Demo
+                                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                        </>
+                                    )}
                                 </button>
                             </form>
                         )}
