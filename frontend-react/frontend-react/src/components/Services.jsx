@@ -17,7 +17,7 @@ import {
 const services = [
     {
         image: "https://img.icons8.com/3d-fluency/94/graduation-cap.png",
-        title: "School Management ERP",
+        title: "Online Classroom System",
         desc: "Advanced ERP systems to simplify and automate institutional operations, enhancing transparency and efficiency.",
         features: [
             "Student & Staff Management",

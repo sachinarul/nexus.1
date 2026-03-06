@@ -20,9 +20,13 @@ import Signup from './components/Signup';
 import K12 from './pages/services/K12';
 import HigherEducation from './pages/services/HigherEducation';
 import CorporateLearning from './pages/services/CorporateLearning';
+import MathAcademy from './pages/MathAcademy';
 import LMS from './pages/products/LMS';
 import WhyNobleNexus from './pages/WhyNobleNexus';
-
+import AdaptiveNeuralNetworks from './pages/capabilities/AdaptiveNeuralNetworks';
+import IntelligentAdministration from './pages/capabilities/IntelligentAdministration';
+import PredictiveAnalytics from './pages/capabilities/PredictiveAnalytics';
+import BorderlessEducation from './pages/capabilities/BorderlessEducation';
 import MeetingLobby from './pages/meeting/MeetingLobby';
 import MeetingRoom from './pages/meeting/MeetingRoom';
 
@@ -68,6 +72,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/why-noble-nexus" element={<WhyNobleNexus />} />
+          <Route path="/math-academy" element={<MathAcademy />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/k12" element={<K12 />} />
           <Route path="/services/higher-education" element={<HigherEducation />} />
@@ -75,6 +80,10 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/lms" element={<LMS />} />
           <Route path="/solutions" element={<Solutions />} />
+          <Route path="/adaptive-neural-networks" element={<AdaptiveNeuralNetworks />} />
+          <Route path="/intelligent-administration" element={<IntelligentAdministration />} />
+          <Route path="/predictive-analytics" element={<PredictiveAnalytics />} />
+          <Route path="/borderless-education" element={<BorderlessEducation />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />

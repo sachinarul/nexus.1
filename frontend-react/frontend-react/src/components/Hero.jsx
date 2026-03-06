@@ -41,18 +41,18 @@ const Hero = () => {
                         </p>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-wrap gap-4">
-                            <Link to="/why-noble-nexus" className="px-8 py-4 bg-[#2563EB] hover:bg-blue-700 text-[#FFFFFF] font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2 group">
+                        <div className="flex flex-wrap gap-3 xl:flex-nowrap">
+                            <Link to="/why-noble-nexus" className="px-6 py-4 bg-[#2563EB] hover:bg-blue-700 text-[#FFFFFF] font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2 group whitespace-nowrap">
                                 Why Noble Nexus <span className="group-hover:translate-x-1 transition-transform">→</span>
                             </Link>
 
-                            <Link to="/contact" className="px-8 py-4 bg-[#FFFFFF] border-2 border-gray-200 text-[#111111] font-bold rounded-full hover:bg-gray-50 hover:border-gray-300 shadow-sm transition-all flex items-center justify-center">
-                                Contact Us
-                            </Link>
-
-                            <button onClick={() => setIsSocialOpen(true)} className="px-8 py-4 bg-[#0F766E] hover:bg-teal-700 text-[#FFFFFF] font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2">
+                            <button onClick={() => setIsSocialOpen(true)} className="px-6 py-4 bg-[#0F766E] hover:bg-teal-700 text-[#FFFFFF] font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2 whitespace-nowrap">
                                 Design as a Service
                             </button>
+
+                            <Link to="/contact" className="px-6 py-4 bg-[#FFFFFF] border-2 border-gray-200 text-[#111111] font-bold rounded-full hover:bg-gray-50 hover:border-gray-300 shadow-sm transition-all flex items-center justify-center whitespace-nowrap">
+                                Contact Us
+                            </Link>
                         </div>
                     </div>
 
