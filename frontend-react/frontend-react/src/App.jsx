@@ -22,6 +22,7 @@ import HigherEducation from './pages/services/HigherEducation';
 import CorporateLearning from './pages/services/CorporateLearning';
 import GeneralTutor from './pages/GeneralTutor';
 import LMS from './pages/products/LMS';
+import ClassBridge from './pages/products/ClassBridge';
 import WhyNobleNexus from './pages/WhyNobleNexus';
 import AdaptiveNeuralNetworks from './pages/capabilities/AdaptiveNeuralNetworks';
 import IntelligentAdministration from './pages/capabilities/IntelligentAdministration';
@@ -79,6 +80,7 @@ function App() {
           <Route path="/services/corporate-learning" element={<CorporateLearning />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/lms" element={<LMS />} />
+          <Route path="/products/classbridge" element={<ClassBridge />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/adaptive-neural-networks" element={<AdaptiveNeuralNetworks />} />
           <Route path="/intelligent-administration" element={<IntelligentAdministration />} />

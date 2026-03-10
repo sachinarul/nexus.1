@@ -21,6 +21,13 @@ const Products = () => {
             description: "Tools for creating, managing, and distributing interactive digital curriculum at scale.",
             gradient: "from-amber-500 to-orange-600",
             icon: "📚"
+        },
+        {
+            category: "AI Educational Portal",
+            name: "ClassBridge",
+            description: "A full-featured, AI-powered EdTech platform with seamless integration for tutors, students, and administration.",
+            gradient: "from-indigo-600 to-purple-500",
+            icon: "🧠"
         }
     ];
 

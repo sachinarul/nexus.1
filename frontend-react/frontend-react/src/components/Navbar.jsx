@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, BookOpen, GraduationCap, Building2, UserCircle, Briefcase, BarChart, LayoutDashboard, HelpCircle, LogOut, Video } from 'lucide-react';
+import { Menu, X, ChevronDown, BookOpen, GraduationCap, Building2, UserCircle, Briefcase, BarChart, LayoutDashboard, HelpCircle, LogOut, Video, Network } from 'lucide-react';
 import HelpBot from './HelpBot';
 import { useAuth } from '../context/AuthContext';
 
@@ -69,6 +69,16 @@ const Navbar = () => {
                                         <div>
                                             <h4 className="text-[#111111] text-sm font-bold group-hover/item:text-[#0F766E] transition-colors mb-0.5">Learning Management Software (LMS)</h4>
                                             <p className="text-xs text-[#444444] font-medium">Comprehensive platform for modern education.</p>
+                                        </div>
+                                    </Link>
+                                    {/* ClassBridge Product */}
+                                    <Link to="/products/classbridge" className="flex items-center gap-4 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-indigo-100 transition-all duration-300 group/item mt-1">
+                                        <div className="w-10 h-10 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600 group-hover/item:bg-indigo-600 group-hover/item:text-white transition-all duration-300 group-hover/item:scale-110 shadow-sm border border-indigo-100">
+                                            <Network size={20} />
+                                        </div>
+                                        <div>
+                                            <h4 className="text-[#111111] text-sm font-bold group-hover/item:text-indigo-600 transition-colors mb-0.5">ClassBridge</h4>
+                                            <p className="text-xs text-[#444444] font-medium">EdTech AI Portal</p>
                                         </div>
                                     </Link>
                                 </div>
@@ -222,6 +232,15 @@ const Navbar = () => {
                                         <div className="flex-1">
                                             <span className="block text-base font-bold text-[#111111]">LMS Platform</span>
                                             <span className="block text-xs text-[#555555] font-medium mt-0.5">Core education platform</span>
+                                        </div>
+                                    </Link>
+                                    <Link to="/products/classbridge" onClick={() => setIsOpen(false)} className="flex items-center gap-4 p-3 rounded-xl hover:bg-white transition-all shadow-sm">
+                                        <div className="w-10 h-10 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600 shadow-sm">
+                                            <Network size={20} />
+                                        </div>
+                                        <div className="flex-1">
+                                            <span className="block text-base font-bold text-[#111111]">ClassBridge</span>
+                                            <span className="block text-xs text-[#555555] font-medium mt-0.5">EdTech AI Portal</span>
                                         </div>
                                     </Link>
                                 </div>
