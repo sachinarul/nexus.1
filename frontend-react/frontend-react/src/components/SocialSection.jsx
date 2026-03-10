@@ -3,7 +3,7 @@ import { Play } from 'lucide-react';
 
 const SocialSection = () => {
     return (
-        <section id="video-showcase" className="py-24 bg-[#ffffff] relative overflow-hidden">
+        <section id="video-showcase" className="py-16 bg-[#ffffff] relative overflow-hidden">
             {/* Background Decoration */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-teal/5 rounded-full blur-[120px] pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple/5 rounded-full blur-[120px] pointer-events-none"></div>

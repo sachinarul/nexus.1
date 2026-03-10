@@ -37,7 +37,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-24 bg-gradient-to-br from-[#F8FAFC] to-[#FFFFFF] relative">
+        <section id="contact" className="py-16 bg-gradient-to-br from-[#F8FAFC] to-[#FFFFFF] relative">
             <div className="container mx-auto px-4 max-w-7xl">
                 <div className="grid lg:grid-cols-2 gap-20">
                     <div>

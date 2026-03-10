@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, BookOpen, GraduationCap, Building2, UserCircle, Briefcase, BarChart, LayoutDashboard, HelpCircle, LogOut, Video, Network, MessageCircle } from 'lucide-react';
+import { Menu, X, ChevronDown, BookOpen, GraduationCap, Building2, UserCircle, Briefcase, BarChart, LayoutDashboard, HelpCircle, LogOut, Network, MessageCircle } from 'lucide-react';
 import HelpBot from './HelpBot';
 import Chatbot from './Chatbot';
 import { useAuth } from '../context/AuthContext';
@@ -24,38 +24,33 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-out border-b backdrop-blur-3xl
+            className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-out border-b backdrop-blur-[10px]
             ${scrolled
-                    ? 'bg-[#F8FAFC]/95 border-[#E5E7EB] shadow-[0_2px_8px_rgba(0,0,0,0.05)]'
-                    : 'bg-[#F8FAFC]/80 border-[#E5E7EB] shadow-[0_2px_8px_rgba(0,0,0,0.05)] py-4'
+                    ? 'bg-white/90 border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.08)]'
+                    : 'bg-white/85 border-gray-100 py-2 shadow-[0_4px_20px_rgba(0,0,0,0.08)]'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
 
                     {/* Brand Logo - Premium Effect */}
-                    <Link to="/" className="flex-shrink-0 flex items-center gap-3 group relative">
-                        <img src="/logo.png" alt="Noble Nexus" className="w-30 h-20 object-contain group-hover:scale-110 transition-transform duration-500 bg-transparent border-none" />
-                        <span className="text-xl font-bold font-sans tracking-tight text-[#111111] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#0F766E] group-hover:to-cyan-600 transition-all duration-300 drop-shadow-sm">
+                    <Link to="/" className="flex-shrink-0 flex items-center gap-4 group relative">
+                        <img src="/logo.png" alt="Noble Nexus" className="w-12 h-12 object-contain group-hover:scale-105 transition-transform duration-500 bg-transparent" />
+                        <span className="text-xl font-extrabold font-sans tracking-tight text-[#0F172A] transition-all duration-300">
                             Noble Nexus
                         </span>
                     </Link>
 
                     {/* Desktop Menu - Glass Interactions */}
                     <div className="hidden md:flex items-center gap-8">
-                        <Link to="/why-noble-nexus" className="relative text-[#111111] hover:text-[#0F766E] transition-colors text-sm font-bold tracking-wide group py-2 drop-shadow-sm">
-                            Why Noble Nexus
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0F766E] to-blue-600 transition-all duration-300 group-hover:w-full opacity-80"></span>
-                        </Link>
-
                         {/* Products Link */}
                         <div className="relative group/dropdown">
-                            <button className="flex items-center gap-1 text-[#111111] font-bold hover:text-[#0F766E] transition-colors text-sm tracking-wide py-2 drop-shadow-sm">
+                            <button className="flex items-center gap-1 text-[#0F172A] font-bold hover:text-[#2563EB] transition-colors text-sm tracking-wide py-2">
                                 Products <ChevronDown size={14} className="group-hover/dropdown:rotate-180 transition-transform duration-300 opacity-90" />
                             </button>
 
                             {/* Dropdown Card */}
-                            <div className="absolute top-full left-0 mt-4 w-[380px] bg-[#FFFFFF] border border-gray-200 rounded-2xl shadow-xl opacity-0 invisible group-hover/dropdown:opacity-100 group-hover/dropdown:visible transition-all duration-300 transform translate-y-4 group-hover/dropdown:translate-y-0 overflow-hidden ring-1 ring-black/5 z-50">
+                            <div className="absolute top-full left-0 mt-4 w-[380px] bg-white border border-gray-100 rounded-2xl shadow-xl opacity-0 invisible group-hover/dropdown:opacity-100 group-hover/dropdown:visible transition-all duration-300 transform translate-y-4 group-hover/dropdown:translate-y-0 overflow-hidden ring-1 ring-black/5 z-50">
                                 {/* Decor Gradients */}
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-teal-50 rounded-full blur-[40px] pointer-events-none"></div>
 
@@ -87,20 +82,14 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        {/* General Tutor Link */}
-                        <Link to="/general-tutor" className="relative text-[#111111] hover:text-[#0F766E] transition-colors text-sm font-bold tracking-wide group py-2 drop-shadow-sm">
-                            General Tutor
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0F766E] to-blue-600 transition-all duration-300 group-hover:w-full opacity-80"></span>
-                        </Link>
-
                         {/* Services Mega Menu */}
                         <div className="relative group/dropdown">
-                            <button className="flex items-center gap-1 text-[#111111] font-bold hover:text-[#0F766E] transition-colors text-sm tracking-wide py-2 drop-shadow-sm">
+                            <button className="flex items-center gap-1 text-[#0F172A] font-bold hover:text-[#2563EB] transition-colors text-sm tracking-wide py-2">
                                 Services <ChevronDown size={14} className="group-hover/dropdown:rotate-180 transition-transform duration-300 opacity-90" />
                             </button>
 
                             {/* Dropdown Card */}
-                            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[650px] bg-[#FFFFFF] border border-gray-200 rounded-2xl shadow-xl opacity-0 invisible group-hover/dropdown:opacity-100 group-hover/dropdown:visible transition-all duration-300 transform translate-y-4 group-hover/dropdown:translate-y-0 overflow-hidden ring-1 ring-black/5 z-50">
+                            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[650px] bg-white border border-gray-100 rounded-2xl shadow-xl opacity-0 invisible group-hover/dropdown:opacity-100 group-hover/dropdown:visible transition-all duration-300 transform translate-y-4 group-hover/dropdown:translate-y-0 overflow-hidden ring-1 ring-black/5 z-50">
                                 {/* Decor Gradients */}
                                 <div className="absolute top-0 right-0 w-64 h-64 bg-teal-50 rounded-full blur-[80px] pointer-events-none"></div>
                                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-50 rounded-full blur-[80px] pointer-events-none"></div>
@@ -149,18 +138,20 @@ const Navbar = () => {
                             </div>
                         </div>
 
+                        {/* General Tutor Link */}
+                        <Link to="/general-tutor" className="relative text-[#0F172A] hover:text-[#2563EB] transition-colors text-sm font-bold tracking-wide group py-2">
+                            General Tutor
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full opacity-80"></span>
+                        </Link>
 
+                        <Link to="/why-noble-nexus" className="relative text-[#0F172A] hover:text-[#2563EB] transition-colors text-sm font-bold tracking-wide group py-2">
+                            Why Noble Nexus
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full opacity-80"></span>
+                        </Link>
                     </div>
 
                     {/* Right Actions */}
                     <div className="hidden md:flex items-center gap-4">
-                        <Link
-                            to="/meet"
-                            className="w-10 h-10 flex items-center justify-center rounded-full bg-teal-50 border border-teal-100 hover:bg-teal-100 text-[#0F766E] transition-all shadow-sm group"
-                            title="Video Meetings"
-                        >
-                            <Video size={20} className="group-hover:scale-110 transition-transform" />
-                        </Link>
 
                         <button
                             onClick={() => setIsChatOpen(true)}
@@ -172,21 +163,21 @@ const Navbar = () => {
 
 
                         {currentUser ? (
-                            <div className="flex items-center gap-4 pl-4 border-l border-white/10">
+                            <div className="flex items-center gap-4 pl-4 border-l border-gray-100">
                                 <Link to="/dashboard" className="flex items-center gap-3 group">
                                     <div className="text-right hidden xl:block">
-                                        <p className="text-sm font-bold text-white group-hover:text-teal transition-colors">{currentUser.displayName || 'User'}</p>
+                                        <p className="text-sm font-bold text-[#0F172A] group-hover:text-blue-600 transition-colors">{currentUser.displayName || 'User'}</p>
                                         <p className="text-[10px] text-gray-400 uppercase tracking-wider font-semibold">Dashboard</p>
                                     </div>
-                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-teal to-blue-600 p-[2px]">
-                                        <div className="w-full h-full rounded-full bg-[#050816] flex items-center justify-center text-white font-bold text-sm">
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 p-[2px]">
+                                        <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-[#2563EB] font-bold text-sm">
                                             {currentUser.displayName ? currentUser.displayName.charAt(0) : <UserCircle size={20} />}
                                         </div>
                                     </div>
                                 </Link>
                                 <button
                                     onClick={() => logout()}
-                                    className="p-2 ml-2 text-gray-400 hover:text-red-400 hover:bg-white/5 rounded-full transition-all"
+                                    className="p-2 ml-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-full transition-all"
                                     title="Sign Out"
                                 >
                                     <LogOut size={18} />
@@ -194,12 +185,11 @@ const Navbar = () => {
                             </div>
                         ) : (
                             <>
-                                <Link to="/login" className="px-6 py-2 bg-[#FFFFFF] text-[#0F766E] border-[#0F766E] border-2 rounded-full text-sm font-bold transition-all shadow-sm hover:bg-teal-50">
+                                <Link to="/login" className="px-6 py-2 bg-transparent text-[#0F172A] border-[#CBD5F5] border rounded-full text-sm font-bold transition-all hover:bg-gray-50/50">
                                     Log in
                                 </Link>
-                                <Link to="/signup" className="group relative px-6 py-2.5 bg-[#0F766E] hover:bg-teal-700 text-[#FFFFFF] font-bold rounded-full shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95 text-sm overflow-hidden">
-                                    <span className="relative z-10">Sign Up</span>
-                                    <div className="absolute inset-0 bg-white/20 group-hover:translate-x-full transition-transform duration-500 ease-out -skew-x-12 origin-left"></div>
+                                <Link to="/contact" className="px-6 py-2.5 bg-[#0D9488] hover:bg-[#0B7A70] text-white font-bold rounded-full shadow-sm transition-all transform hover:-translate-y-0.5 active:scale-95 text-sm">
+                                    Contact Us
                                 </Link>
                             </>
                         )}
@@ -219,11 +209,6 @@ const Navbar = () => {
                 <div className="md:hidden fixed inset-0 z-40 bg-[#FFFFFF] animate-fade-in-down overflow-y-auto pt-24 border-t border-gray-200 flex flex-col min-h-screen">
                     <div className="px-6 pb-8 flex-1 flex flex-col space-y-4">
                         <div className="space-y-2 mt-2">
-                            <Link to="/why-noble-nexus" onClick={() => setIsOpen(false)} className="block flex items-center justify-between py-4 px-4 text-lg font-bold text-[#111111] hover:bg-gray-50 rounded-2xl transition-all border border-transparent hover:border-gray-200">
-                                Why Noble Nexus
-                                <ChevronDown size={18} className="-rotate-90 text-gray-400" />
-                            </Link>
-
                             {/* Products Section */}
                             <div className="py-2 bg-gray-50 rounded-2xl border border-gray-200">
                                 <span className="block px-5 py-3 text-xs font-bold text-[#0F766E] uppercase tracking-widest border-b border-gray-200">Products</span>
@@ -248,12 +233,6 @@ const Navbar = () => {
                                     </Link>
                                 </div>
                             </div>
-
-                            {/* General Tutor Link */}
-                            <Link to="/general-tutor" onClick={() => setIsOpen(false)} className="block flex items-center justify-between py-4 px-4 text-lg font-bold text-[#111111] hover:bg-gray-50 rounded-2xl transition-all border border-transparent hover:border-gray-200">
-                                General Tutor
-                                <span className="w-[18px]"></span>
-                            </Link>
 
                             {/* Services Section */}
                             <div className="py-2 bg-gray-50 rounded-2xl border border-gray-200">
@@ -289,18 +268,22 @@ const Navbar = () => {
                                 </div>
                             </div>
 
+                            {/* General Tutor Link */}
+                            <Link to="/general-tutor" onClick={() => setIsOpen(false)} className="block flex items-center justify-between py-4 px-4 text-lg font-bold text-[#111111] hover:bg-gray-50 rounded-2xl transition-all border border-transparent hover:border-gray-200">
+                                General Tutor
+                                <span className="w-[18px]"></span>
+                            </Link>
+
+                            <Link to="/why-noble-nexus" onClick={() => setIsOpen(false)} className="block flex items-center justify-between py-4 px-4 text-lg font-bold text-[#111111] hover:bg-gray-50 rounded-2xl transition-all border border-transparent hover:border-gray-200">
+                                Why Noble Nexus
+                                <ChevronDown size={18} className="-rotate-90 text-gray-400" />
+                            </Link>
+
                         </div>
 
                         {/* Mobile Actions Bottom */}
                         <div className="mt-8 pt-6 border-t border-gray-200 space-y-4 pb-20">
-                            <div className="grid grid-cols-2 gap-3">
-                                <Link
-                                    to="/meet"
-                                    onClick={() => setIsOpen(false)}
-                                    className="w-full py-3.5 flex items-center justify-center gap-2 bg-teal-50 border border-teal-200 rounded-2xl text-[#0F766E] font-bold hover:bg-teal-100 transition-colors shadow-sm"
-                                >
-                                    <Video size={18} /> Meetings
-                                </Link>
+                            <div className="grid grid-cols-1 gap-3">
                                 <button
                                     onClick={() => { setIsChatOpen(true); setIsOpen(false); }}
                                     className="w-full py-3.5 flex items-center justify-center gap-2 bg-transparent border-2 border-[#0F766E] rounded-2xl text-[#0F766E] font-bold hover:bg-teal-50 transition-colors shadow-sm"
@@ -314,8 +297,8 @@ const Navbar = () => {
                                     <Link to="/login" onClick={() => setIsOpen(false)} className="py-3.5 px-4 bg-transparent border-2 border-[#0F766E] hover:bg-teal-50 rounded-2xl text-[#0F766E] font-bold transition-colors text-center shadow-sm">
                                         Log in
                                     </Link>
-                                    <Link to="/signup" onClick={() => setIsOpen(false)} className="py-3.5 px-4 bg-[#0F766E] hover:bg-teal-700 text-white font-bold rounded-2xl shadow-md transition-transform active:scale-95 text-center">
-                                        Sign Up
+                                    <Link to="/contact" onClick={() => setIsOpen(false)} className="py-3.5 px-4 bg-[#0F766E] hover:bg-teal-700 text-white font-bold rounded-2xl shadow-md transition-transform active:scale-95 text-center">
+                                        Contact Us
                                     </Link>
                                 </div>
                             ) : (

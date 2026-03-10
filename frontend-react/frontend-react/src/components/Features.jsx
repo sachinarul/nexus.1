@@ -35,14 +35,14 @@ const features = [
 
 const Features = () => {
     return (
-        <section id="features" className="py-24 bg-[#F8FAFC] relative">
+        <section id="features" className="py-16 bg-[#F8FAFC] relative">
             <div className="container mx-auto px-4">
                 {/* Section Header */}
                 <div className="text-center mb-20">
                     <span className="text-[#0F766E] font-bold tracking-widest uppercase mb-4 block">
                         Core capabilities
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight text-[#111111]">
+                    <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight text-[#0F172A]">
                         Built for the <br />
                         <span className="text-[#2563EB]">
                             Next Generation
@@ -51,31 +51,23 @@ const Features = () => {
                 </div>
 
                 {/* Feature Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {features.map((feature, idx) => (
-                        <Link to={feature.link} key={idx} className="block group">
-                            <motion.div
-                                whileHover={{ y: -10 }}
-                                className="relative p-8 rounded-2xl bg-[#FFFFFF] border border-gray-200 group-hover:border-teal-300 transition-all duration-300 shadow-md group-hover:shadow-xl overflow-hidden h-full"
-                            >
-                                {/* Gradient Glow */}
-                                <div className={`absolute -inset-1 bg-gradient-to-r ${feature.color} opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500`} />
-
-                                <div className="relative z-10">
-                                    <div className={`w-14 h-14 rounded-xl flex items-center justify-center bg-gradient-to-br ${feature.color} bg-opacity-10 mb-6 shadow-sm`}>
-                                        <feature.icon className="w-8 h-8 text-[#111111]" />
-                                    </div>
-
-                                    <h3 className="text-xl font-bold font-display mb-3 text-[#111111] group-hover:text-[#0F766E] transition-colors">
-                                        {feature.title}
-                                    </h3>
-
-                                    <p className="text-[#555555] font-medium text-sm leading-relaxed">
-                                        {feature.desc}
-                                    </p>
+                        <div key={idx} className="relative transition-all duration-300">
+                            <div className="relative z-10">
+                                <div className={`w-14 h-14 rounded-xl flex items-center justify-center bg-gradient-to-br ${feature.color} bg-opacity-10 mb-6 shadow-sm`}>
+                                    <feature.icon className="w-8 h-8 text-[#0F172A]" />
                                 </div>
-                            </motion.div>
-                        </Link>
+
+                                <h3 className="text-xl font-bold font-display mb-3 text-[#0F172A]">
+                                    {feature.title}
+                                </h3>
+
+                                <p className="text-[#334155] font-medium text-sm leading-relaxed">
+                                    {feature.desc}
+                                </p>
+                            </div>
+                        </div>
                     ))}
                 </div>
             </div>

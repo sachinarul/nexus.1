@@ -1,7 +1,7 @@
 
 const Solutions = () => {
     return (
-        <section id="solutions" className="py-24 bg-[#FFFFFF] relative">
+        <section id="solutions" className="py-16 bg-[#FFFFFF] relative">
             <div className="container mx-auto px-4 max-w-7xl relative z-10">
                 <div className="text-center mb-16">
                     <span className="text-[#0F766E] font-bold tracking-widest text-sm uppercase mb-4 block">Proven Impact</span>

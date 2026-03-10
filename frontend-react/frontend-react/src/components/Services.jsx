@@ -64,31 +64,31 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="py-24 bg-[#F8FAFC] relative overflow-hidden">
+        <section id="services" className="py-16 bg-[#F8FAFC] relative overflow-hidden">
 
             <div className="container mx-auto px-4 max-w-7xl relative z-10">
-                <div className="text-center mb-24 max-w-3xl mx-auto">
+                <div className="text-center mb-16 max-w-3xl mx-auto">
                     <span
                         className="inline-block py-1.5 px-4 rounded-full bg-teal-50 border border-teal-200 text-[#0F766E] text-xs font-bold tracking-widest uppercase mb-6 shadow-sm"
                     >
                         Our Expertise
                     </span>
                     <h2
-                        className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-[#111111] mb-6 leading-tight"
+                        className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-[#0F172A] mb-6 leading-tight"
                     >
                         Architecting the <br />
                         <span className="text-[#2563EB]">Future of Education</span>
                     </h2>
                     <p
-                        className="text-[#555555] text-lg leading-relaxed font-medium"
+                        className="text-[#334155] text-lg leading-relaxed font-medium"
                     >
                         Comprehensive EdTech solutions designed to empower your platform, educators, and learners through innovation and scalable technology.
                     </p>
                 </div>
 
-                <div className="space-y-32">
+                <div className="space-y-20">
                     {services.map((service, index) => {
-                        const isEven = index % 2 !== 0; // if isEven, reverse the layout
+                        const isEven = index % 2 === 0; // Swap the layout order
 
                         return (
                             <div
@@ -110,7 +110,7 @@ const Services = () => {
                                     )}
 
                                     <div className="flex items-center gap-4">
-                                        <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} p-0.5 shadow-md`}>
+                                        <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} p-0.5`}>
                                             <div className="w-full h-full bg-[#FFFFFF] rounded-[14px] flex items-center justify-center overflow-hidden">
                                                 <img
                                                     src={service.icon}
@@ -119,12 +119,12 @@ const Services = () => {
                                                 />
                                             </div>
                                         </div>
-                                        <h3 className="text-3xl lg:text-4xl font-bold font-display text-[#111111]">
+                                        <h3 className="text-3xl lg:text-4xl font-bold font-display text-[#0F172A]">
                                             {service.title}
                                         </h3>
                                     </div>
 
-                                    <p className="text-[#555555] text-[1.05rem] leading-[1.8] font-medium text-justify">
+                                    <p className="text-[#334155] text-[1.05rem] leading-[1.8] font-medium text-justify">
                                         {service.desc}
                                     </p>
                                 </motion.div>
@@ -139,15 +139,12 @@ const Services = () => {
                                 >
                                     <div className={`absolute -inset-6 bg-gradient-to-tr ${service.gradient} opacity-20 rounded-[2.5rem] blur-2xl group-hover:opacity-30 transition-opacity duration-500 -z-10`}></div>
 
-                                    <div className={`relative rounded-3xl overflow-hidden border border-gray-200 shadow-xl bg-[#FFFFFF] transform transition-transform duration-500 group-hover:scale-105`}>
+                                    <div className="relative rounded-[2rem] overflow-hidden transition-all duration-500 shadow-sm border border-gray-100">
                                         <img
                                             src={service.image}
                                             alt={service.title}
                                             className="w-full h-[350px] sm:h-[450px] object-cover"
                                         />
-
-                                        {/* Decorative overlay gradient */}
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                     </div>
                                 </motion.div>
                             </div>

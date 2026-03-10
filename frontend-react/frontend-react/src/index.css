@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy: #ffffff;
-  --color-white: #000000;
-  --color-black: #ffffff;
-  --color-teal: #005f52;
-  --color-purple: #5b21b6;
+  --color-navy: #0F172A;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-teal: #0D9488;
+  --color-purple: #5B21B6;
   --font-display: "Space Grotesk", sans-serif;
   --font-body: "Inter", sans-serif;
 

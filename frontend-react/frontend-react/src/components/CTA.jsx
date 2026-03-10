@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const CTA = () => {
     return (
-        <section className="bg-[#FFFFFF] py-24 relative overflow-hidden">
+        <section className="bg-[#FFFFFF] py-16 relative overflow-hidden">
             <div className="container mx-auto px-4 relative z-10 text-center">
                 <div className="max-w-4xl mx-auto backdrop-blur-3xl bg-[#F8FAFC] border border-gray-200 rounded-3xl p-12 md:p-20 shadow-xl relative group hover:border-teal-300 transition-all duration-500">
 

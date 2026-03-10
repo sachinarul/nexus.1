@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
-        <section id="about" className="py-32 bg-[#F8FAFC] relative z-10 border-t border-gray-100">
+        <section id="about" className="py-16 bg-[#F8FAFC] relative z-10 border-t border-gray-100">
             <div className="container mx-auto px-4 max-w-7xl">
-                <div className="grid lg:grid-cols-2 gap-20 items-center">
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
 
 
                     {/* Content */}

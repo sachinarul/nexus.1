@@ -39,7 +39,7 @@ const Feedback = () => {
     };
 
     return (
-        <section className="py-24 bg-[#F8FAFC] relative overflow-hidden">
+        <section className="py-16 bg-[#F8FAFC] relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-teal-50 rounded-full blur-[120px] pointer-events-none -translate-x-1/2 -translate-y-1/2"></div>
             <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-blue-50 rounded-full blur-[120px] pointer-events-none translate-x-1/2 translate-y-1/2"></div>

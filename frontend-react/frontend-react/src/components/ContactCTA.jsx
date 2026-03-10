@@ -3,7 +3,7 @@ import { Mail, Phone } from 'lucide-react';
 
 const ContactCTA = () => {
     return (
-        <section className="py-20 bg-[#ffffff] relative overflow-hidden">
+        <section className="py-12 bg-[#ffffff] relative overflow-hidden">
             {/* Contact CTA Area */}
             <div className="container mx-auto px-4 max-w-7xl relative z-10">
                 <motion.div
