@@ -1,13 +1,15 @@
 
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, BookOpen, GraduationCap, Building2, UserCircle, Briefcase, BarChart, LayoutDashboard, HelpCircle, LogOut, Video, Network } from 'lucide-react';
+import { Menu, X, ChevronDown, BookOpen, GraduationCap, Building2, UserCircle, Briefcase, BarChart, LayoutDashboard, HelpCircle, LogOut, Video, Network, MessageCircle } from 'lucide-react';
 import HelpBot from './HelpBot';
+import Chatbot from './Chatbot';
 import { useAuth } from '../context/AuthContext';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isHelpOpen, setIsHelpOpen] = useState(false);
+    const [isChatOpen, setIsChatOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const { currentUser, logout } = useAuth();
 
@@ -161,12 +163,13 @@ const Navbar = () => {
                         </Link>
 
                         <button
-                            onClick={() => setIsHelpOpen(true)}
-                            className="w-10 h-10 flex items-center justify-center rounded-full bg-black/5 border border-black/10 hover:bg-black/10 hover:border-black/20 text-[#111111] transition-all shadow-sm group"
-                            title="Get Help"
+                            onClick={() => setIsChatOpen(true)}
+                            className="w-10 h-10 flex items-center justify-center rounded-full bg-teal-50 border border-teal-100 hover:bg-teal-100 text-[#0F766E] transition-all shadow-sm group"
+                            title="AI Assistant"
                         >
                             <HelpCircle size={20} className="group-hover:scale-110 transition-transform" />
                         </button>
+
 
                         {currentUser ? (
                             <div className="flex items-center gap-4 pl-4 border-l border-white/10">
@@ -299,7 +302,7 @@ const Navbar = () => {
                                     <Video size={18} /> Meetings
                                 </Link>
                                 <button
-                                    onClick={() => { setIsHelpOpen(true); setIsOpen(false); }}
+                                    onClick={() => { setIsChatOpen(true); setIsOpen(false); }}
                                     className="w-full py-3.5 flex items-center justify-center gap-2 bg-transparent border-2 border-[#0F766E] rounded-2xl text-[#0F766E] font-bold hover:bg-teal-50 transition-colors shadow-sm"
                                 >
                                     <HelpCircle size={18} /> Support
@@ -331,6 +334,7 @@ const Navbar = () => {
             )}
 
             <HelpBot isOpen={isHelpOpen} onClose={() => setIsHelpOpen(false)} />
+            <Chatbot isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
         </nav>
     );
 };
