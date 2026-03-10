@@ -24,7 +24,7 @@ const About = () => {
                         <div className="space-y-6 border-l-4 border-[#0F766E] pl-8">
                             <div className="group">
                                 <p className="text-xl font-bold text-[#111111] mb-2 leading-relaxed">
-                                    "We empower institutions to adapt, grow, and succeed in the digital education era."
+                                    "We empower educators and organizations to adapt, grow, and succeed in the digital education era."
                                 </p>
                             </div>
                         </div>

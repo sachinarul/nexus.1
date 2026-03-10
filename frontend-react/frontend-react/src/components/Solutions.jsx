@@ -17,7 +17,7 @@ const Solutions = () => {
                         <div key={idx} className="p-8 border border-gray-200 rounded-2xl bg-[#F8FAFC] hover:border-teal-300 transition-all duration-300 shadow-md hover:shadow-lg group">
                             <h3 className="text-[#111111] text-xl font-bold mb-3 group-hover:text-[#0F766E] transition-colors">{item}</h3>
                             <p className="text-[#555555] font-medium text-sm leading-relaxed">
-                                Deploy enterprise-grade infrastructure that adapts to your institution's growing needs.
+                                Deploy enterprise-grade infrastructure that adapts to your platform's growing needs.
                             </p>
                         </div>
                     ))}

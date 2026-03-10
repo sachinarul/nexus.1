@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import {
     LayoutDashboard,
@@ -16,73 +15,47 @@ import {
 
 const services = [
     {
-        image: "https://img.icons8.com/3d-fluency/94/graduation-cap.png",
+        icon: "https://img.icons8.com/3d-fluency/94/graduation-cap.png",
+        image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
         title: "Online Classroom System",
-        desc: "Advanced ERP systems to simplify and automate institutional operations, enhancing transparency and efficiency.",
-        features: [
-            "Student & Staff Management",
-            "Attendance & Examination",
-            "Fee & Finance Management",
-            "Real-Time Analytics"
-        ],
+        desc: "Elevate your e-learning platform with our cutting-edge Online Classroom System. Engineered to seamlessly integrate into your digital workflow, this robust solution dramatically simplifies academic and administrative management. Replace manual overhead with automated course administration, effortless progress tracking, and insightful real-time analytics. We empower educators to focus on delivering high-quality instruction by providing a highly transparent, data-driven environment for both instructors and learners. Every element of your virtual classroom is meticulously synchronized to deliver a flawless, deeply engaging, and highly scalable online learning experience.",
         gradient: "from-teal-400 to-emerald-500",
         shadow: "shadow-teal/20",
         delay: 0.1
     },
     {
-        image: "https://img.icons8.com/3d-fluency/94/design.png",
+        icon: "https://img.icons8.com/3d-fluency/94/design.png",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
         title: "Instructional Design",
-        desc: "Engaging, learner-focused courses tailored to your academic goals with multimedia and gamified content.",
-        features: [
-            "Interactive Course Modules",
-            "Multimedia Content",
-            "Assessment Tools",
-            "Personalized Paths"
-        ],
+        desc: "Transform standard curricula into captivating, interactive journeys with our premium Instructional Design services. We leverage deep, learner-centric methodologies to craft highly engaging course materials tailored specifically to your platform's unique goals. Our dynamic approach weaves together rich multimedia storytelling, interactive modules, and intelligent assessment tools with personalized gamification strategies that keep learners motivated. By aligning cutting-edge educational content with cognitive science, we deliver digital learning experiences that maximize knowledge retention and empower your students to consistently succeed.",
         gradient: "from-purple-400 to-pink-500",
         shadow: "shadow-purple/20",
         delay: 0.2
     },
     {
-        image: "https://img.icons8.com/3d-fluency/94/cloud-storage.png",
+        icon: "https://img.icons8.com/3d-fluency/94/cloud-storage.png",
+        image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
         title: "Managed eLearning",
-        desc: "Complete technical support for your digital infrastructure. We handle the technology while you focus on teaching.",
-        features: [
-            "LMS Setup & Config",
-            "Platform Maintenance",
-            "24/7 Technical Support",
-            "System Upgrades",
-            "Scalable Infrastructure"
-        ],
+        desc: "Eliminate technical complexities with our comprehensive Managed eLearning infrastructure. We expertly handle all intricate, behind-the-scenes operations—from complete platform staging and cloud configuration to routine maintenance and rapid system upgrades. This hands-off approach allows your team to focus exclusively on growing your educational community. Backed by 24/7 proactive technical support and an architecture built for elastic scalability, we guarantee that your e-learning platform remains remarkably robust, highly secure, and perfectly optimized to flawlessly handle surging student traffic.",
         gradient: "from-amber-400 to-orange-500",
         shadow: "shadow-amber/20",
         popular: true,
         delay: 0.3
     },
     {
-        image: "https://img.icons8.com/3d-fluency/94/books.png",
+        icon: "https://img.icons8.com/3d-fluency/94/books.png",
+        image: "https://images.unsplash.com/photo-1610484826967-09c5720778c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
         title: "Digital Content Mgmt",
-        desc: "Organize and distribute educational content effortlessly with centralized libraries and secure cloud storage.",
-        features: [
-            "Centralized Library",
-            "Secure Cloud Storage",
-            "Version Control",
-            "Collaborative Access"
-        ],
+        desc: "Organize, protect, and effortlessly distribute your vital educational resources with our centralized Digital Content Management solutions. Built upon highly secure and lightning-fast cloud architectures, our centralized libraries bring all your multimedia assets, collaborative files, and version-controlled documents into one unified hub. Your platform administrators and educators can seamlessly curate vast amounts of coursework, instantly deploy updates globally, and maintain precise control over access permissions. We guarantee an uninterrupted, intuitive experience where learners effortlessly find the exact tools they need.",
         gradient: "from-cyan-400 to-blue-500",
         shadow: "shadow-cyan/20",
         delay: 0.4
     },
     {
-        image: "https://img.icons8.com/3d-fluency/94/wheelchair.png",
+        icon: "https://img.icons8.com/3d-fluency/94/wheelchair.png",
+        image: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
         title: "Accessibility Compliance",
-        desc: "Inclusive platforms supporting every learner. WCAG standards, screen readers, and adaptive interfaces.",
-        features: [
-            "WCAG Standards",
-            "Screen Reader Ready",
-            "Keyboard Navigation",
-            "Adaptive Interfaces"
-        ],
+        desc: "Champion a genuinely inclusive learning environment with our rigorous Accessibility Compliance services. We weave strict WCAG standards into the very fabric of your digital interfaces, flawlessly accommodating a beautifully diverse spectrum of learning needs. From robust screen reader compatibility and intuitive keyboard-only navigation to highly adaptive UI layouts designed for cognitive variability, our unwavering commitment to complete accessibility massively broadens your platform's reach. By breaking down technical barriers, we guarantee that every single learner can engage with confidence and achieve remarkable educational outcomes.",
         gradient: "from-rose-400 to-red-500",
         shadow: "shadow-rose/20",
         delay: 0.5
@@ -91,111 +64,100 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="py-32 bg-[#ffffff] relative overflow-hidden">
-            {/* Background Grid Pattern */}
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 pointer-events-none"></div>
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),linear-gradient(to_bottom,#00000008_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
+        <section id="services" className="py-24 bg-[#F8FAFC] relative overflow-hidden">
 
             <div className="container mx-auto px-4 max-w-7xl relative z-10">
-                <div className="text-center mb-20 max-w-3xl mx-auto">
-                    <motion.span
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="inline-block py-1 px-3 rounded-full bg-teal/10 border border-teal/20 text-teal text-xs font-bold tracking-widest uppercase mb-6"
+                <div className="text-center mb-24 max-w-3xl mx-auto">
+                    <span
+                        className="inline-block py-1.5 px-4 rounded-full bg-teal-50 border border-teal-200 text-[#0F766E] text-xs font-bold tracking-widest uppercase mb-6 shadow-sm"
                     >
                         Our Expertise
-                    </motion.span>
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.1 }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-[#000000] mb-6 leading-tight"
+                    </span>
+                    <h2
+                        className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-[#111111] mb-6 leading-tight"
                     >
                         Architecting the <br />
-                        <span className="bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Future of Education</span>
-                    </motion.h2>
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.2 }}
-                        className="text-gray-600 text-lg leading-relaxed font-medium"
+                        <span className="text-[#2563EB]">Future of Education</span>
+                    </h2>
+                    <p
+                        className="text-[#555555] text-lg leading-relaxed font-medium"
                     >
-                        Comprehensive EdTech solutions designed to empower institutions, educators, and learners through innovation and scalable technology.
-                    </motion.p>
+                        Comprehensive EdTech solutions designed to empower your platform, educators, and learners through innovation and scalable technology.
+                    </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-                    {services.map((service, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: service.delay, duration: 0.5 }}
-                            whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                            className={`relative p-8 rounded-3xl border transition-all duration-300 group flex flex-col h-full
-                                ${service.popular
-                                    ? 'bg-[#111827] border-teal-500/50 shadow-2xl shadow-teal-500/10 lg:-mt-8 lg:mb-8 z-10 scale-105'
-                                    : 'bg-[#111827] border-gray-800 hover:border-gray-700 shadow-xl shadow-black/10'}
-                            `}
-                        >
-                            {/* Popular Badge */}
-                            {service.popular && (
-                                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-amber-400 to-orange-500 text-[#000000] text-xs font-bold px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1">
-                                    <Star size={12} fill="currentColor" /> MOST POPULAR
-                                </div>
-                            )}
+                <div className="space-y-32">
+                    {services.map((service, index) => {
+                        const isEven = index % 2 !== 0; // if isEven, reverse the layout
 
-                            {/* Icon / Image Box */}
-                            <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.gradient} p-0.5 mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg ${service.shadow}`}>
-                                <div className="w-full h-full bg-[#0a0f1d] rounded-[14px] flex items-center justify-center overflow-hidden relative">
-                                    <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-10 group-hover:opacity-20 transition-opacity`}></div>
-                                    <img
-                                        src={service.image}
-                                        alt={service.title}
-                                        className="w-10 h-10 object-contain drop-shadow-md z-10"
-                                    />
-                                </div>
-                            </div>
-
-                            <h3 className="text-xl font-bold text-[#ffffff] mb-4 group-hover:text-teal-400 transition-colors">
-                                {service.title}
-                            </h3>
-
-                            <p className="text-[#9ca3af] text-sm leading-relaxed mb-8 flex-grow">
-                                {service.desc}
-                            </p>
-
-                            <div className="space-y-3 mb-8">
-                                {service.features.map((feature, i) => (
-                                    <div key={i} className="flex items-start gap-3">
-                                        <div className={`mt-0.5 p-0.5 rounded-full bg-gradient-to-br ${service.gradient} opacity-90`}>
-                                            <Check size={10} className="text-[#111827] stroke-[3]" />
+                        return (
+                            <div
+                                key={index}
+                                className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${isEven ? 'lg:flex-row-reverse' : ''}`}
+                            >
+                                {/* Text Content */}
+                                <motion.div
+                                    initial={{ opacity: 0, x: isEven ? 50 : -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true, margin: "-100px" }}
+                                    transition={{ duration: 0.6 }}
+                                    className="flex-1 space-y-8"
+                                >
+                                    {service.popular && (
+                                        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-400 to-orange-500 text-[#000000] text-xs font-bold px-4 py-1.5 rounded-full shadow-md">
+                                            <Star size={12} fill="currentColor" /> MOST POPULAR
                                         </div>
-                                        <span className="text-sm text-[#d1d5db]">{feature}</span>
+                                    )}
+
+                                    <div className="flex items-center gap-4">
+                                        <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} p-0.5 shadow-md`}>
+                                            <div className="w-full h-full bg-[#FFFFFF] rounded-[14px] flex items-center justify-center overflow-hidden">
+                                                <img
+                                                    src={service.icon}
+                                                    alt={service.title}
+                                                    className="w-8 h-8 object-contain drop-shadow-sm"
+                                                />
+                                            </div>
+                                        </div>
+                                        <h3 className="text-3xl lg:text-4xl font-bold font-display text-[#111111]">
+                                            {service.title}
+                                        </h3>
                                     </div>
-                                ))}
-                            </div>
 
-                            <div className="space-y-3 mt-auto">
+                                    <p className="text-[#555555] text-[1.05rem] leading-[1.8] font-medium text-justify">
+                                        {service.desc}
+                                    </p>
+                                </motion.div>
+
+                                {/* Image Section */}
+                                <motion.div
+                                    initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true, margin: "-100px" }}
+                                    transition={{ duration: 0.6 }}
+                                    className="flex-1 w-full relative group perspective-1000"
+                                >
+                                    <div className={`absolute -inset-6 bg-gradient-to-tr ${service.gradient} opacity-20 rounded-[2.5rem] blur-2xl group-hover:opacity-30 transition-opacity duration-500 -z-10`}></div>
+
+                                    <div className={`relative rounded-3xl overflow-hidden border border-gray-200 shadow-xl bg-[#FFFFFF] transform transition-transform duration-500 group-hover:scale-105`}>
+                                        <img
+                                            src={service.image}
+                                            alt={service.title}
+                                            className="w-full h-[350px] sm:h-[450px] object-cover"
+                                        />
+
+                                        {/* Decorative overlay gradient */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                    </div>
+                                </motion.div>
                             </div>
-                        </motion.div>
-                    ))}
+                        );
+                    })}
                 </div>
-
 
             </div>
         </section>
     );
 };
-
-const ViewDemoButton = () => (
-    <>
-        <Play size={14} className="fill-current" /> View Demo
-    </>
-);
 
 export default Services;

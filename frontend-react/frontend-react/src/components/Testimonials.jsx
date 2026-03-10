@@ -15,7 +15,7 @@ const Testimonials = () => {
                     {/* Testimonial Cards */}
                     {[
                         { name: "Global University", quote: "Nexus LMS increased our student engagement by 40% in just one semester.", role: "Dean of Digital Learning" },
-                        { name: "Tech High School", quote: "The ERP automation saved our admin team over 20 hours per week.", role: "Principal" },
+                        { name: "Tech Learning Hub", quote: "The ERP automation saved our admin team over 20 hours per week.", role: "Director" },
                         { name: "Corporate Institute", quote: "Seamless onboarding and training. The best investment we made this year.", role: "HR Director" }
                     ].map((item, idx) => (
                         <div key={idx} className="p-8 bg-[#f8fafc] rounded-2xl border border-gray-200 hover:-translate-y-2 transition-transform duration-300 shadow-lg">
