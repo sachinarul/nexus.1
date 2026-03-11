@@ -140,48 +140,48 @@ const WhyNobleNexus = () => {
             {/* --- Who We Serve Section --- */}
             <section className="py-24 bg-[#FFFFFF] relative border-t border-gray-100">
                 <div className="container mx-auto px-4 max-w-7xl relative z-10">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-20">
                         <span className="text-[#0F766E] font-bold tracking-widest text-sm uppercase mb-4 block">Our Partners</span>
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-[#111111] mb-6">Who We Serve</h2>
+                        <h2 className="text-4xl md:text-5xl font-display font-bold text-[#111111]">Deep Expertise Across Sectors</h2>
                     </div>
 
-                    <motion.div
-                        variants={staggerContainer}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
-                    >
+                    <div className="grid md:grid-cols-2 gap-16 lg:gap-24">
                         {[
-                            { title: "Schools", icon: School, img: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80", desc: "K-12 institutions creating modern classrooms." },
-                            { title: "Universities", icon: GraduationCap, img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80", desc: "Higher-ed campuses transforming student experiences." },
-                            { title: "Enterprises", icon: Building2, img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80", desc: "Businesses upskilling their global workforce." },
-                            { title: "Government", icon: Landmark, img: "https://images.unsplash.com/photo-1555529733-0e670560f7e1?auto=format&fit=crop&w=800&q=80", desc: "Public sector training and development centers." }
+                            { title: "Schools", icon: School, img: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80", desc: "Empowering K-12 institutions to create modern, interactive classrooms that inspire the next generation of learners." },
+                            { title: "Universities", icon: GraduationCap, img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80", desc: "Transforming higher-ed campuses with digital-first solutions that enhance student engagement and academic research excellence." },
+                            { title: "Enterprises", icon: Building2, img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80", desc: "Scalable training platforms designed for global businesses to upskill their workforce and maintain a competitive edge." },
+                            { title: "Government", icon: Landmark, img: "https://images.unsplash.com/photo-1555529733-0e670560f7e1?auto=format&fit=crop&w=800&q=80", desc: "Robust and secure public sector training centers focused on large-scale development and specialized personnel training." }
                         ].map((item, idx) => (
                             <motion.div
                                 key={idx}
-                                variants={fadeInUp}
-                                className="bg-[#FFFFFF] border border-gray-200 rounded-2xl overflow-hidden flex flex-col shadow-sm relative h-[340px]"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                className="flex flex-col sm:flex-row gap-8 items-start"
                             >
-                                <div className="h-48 w-full relative overflow-hidden bg-gray-100 shrink-0">
-                                    <img
-                                        src={item.img}
-                                        alt={item.title}
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-
-                                <div className="relative p-6 pt-10 bg-[#FFFFFF] flex-grow flex flex-col">
-                                    {/* Floating Icon */}
-                                    <div className="absolute -top-8 left-6 w-14 h-14 rounded-xl bg-teal-50 flex items-center justify-center text-[#0F766E] shadow-sm border border-teal-100">
-                                        <item.icon size={28} />
+                                <div className="w-full sm:w-1/2 shrink-0">
+                                    <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
+                                        <img
+                                            src={item.img}
+                                            alt={item.title}
+                                            className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-500"
+                                        />
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#111111] mb-2">{item.title}</h3>
-                                    <p className="text-[#555555] text-sm font-medium leading-relaxed">{item.desc}</p>
+                                </div>
+                                <div className="space-y-4">
+                                    <div className="flex items-center gap-3">
+                                        <div className="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center text-[#0F766E]">
+                                            <item.icon size={22} />
+                                        </div>
+                                        <h3 className="text-2xl font-bold text-[#111111]">{item.title}</h3>
+                                    </div>
+                                    <p className="text-[#555555] text-lg leading-relaxed font-medium">
+                                        {item.desc}
+                                    </p>
                                 </div>
                             </motion.div>
                         ))}
-                    </motion.div>
+                    </div>
                 </div>
             </section>
 
@@ -271,30 +271,68 @@ const WhyNobleNexus = () => {
 
             {/* --- Why Choose Noble Nexus Section --- */}
             <section className="py-24 bg-[#FFFFFF] relative border-t border-gray-100">
-                <div className="absolute inset-0 bg-[#F8FAFC] opacity-40"></div>
-                <div className="container mx-auto px-4 max-w-7xl text-center relative z-10">
-                    <h2 className="text-4xl md:text-5xl font-display font-bold text-[#111111] mb-16">Why Choose Noble Nexus?</h2>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {[
-                            { title: "Innovation-Driven", desc: "Always ahead of the curve with latest tech.", icon: Cpu },
-                            { title: "Industry Expertise", desc: "Deep understanding of educational needs.", icon: GraduationCap },
-                            { title: "Scalable Architecture", desc: "Systems that grow with your institution.", icon: Server },
-                            { title: "Secure Infrastructure", desc: "Enterprise-grade data protection.", icon: ShieldCheck },
-                            { title: "Dedicated Support", desc: "We are with you every step of the way.", icon: Headphones },
-                            { title: "Global Standards", desc: "World-class compliance and quality.", icon: Globe }
-                        ].map((feat, i) => (
-                            <motion.div
-                                key={i}
-                                className="p-8 rounded-2xl bg-[#FFFFFF] border border-gray-200 shadow-sm text-left"
-                            >
-                                <div className="w-14 h-14 rounded-full bg-teal-50 flex items-center justify-center text-[#0F766E] mb-6 shadow-sm border border-teal-100">
-                                    <feat.icon size={28} />
+                <div className="container mx-auto px-4 max-w-7xl relative z-10">
+                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                        >
+                            <h2 className="text-4xl md:text-5xl font-display font-bold text-[#111111] mb-8">Why Choose Noble Nexus?</h2>
+                            <div className="space-y-6">
+                                <p className="text-xl text-[#0F766E] font-semibold leading-relaxed">
+                                    Choosing the right partner for your educational journey is critical. At Noble Nexus, we combine technology, expertise, and dedication to ensure your success.
+                                </p>
+                                <p className="text-[#555555] text-lg leading-relaxed font-medium">
+                                    We are an innovation-driven organization, always staying ahead of the curve with the latest technological advancements to deliver cutting-edge solutions. Our deep industry expertise allows us to understand the unique challenges of the educational landscape, enabling us to design scalable architectures that grow seamlessly with your institution.
+                                </p>
+                                <p className="text-[#555555] text-lg leading-relaxed font-medium">
+                                    Security is at our core, with enterprise-grade infrastructure providing unmatched data protection. Beyond technology, we offer dedicated support, standing by you at every step of your digital transformation. All our solutions adhere to world-class global standards, ensuring top-tier compliance and premium quality for institutions worldwide.
+                                </p>
+                                <div className="pt-4">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        {[
+                                            "Innovation-Driven", "Industry Expertise",
+                                            "Scalable Architecture", "Secure Infrastructure",
+                                            "Dedicated Support", "Global Standards"
+                                        ].map((item, idx) => (
+                                            <div key={idx} className="flex items-center gap-2 text-[#555555]">
+                                                <CheckCircle2 className="text-[#0F766E] shrink-0" size={20} />
+                                                <span className="font-semibold">{item}</span>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                                <h4 className="text-xl font-bold text-[#111111] mb-3">{feat.title}</h4>
-                                <p className="text-[#555555] text-sm font-medium">{feat.desc}</p>
-                            </motion.div>
-                        ))}
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 group">
+                                <img
+                                    src="/why-choose-us.png"
+                                    alt="Why Choose Noble Nexus"
+                                    className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#0F766E]/20 to-transparent"></div>
+
+                                {/* Decorative badge */}
+                                <div className="absolute bottom-6 right-6 bg-[#FFFFFF]/90 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-lg">
+                                    <div className="flex items-center gap-3">
+                                        <div className="w-10 h-10 rounded-xl bg-[#0F766E] flex items-center justify-center text-white">
+                                            <ShieldCheck size={20} />
+                                        </div>
+                                        <div>
+                                            <p className="text-xs font-bold text-[#555555] uppercase tracking-wider">Trusted Partner</p>
+                                            <p className="text-[#111111] font-bold">Noble Nexus</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>

@@ -31,7 +31,7 @@ const LMS = () => {
         <div className="bg-[#ffffff] min-h-screen font-sans text-gray-900 selection:bg-teal-200 selection:text-teal-900 overflow-hidden">
 
             {/* --- Hero Section --- */}
-            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#FFFFFF]">
+            <section className="relative pt-20 pb-20 lg:pt-32 lg:pb-32 overflow-hidden bg-[#FFFFFF]">
                 {/* Background Elements & Overlays */}
                 <div className="absolute inset-0 bg-[#FFFFFF] z-0"></div>
                 <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-teal-50 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-slow"></div>
@@ -45,16 +45,10 @@ const LMS = () => {
                             variants={fadeInUp}
                             className="text-left"
                         >
-                            <span className="inline-block py-1 px-3 rounded-full bg-teal-100 border border-teal-200 text-teal-700 text-xs font-bold tracking-widest uppercase mb-6">
-                                Next-Gen EdTech
-                            </span>
                             <h1 className="text-5xl lg:text-7xl font-display font-bold leading-tight mb-6 text-[#111111]">
-                                Smart <span className="text-[#0F766E]">LMS</span> <br />
-                                for Modern Schools
+                                Enriching Schools with <span className="text-[#0F766E]">Smart Management Tools</span> and Technology
                             </h1>
-                            <p className="text-xl text-[#555555] mb-8 leading-relaxed font-medium">
-                                Enrich your institution with intelligent management tools. A comprehensive Learning Management System designed for seamless collaboration, tracking, and growth.
-                            </p>
+
                             <div className="flex flex-wrap gap-4">
                                 <Link to="/" onClick={() => window.scrollTo(0, 0)} className="px-8 py-4 bg-[#0F766E] text-[#FFFFFF] font-bold rounded-full shadow-md hover:bg-teal-700 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 group">
                                     Home <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
@@ -101,214 +95,106 @@ const LMS = () => {
             </section>
 
             {/* --- What is LMS Section --- */}
-            <section className="py-24 bg-[#F8FAFC] relative">
-                <div className="container mx-auto px-4 max-w-5xl text-center">
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        variants={fadeInUp}
-                    >
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-[#111111] mb-6">What is a <span className="text-teal-600">Learning Management System?</span></h2>
-                        <p className="text-lg text-[#555555] leading-relaxed font-medium max-w-3xl mx-auto mb-12">
-                            A Learning Management System (LMS) is a powerful software application for the administration, documentation, tracking, reporting, automation, and delivery of educational courses, training programs, or learning and development programs. It is the central nervous system of modern education.
-                        </p>
-                    </motion.div>
+            <section className="pt-12 pb-8 bg-[#F8FAFC] relative">
+                <div className="container mx-auto px-4 max-w-7xl">
+                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            variants={fadeInUp}
+                            className="text-left"
+                        >
+                            <h2 className="text-3xl md:text-5xl font-display font-bold text-[#111111] mb-8">What does <span className="text-teal-600">LMS stand for?</span></h2>
+                            <div className="text-lg text-[#555555] leading-relaxed font-medium space-y-6">
+                                <p>
+                                    Learning management system (LMS), it is a type of software that hosts educational or training content for students or employees or customers. Using a learning management system makes it possible for businesses to transfer your training and development program into an online environment. Business leaders can organize learning programs and reduce the time required to create courses and distribute them to your colleagues or students.
+                                </p>
+                                <p>
+                                    The learning management system can vary from a basic nursery rhyme audio/video CD to any sophisticated software to advance teaching management program or business. A standard learning management system can perform a variety of e-learning tasks such as providing materials to students, discussion through chat or teleconference between learners and instructors, tests, recording scores, report and track the progress of learners.
+                                </p>
+                            </div>
+                        </motion.div>
 
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        variants={fadeInUp}
-                        className="grid lg:grid-cols-2 rounded-3xl overflow-hidden shadow-2xl border border-gray-200 bg-[#FFFFFF]"
-                    >
-                        {/* Premium Dashboard Mockup Container */}
-                        <div className="h-full min-h-[450px] relative overflow-hidden group bg-[#F8FAFC] flex items-center justify-center p-6 lg:p-12">
-                            {/* Animated Background Gradients */}
-                            <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-teal-50 to-transparent opacity-60"></div>
-
-                            {/* Floating Browser Mockup */}
-                            <div className="relative z-10 w-full aspect-video rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-200 group-hover:-translate-y-2 transition-transform duration-500">
-                                {/* Browser Header */}
-                                <div className="h-6 bg-gray-100 border-b border-gray-200 flex items-center px-3 gap-1.5">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-red-400"></div>
-                                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-400"></div>
-                                    <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div>
-                                </div>
-
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                            className="relative"
+                        >
+                            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-[#FFFFFF] p-4">
                                 <img
-                                    src="/modern_lms_dashboard_mockup_1772614506644.png"
-                                    alt="Centralized LMS Dashboard"
-                                    className="w-full h-full object-cover"
+                                    src="/lms-definition.png"
+                                    alt="What is LMS"
+                                    className="w-full h-auto object-cover rounded-2xl"
                                 />
+                                {/* Decorative elements */}
+                                <div className="absolute -top-6 -right-6 w-24 h-24 bg-teal-100 rounded-full blur-2xl opacity-60 -z-10 animate-pulse"></div>
+                                <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-100 rounded-full blur-2xl opacity-60 -z-10 animate-pulse delay-1000"></div>
                             </div>
-
-                            {/* Decorative Accent */}
-                            <div className="absolute bottom-10 right-10 w-32 h-32 bg-teal-500/10 rounded-full blur-3xl group-hover:bg-teal-500/20 transition-colors"></div>
-                        </div>
-
-                        {/* Text Content Column */}
-                        <div className="p-10 lg:p-16 flex flex-col justify-center bg-gray-50/30">
-                            <div className="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-[#0F766E] mb-6 shadow-sm">
-                                <LayoutDashboard size={24} />
-                            </div>
-                            <h3 className="text-3xl lg:text-4xl font-display font-bold text-[#111111] mb-6 leading-tight">
-                                Centralized <br />
-                                <span className="text-teal-600">Command Center</span>
-                            </h3>
-                            <p className="text-xl text-[#555555] font-medium leading-relaxed mb-8">
-                                Monitor progress, manage content, and analyze performance from a single intuitive dashboard. All your education data, unified in one place.
-                            </p>
-                            <div className="space-y-4">
-                                {["Real-time Analytics", "Seamless Content Control", "Intuitive User Design"].map((item, i) => (
-                                    <div key={i} className="flex items-center gap-3 text-[#333333] font-semibold">
-                                        <div className="w-5 h-5 rounded-full bg-teal-100 flex items-center justify-center">
-                                            <CheckCircle2 size={12} className="text-[#0F766E]" />
-                                        </div>
-                                        {item}
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </motion.div>
-
-                    {/* Benefits Grid */}
-                    <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 mt-16">
-                        {[
-                            { icon: School, title: "Online Learning" },
-                            { icon: BarChart3, title: "Performance Analytics" },
-                            { icon: CheckCircle2, title: "Progress Tracking" },
-                            { icon: BookOpen, title: "Course Management" },
-                            { icon: Users, title: "Remote Collaboration" }
-                        ].map((item, idx) => (
-                            <motion.div
-                                key={idx}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: idx * 0.1 }}
-                                className="p-6 bg-gray-50 border border-gray-200 rounded-xl hover:bg-teal-50 hover:border-teal-200 transition-all group shadow-sm"
-                            >
-                                <item.icon className="w-8 h-8 text-teal-600 mb-4 mx-auto group-hover:scale-110 transition-transform" />
-                                <h4 className="font-bold text-[#111111] group-hover:text-teal-700">{item.title}</h4>
-                            </motion.div>
-                        ))}
+                        </motion.div>
                     </div>
-                </div>
-            </section>
 
-            {/* --- Core Services Grid --- */}
-            <section className="py-24 relative overflow-hidden">
-                <div className="container mx-auto px-4 max-w-7xl relative z-10">
-                    <div className="text-center mb-16">
-                        <span className="text-teal-600 font-bold tracking-widest text-sm uppercase mb-4 block">Holistic Ecosystem</span>
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-[#111111] mb-6">
-                            Complete <span className="text-teal-600">Educational Management</span>
+                    {/* Services Heading Section */}
+                    <div className="text-center mt-16 mb-8">
+                        <span className="text-teal-600 font-bold tracking-widest text-sm uppercase mb-4 block">Platform Offerings</span>
+                        <h2 className="text-4xl md:text-6xl font-display font-bold text-[#111111] mb-6">
+                            Services under <span className="text-teal-600">LMS Product</span>
                         </h2>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {[
-                            {
-                                title: "Student Management",
-                                icon: GraduationCap,
-                                desc: "Track improved outcomes with homework, timetables, and exam modules."
-                            },
-                            {
-                                title: "Teacher Management",
-                                icon: Users,
-                                desc: "Empower educators with question banks, online testing, and automated grading."
-                            },
-                            {
-                                title: "Parent Portal",
-                                icon: Smartphone,
-                                desc: "Keep families engaged with real-time updates on grades, attendance, and alerts."
-                            },
-                            {
-                                title: "Admissions & Applications",
-                                icon: FileText,
-                                desc: "Streamline the enrollment process with online forms and interview tracking."
-                            },
-                            {
-                                title: "Tailored Education",
-                                icon: Settings,
-                                desc: "Custom ERP and eLearning support adapted to specific institutional needs."
-                            },
-                            {
-                                title: "System Administration",
-                                icon: ShieldCheck,
-                                desc: "Robust security, role-based access control, and seamless license management."
-                            }
-                        ].map((service, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: index * 0.1 }}
-                                className="p-8 bg-gray-50 border border-gray-200 rounded-2xl hover:border-teal-300 hover:shadow-lg transition-all group relative overflow-hidden"
-                            >
-                                <div className="absolute top-0 right-0 p-4 opacity-[0.03] group-hover:opacity-10 transition-opacity">
-                                    <service.icon size={100} className="text-black" />
-                                </div>
-                                <div className="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center text-teal-600 mb-6 group-hover:scale-110 transition-transform">
-                                    <service.icon size={28} />
-                                </div>
-                                <h3 className="text-xl font-bold text-[#111111] mb-3 group-hover:text-teal-700 transition-colors">{service.title}</h3>
-                                <p className="text-[#555555] font-medium text-sm leading-relaxed">{service.desc}</p>
-                            </motion.div>
-                        ))}
+                        <div className="w-24 h-1.5 bg-teal-600 mx-auto rounded-full"></div>
                     </div>
                 </div>
             </section>
+
+
 
             {/* --- Detailed Breakdown Sections --- */}
             {[
                 {
                     title: "Student Management System",
-                    desc: "A student-centric platform that puts learning first. Manage every aspect of the student lifecycle from a single interface.",
-                    features: ["Interactive Homework Tracking", "Dynamic Timetable Management", "Online Examination Portal", "Automated Attendance Logs"],
+                    desc: "A system that transforms the way our students engage with their academic information at their campus. We streamline your processes and automate systems to:",
+                    features: ["Homework, assignments and project tracking", "Timetable and scheduling management", "Exams and grade management", "Student Profile Management", "Daily, monthly and cumulative attendance tracking", "Email exchange between teacher and management staff", "Informative dashboard to monitor progress"],
                     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "left"
                 },
                 {
-                    title: "Teacher Empowerment Suite",
-                    desc: "Tools that give time back to teachers. Automate administrative tasks so educators can focus on what they do best: teaching.",
-                    features: ["Extensive Question Banks", "Seamless Assignment Grading", "Performance Reporting Dashboard", "Digital Classroom Tools"],
+                    title: "Teacher Management System",
+                    desc: "Teachers handle critical information required to sustain the institution which is related to students and their performance which adds to the adherence of the institution such as:",
+                    features: ["Manage Attendance", "Create multiple questions bank", "Create on-line test and assign to the students", "Upload assignments and assessments", "Report cards", "Performance register", "Updates to students and parents"],
                     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "right"
                 },
                 {
-                    title: "System Administration & Security",
-                    desc: "Enterprise-grade security and control. Ensure data privacy and operational integrity across the entire institution.",
-                    features: ["Role-Based Access Control", "Encrypted Data Storage", "Centralized Billing & Licensing", "Audit Trails & Logs"],
-                    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+                    title: "Parent Management System",
+                    desc: "This portal allows Parents to easily keep track of their children's academic progress and information. With quick access menus, Parents can stay updated on various aspects including:",
+                    features: ["Students profile", "Grades and Progress", "Homework, assignments & project progress", "Attendance", "Email exchange between management and parents", "Notices and notifications", "SMS or Email Alerts"],
+                    image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "left"
                 },
                 {
-                    title: "Parent Engagement Portal",
-                    desc: "Bridge the gap between home and school. Give parents real-time visibility into their child's academic journey.",
-                    features: ["Real-time Gradebook Access", "Instant Attendance Alerts", "Direct Teacher Messaging", "Homework Supervision"],
-                    image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+                    title: "Student Application Management",
+                    desc: "Online Admission Manager module will streamline the school’s entire admissions process. Begin with tracking detailed prospective student data during the inquiry stage, through interview, visit and ultimately registration.",
+                    features: ["Save manual hours every day entering and tracking applicant progress", "Automatically keep parents, applicants and staff informed about applicant progress", "Integrated e-mail streamlines communication and reduces paper costs"],
+                    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "right"
                 },
                 {
-                    title: "Admissions & Enrollment Hub",
-                    desc: "Go paperless with a fully digital admissions process. Track applications from inquiry to enrollment effortlessly.",
-                    features: ["Customizable Application Forms", "Interview Scheduling Tools", "Document Upload & Verification", "Automated Acceptance Letters"],
-                    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+                    title: "Tailored Educational Management",
+                    desc: "Revolutionize your educational institution with tailor-made company management solutions. Explore our services:",
+                    features: ["ERP Systems for School Management", "Custom Course Development and Instructional Design", "Managed eLearning Services including LMS setup and support", "Digital Content Management Solutions tailored for modern education", "Accessibility Compliance Services for Inclusive Learning", "Integration of Virtual Classrooms and Mobile Learning"],
+                    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "left"
                 },
                 {
-                    title: "Tailored Educational Ecosystems",
-                    desc: "We adapt to you, not the other way around. Custom modules and branding to fit your institution's unique pedagogy.",
-                    features: ["White-Label Interface", "Custom Report Cards", "Third-Party API Integrations", "Multi-Language Support"],
-                    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+                    title: "System Administration",
+                    desc: "System Administrator module helps to setup entire application setup functions and maintenance including:",
+                    features: ["Creating institutional licenses, payment details of subscription fees and balance dues", "3-tier securities – Module based, Role based and Functions based securities", "User’s authentications creations and password maintenance for the users"],
+                    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "right"
                 }
-
             ].map((section, idx) => (
-                <section key={idx} className={`py-20 lg:py-32 ${idx % 2 === 1 ? 'bg-[#F8FAFC]' : 'bg-[#FFFFFF]'}`}>
+                <section key={idx} className={`py-12 lg:py-20 ${idx % 2 === 1 ? 'bg-[#F8FAFC]' : 'bg-[#FFFFFF]'}`}>
                     <div className="container mx-auto px-4 max-w-7xl">
                         <div className={`grid lg:grid-cols-2 gap-16 items-center ${section.align === 'right' ? 'lg:flex-row-reverse' : ''}`}>
                             <motion.div
@@ -340,11 +226,7 @@ const LMS = () => {
                                 className={`relative rounded-2xl overflow-hidden border border-gray-200 shadow-xl group ${section.align === 'right' ? 'lg:order-1' : ''}`}
                             >
                                 <div className="absolute inset-0 bg-teal-100/10 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none"></div>
-                                <img
-                                    src={section.image}
-                                    alt={section.title}
-                                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                                />
+                                <img src={section.image} alt={section.title} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                             </motion.div>
                         </div>
                     </div>
@@ -366,19 +248,8 @@ const LMS = () => {
                         Join hundreds of forward-thinking schools using Noble Nexus to power their future.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <Link
-                            to="/"
-                            onClick={() => window.scrollTo(0, 0)}
-                            className="w-full sm:w-auto px-10 py-5 bg-[#0F766E] text-[#FFFFFF] font-bold text-lg rounded-full shadow-md hover:bg-teal-700 hover:scale-105 active:scale-95 transition-all"
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            to="/contact"
-                            className="w-full sm:w-auto px-10 py-5 bg-[#FFFFFF] border border-gray-200 text-[#111111] font-bold text-lg rounded-full hover:bg-gray-50 shadow-sm hover:shadow-md transition-all"
-                        >
-                            Contact Sales
-                        </Link>
+                        <Link to="/" onClick={() => window.scrollTo(0, 0)} className="w-full sm:w-auto px-10 py-5 bg-[#0F766E] text-[#FFFFFF] font-bold text-lg rounded-full shadow-md hover:bg-teal-700 hover:scale-105 active:scale-95 transition-all">Home</Link>
+                        <Link to="/contact" className="w-full sm:w-auto px-10 py-5 bg-[#FFFFFF] border border-gray-200 text-[#111111] font-bold text-lg rounded-full hover:bg-gray-50 shadow-sm hover:shadow-md transition-all">Contact Sales</Link>
                     </div>
                 </div>
             </section>
