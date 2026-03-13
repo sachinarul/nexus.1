@@ -67,7 +67,7 @@ const ClassBridge = () => {
                         >
                             <div className="relative z-10 rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-[#FFFFFF] backdrop-blur-xl transform transition-transform duration-500 hover:rotate-y-2 hover:rotate-x-2">
                                 <img
-                                    src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                                    src="/classbridge_hero.png"
                                     alt="ClassBridge Platform Overview"
                                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
@@ -111,21 +111,28 @@ const ClassBridge = () => {
                     title: "AI & Intelligence Engine",
                     desc: "ClassBridge embeds AI capabilities directly into the learning workflow. Automate grading, generate lesson plans, and provide 24/7 AI tutoring.",
                     features: ["AI Lesson Plan Generator (v1 & v2)", "AI Quiz Generator & Short Answer Grader", "AI Student Tutor (with file uploads)", "AI Grade Helper & Engagement Helper"],
-                    image: "https://images.unsplash.com/photo-1620712948343-008423bb0dcc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+                    image: "/classbridge_ai_engine.png",
                     align: "right"
                 },
                 {
                     title: "Learning Management System (LMS)",
                     desc: "A built-in LMS to create and manage structured online courses with sections, modules, and completion tracking. Full LTI and Moodle native integration.",
                     features: ["Module Completion Tracking", "Moodle Assignment & Grade Sync", "AI-Powered Course Chat", "Timetable & Attendance Marking"],
-                    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+                    image: "/classbridge_lms.png",
                     align: "left"
+                },
+                {
+                    title: "Enterprise Finance Module",
+                    desc: "Full double-entry accounting tightly integrated with operational data. Includes Accounts Receivable, Payable, Inventory, Fixed Assets, and Payroll.",
+                    features: ["General Ledger & Trial Balance", "Journal Entries & Reversals", "Payroll Run Generation & Payslips", "Fixed Asset Register & Depreciation"],
+                    image: "/classbridge_finance.png",
+                    align: "right"
                 },
                 {
                     title: "Student & Teacher Management",
                     desc: "Comprehensive lifecycle tools combining enrollment, health records, assignments, marking, and group collaboration into one interface.",
                     features: ["Student Enrollment & Progress Reporting", "Teacher Assignment & Quiz Workflows", "Multi-channel Communication & Alerts", "Leave Management System"],
-                    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+                    image: "/classbridge_student_mgmt.png",
                     align: "left"
                 }
             ].map((section, idx) => (

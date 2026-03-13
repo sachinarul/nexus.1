@@ -39,8 +39,8 @@ const About = () => {
                         <div className="relative z-10 transform transition-transform duration-700 hover:rotate-y-6 hover:rotate-x-6 shadow-2xl rounded-2xl overflow-hidden border border-gray-200 group bg-[#FFFFFF]">
                             <div className="absolute inset-0 bg-gradient-to-br from-teal-50 via-transparent to-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
                             <img
-                                src="/about-innovation.png"
-                                alt="Noble Nexus eLearning Innovation"
+                                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                                alt="Noble Nexus Team Planning"
                                 className="w-full h-auto object-cover opacity-100 transition-opacity duration-500"
                             />
 
