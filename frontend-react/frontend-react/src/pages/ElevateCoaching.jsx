@@ -6,7 +6,7 @@ import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase';
 import toast from 'react-hot-toast';
 
-const GeneralTutor = () => {
+const ElevateCoaching = () => {
     const [formData, setFormData] = useState({
         studentName: '',
         classGrade: '',
@@ -54,8 +54,8 @@ const GeneralTutor = () => {
         { 
             icon: Calculator, 
             title: "Mathematics", 
-            desc: "Algebra, Geometry, Calculus, and beyond.",
-            topics: ["Algebra & Geometry", "Calculus & Trigonometry", "Data Handling"],
+            desc: "Algebra, Geometry, Calculus, and Data Science fundamentals.",
+            topics: ["Maths Foundation", "Calculus & Trigonometry", "Analytical Reasoning"],
             highlights: ["Live classes", "Practice exercises", "Expert tutors"],
             colors: {
                 wrapperHoverBorder: "hover:border-blue-200",
@@ -70,28 +70,10 @@ const GeneralTutor = () => {
             }
         },
         { 
-            icon: Atom, 
-            title: "Physics", 
-            desc: "Mechanics, Thermodynamics, and Quantum concepts.",
-            topics: ["Kinematics & Mechanics", "Electromagnetism", "Thermodynamics"],
-            highlights: ["Live classes", "Practice exercises", "Expert tutors"],
-            colors: {
-                wrapperHoverBorder: "hover:border-violet-200",
-                iconBg: "bg-violet-50",
-                iconText: "text-violet-600",
-                iconGroupHoverBg: "group-hover:bg-violet-600",
-                titleGroupHoverText: "group-hover:text-violet-600",
-                bulletBg: "bg-violet-500",
-                btnBg: "bg-violet-50",
-                btnText: "text-violet-600",
-                btnHoverBg: "hover:bg-violet-600"
-            }
-        },
-        { 
             icon: FlaskConical, 
-            title: "Chemistry", 
-            desc: "Organic, Inorganic, and Physical Chemistry.",
-            topics: ["Organic Chemistry", "Chemical Reactions", "Periodic Trends"],
+            title: "Science", 
+            desc: "Explore Physics, Chemistry, and Biology through experiment-based learning.",
+            topics: ["Physical Sciences", "Chemical Dynamics", "Life Sciences"],
             highlights: ["Live classes", "Practice exercises", "Expert tutors"],
             colors: {
                 wrapperHoverBorder: "hover:border-emerald-200",
@@ -106,27 +88,9 @@ const GeneralTutor = () => {
             }
         },
         { 
-            icon: Dna, 
-            title: "Biology", 
-            desc: "Botany, Zoology, Genetics, and Human Anatomy.",
-            topics: ["Genetics & Evolution", "Human Anatomy", "Plant Physiology"],
-            highlights: ["Live classes", "Practice exercises", "Expert tutors"],
-            colors: {
-                wrapperHoverBorder: "hover:border-rose-200",
-                iconBg: "bg-rose-50",
-                iconText: "text-rose-600",
-                iconGroupHoverBg: "group-hover:bg-rose-600",
-                titleGroupHoverText: "group-hover:text-rose-600",
-                bulletBg: "bg-rose-500",
-                btnBg: "bg-rose-50",
-                btnText: "text-rose-600",
-                btnHoverBg: "hover:bg-rose-600"
-            }
-        },
-        { 
             icon: BookOpen, 
             title: "English", 
-            desc: "Grammar, Literature, and Communication Skills.",
+            desc: "Master communication, grammar, and literature for global proficiency.",
             topics: ["Advanced Grammar", "Literature Analysis", "Creative Writing"],
             highlights: ["Live classes", "Practice exercises", "Expert tutors"],
             colors: {
@@ -139,24 +103,6 @@ const GeneralTutor = () => {
                 btnBg: "bg-amber-50",
                 btnText: "text-amber-600",
                 btnHoverBg: "hover:bg-amber-600"
-            }
-        },
-        { 
-            icon: Code, 
-            title: "Computer Science", 
-            desc: "Coding, Logic, Algorithms, and Software.",
-            topics: ["Programming Basics", "Data Structures", "Algorithm Design"],
-            highlights: ["Live classes", "Practice exercises", "Expert tutors"],
-            colors: {
-                wrapperHoverBorder: "hover:border-cyan-200",
-                iconBg: "bg-cyan-50",
-                iconText: "text-cyan-600",
-                iconGroupHoverBg: "group-hover:bg-cyan-600",
-                titleGroupHoverText: "group-hover:text-cyan-600",
-                bulletBg: "bg-cyan-500",
-                btnBg: "bg-cyan-50",
-                btnText: "text-cyan-600",
-                btnHoverBg: "hover:bg-cyan-600"
             }
         }
     ];
@@ -172,25 +118,30 @@ const GeneralTutor = () => {
     ];
 
     const subjectOptions = [
-        "Mathematics", "Physics", "Chemistry", "Biology", "English", "Computer Science"
+        "Mathematics", "Science", "English"
     ];
 
     return (
         <div className="pt-24 min-h-screen bg-gray-50 pb-20">
             {/* Hero Section */}
-            <div className="bg-[#FFFFFF] border-b border-gray-200 shadow-sm relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-teal-50 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none opacity-60"></div>
+            <div className="relative overflow-hidden border-b border-gray-200">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0 bg-center bg-cover bg-no-repeat" style={{ backgroundImage: "url('/hero-bg-v3.png')" }}></div>
+                
+                {/* Overlay for Premium Look */}
+                <div className="absolute inset-0 z-0 bg-white/70 backdrop-blur-[2px] bg-gradient-to-tr from-white/90 via-white/40 to-teal-50/20"></div>
+
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24 relative z-10 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                     >
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111111] mb-6 tracking-tight">
-                            Noble Nexus General Tutor <br />
+                            Elevate Coaching <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0F766E] to-blue-600 block mt-2 text-3xl md:text-4xl">Smart Online Learning</span>
                         </h1>
-                        <p className="text-lg md:text-xl text-[#444444] max-w-3xl mx-auto leading-relaxed mt-6">
-                            Noble Nexus General Tutor provides high-quality online tutoring across multiple subjects. Our platform connects students with expert tutors for personalized learning, interactive sessions, and concept-based teaching.
+                        <p className="text-lg md:text-xl text-[#444444] max-w-3xl mx-auto leading-relaxed mt-6 font-medium">
+                            Elevate Coaching provides high-quality online tutoring across core subjects. Our platform connects students with expert tutors for personalized learning, interactive sessions, and concept-based teaching.
                         </p>
                         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <a href="#demo-section" className="px-8 py-4 bg-[#0F766E] hover:bg-teal-700 text-white font-bold rounded-full shadow-lg transition-transform active:scale-95 flex items-center gap-2 group">
@@ -462,4 +413,4 @@ const GeneralTutor = () => {
     );
 };
 
-export default GeneralTutor;
+export default ElevateCoaching;

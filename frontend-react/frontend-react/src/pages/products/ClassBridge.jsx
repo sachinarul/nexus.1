@@ -122,13 +122,6 @@ const ClassBridge = () => {
                     align: "left"
                 },
                 {
-                    title: "Enterprise Finance Module",
-                    desc: "Full double-entry accounting tightly integrated with operational data. Includes Accounts Receivable, Payable, Inventory, Fixed Assets, and Payroll.",
-                    features: ["General Ledger & Trial Balance", "Journal Entries & Reversals", "Payroll Run Generation & Payslips", "Fixed Asset Register & Depreciation"],
-                    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-                    align: "right"
-                },
-                {
                     title: "Student & Teacher Management",
                     desc: "Comprehensive lifecycle tools combining enrollment, health records, assignments, marking, and group collaboration into one interface.",
                     features: ["Student Enrollment & Progress Reporting", "Teacher Assignment & Quiz Workflows", "Multi-channel Communication & Alerts", "Leave Management System"],

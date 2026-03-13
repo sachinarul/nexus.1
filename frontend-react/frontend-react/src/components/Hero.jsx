@@ -8,14 +8,18 @@ const Hero = () => {
 
     return (
         <section className="relative pt-24 pb-16 lg:pt-36 lg:pb-24 overflow-hidden min-h-screen flex items-center">
-            {/* Background Image with Contrast/Brightness Adjustments */}
-            <div className="absolute inset-0 z-0 bg-center bg-cover bg-no-repeat contrast-[1.05] brightness-[1.1]" style={{ backgroundImage: "url('/hero-bg3.png')" }}></div>
+            {/* Premium Background Image */}
+            <div className="absolute inset-0 z-0 bg-center bg-cover bg-no-repeat transition-opacity duration-1000" style={{ backgroundImage: "url('/hero-bg-v2.png')" }}></div>
 
-            {/* Ambient Background Elements / Overlay */}
-            <div className="absolute inset-0 z-0 backdrop-blur-[8px] bg-gradient-to-b from-white/10 via-transparent to-transparent"></div>
+            {/* Glassmorphism Overlay for Text Clarity */}
+            <div className="absolute inset-0 z-0 bg-white/40 backdrop-blur-[4px] bg-gradient-to-tr from-white/60 via-transparent to-teal-50/30"></div>
+
+            {/* Atmospheric Glow */}
+            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-400/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-teal-400/10 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
             {/* Bottom Fade Transition */}
-            <div className="absolute bottom-0 left-0 w-full h-[150px] z-0 bg-gradient-to-t from-[#F8FAFC] to-transparent"></div>
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-0 bg-gradient-to-t from-[#FFFFFF] to-transparent"></div>
 
             <div className="container mx-auto px-4 max-w-5xl relative z-10 text-center">
 

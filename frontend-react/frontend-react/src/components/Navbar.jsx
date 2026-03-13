@@ -130,9 +130,9 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        {/* General Tutor Link */}
-                        <Link to="/general-tutor" className="relative text-[#0F172A] hover:text-[#2563EB] transition-colors text-sm font-bold tracking-wide group py-2">
-                            General Tutor
+                        {/* Elevate Coaching Link */}
+                        <Link to="/elevate-coaching" className="relative text-[#0F172A] hover:text-[#2563EB] transition-colors text-sm font-bold tracking-wide group py-2">
+                            Elevate Coaching
                             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full opacity-80"></span>
                         </Link>
 
@@ -251,9 +251,9 @@ const Navbar = () => {
                                 </div>
                             </div>
 
-                            {/* General Tutor Link */}
-                            <Link to="/general-tutor" onClick={() => setIsOpen(false)} className="block flex items-center justify-between py-4 px-4 text-lg font-bold text-[#111111] hover:bg-gray-50 rounded-2xl transition-all border border-transparent hover:border-gray-200">
-                                General Tutor
+                            {/* Elevate Coaching Link */}
+                            <Link to="/elevate-coaching" onClick={() => setIsOpen(false)} className="block flex items-center justify-between py-4 px-4 text-lg font-bold text-[#111111] hover:bg-gray-50 rounded-2xl transition-all border border-transparent hover:border-gray-200">
+                                Elevate Coaching
                                 <span className="w-[18px]"></span>
                             </Link>
 
