@@ -153,43 +153,43 @@ const LMS = () => {
             {[
                 {
                     title: "Student Management System",
-                    desc: "A system that transforms the way our students engage with their academic information at their campus. We streamline your processes and automate systems to:",
-                    features: ["Homework, assignments and project tracking", "Timetable and scheduling management", "Exams and grade management", "Student Profile Management", "Daily, monthly and cumulative attendance tracking", "Email exchange between teacher and management staff", "Informative dashboard to monitor progress"],
+                    desc: "The Student Management System is designed to simplify and improve the way students interact with their academic information. It provides a centralized platform where institutions can efficiently manage student records, assignments, academic schedules, and overall performance. Through this system, students and administrators can track homework, assignments, and projects while maintaining accurate academic records. It also supports timetable management, exam scheduling, and grade tracking, ensuring that all academic activities are well organized. Attendance can be monitored on a daily, monthly, and cumulative basis, helping institutions maintain transparency and discipline. Additionally, the system provides a clear dashboard that allows both students and administrators to monitor academic progress and stay updated on important information.",
+                    features: [],
                     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "left"
                 },
                 {
                     title: "Teacher Management System",
-                    desc: "Teachers handle critical information required to sustain the institution which is related to students and their performance which adds to the adherence of the institution such as:",
-                    features: ["Manage Attendance", "Create multiple questions bank", "Create on-line test and assign to the students", "Upload assignments and assessments", "Report cards", "Performance register", "Updates to students and parents"],
+                    desc: "The Teacher Management System supports educators in managing important academic activities and student-related information within an institution. It enables teachers to record and manage student attendance, create and maintain question banks, and conduct online tests for effective assessment. Teachers can upload assignments, assessments, and other academic resources to keep students engaged and informed. The system also helps in generating report cards, maintaining performance registers, and tracking student progress over time. Furthermore, it allows teachers to communicate updates and important information to both students and parents while setting up notifications and alerts to ensure timely communication and academic coordination.",
+                    features: [],
                     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "right"
                 },
                 {
                     title: "Parent Management System",
-                    desc: "This portal allows Parents to easily keep track of their children's academic progress and information. With quick access menus, Parents can stay updated on various aspects including:",
-                    features: ["Students profile", "Grades and Progress", "Homework, assignments & project progress", "Attendance", "Email exchange between management and parents", "Notices and notifications", "SMS or Email Alerts"],
+                    desc: "The Parent Management System allows parents to stay connected with their children's academic progress and institutional updates. Through this portal, parents can easily access important information such as student profiles, academic performance, and attendance records. It provides clear insights into grades, homework, assignments, and project progress, helping parents stay informed about their child's educational development. The system also supports communication between parents and school management through email or messaging features. In addition, parents receive notices, announcements, and important updates through SMS or email alerts, ensuring they remain aware of school activities and academic events.",
+                    features: [],
                     image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "left"
                 },
                 {
                     title: "Student Application Management",
-                    desc: "Online Admission Manager module will streamline the school’s entire admissions process. Begin with tracking detailed prospective student data during the inquiry stage, through interview, visit and ultimately registration.",
-                    features: ["Save manual hours every day entering and tracking applicant progress", "Automatically keep parents, applicants and staff informed about applicant progress", "Integrated e-mail streamlines communication and reduces paper costs"],
+                    desc: "The Student Application Management module streamlines the entire admissions process by digitizing and organizing student application workflows. It enables institutions to track prospective student information from the initial inquiry stage through interviews, visits, and final registration. This system reduces the need for manual paperwork and saves valuable time for administrative staff. It automatically updates parents, applicants, and staff members regarding the progress of applications, ensuring transparency throughout the admission process. Integrated email communication also helps simplify interactions and reduce the need for paper-based documentation.",
+                    features: [],
                     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "right"
                 },
                 {
                     title: "Tailored Educational Management",
-                    desc: "Revolutionize your educational institution with tailor-made company management solutions. Explore our services:",
-                    features: ["ERP Systems for School Management", "Custom Course Development and Instructional Design", "Managed eLearning Services including LMS setup and support", "Digital Content Management Solutions tailored for modern education", "Accessibility Compliance Services for Inclusive Learning", "Integration of Virtual Classrooms and Mobile Learning"],
+                    desc: "Tailored Educational Management solutions are designed to help educational institutions improve their operational efficiency and learning delivery through customized digital systems. These solutions include the implementation of ERP systems for school management, the development of customized courses, and instructional design services that enhance teaching effectiveness. Institutions can also benefit from managed eLearning services such as LMS setup, platform support, and digital content management. Additional services ensure accessibility compliance for inclusive learning environments while enabling the integration of virtual classrooms and mobile learning technologies that support modern educational practices.",
+                    features: [],
                     image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "left"
                 },
                 {
                     title: "System Administration",
-                    desc: "System Administrator module helps to setup entire application setup functions and maintenance including:",
-                    features: ["Creating institutional licenses, payment details of subscription fees and balance dues", "3-tier securities – Module based, Role based and Functions based securities", "User’s authentications creations and password maintenance for the users"],
+                    desc: "The System Administration module provides administrators with complete control over the configuration and maintenance of the application. It allows institutions to manage licensing details, subscription payments, and financial records related to system usage. Administrators can implement advanced security measures through module-based, role-based, and function-based access controls to ensure data protection and system integrity. The system also supports user authentication management, account creation, and password maintenance for all users. With these administrative tools, institutions can efficiently manage system settings, maintain security, and ensure smooth platform operations.",
+                    features: [],
                     image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "right"
                 }
@@ -249,7 +249,7 @@ const LMS = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                         <Link to="/" onClick={() => window.scrollTo(0, 0)} className="w-full sm:w-auto px-10 py-5 bg-[#0F766E] text-[#FFFFFF] font-bold text-lg rounded-full shadow-md hover:bg-teal-700 hover:scale-105 active:scale-95 transition-all">Home</Link>
-                        <Link to="/contact" className="w-full sm:w-auto px-10 py-5 bg-[#FFFFFF] border border-gray-200 text-[#111111] font-bold text-lg rounded-full hover:bg-gray-50 shadow-sm hover:shadow-md transition-all">Contact Sales</Link>
+                        <Link to="/contact" className="w-full sm:w-auto px-10 py-5 bg-[#FFFFFF] border border-gray-200 text-[#111111] font-bold text-lg rounded-full hover:bg-gray-50 shadow-sm hover:shadow-md transition-all">Contact Us</Link>
                     </div>
                 </div>
             </section>

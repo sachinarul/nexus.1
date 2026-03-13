@@ -137,50 +137,98 @@ const WhyNobleNexus = () => {
                 </div>
             </section>
 
-            {/* --- Who We Serve Section --- */}
+            {/* --- Sectors We Serve Section --- */}
             <section className="py-24 bg-[#FFFFFF] relative border-t border-gray-100">
                 <div className="container mx-auto px-4 max-w-7xl relative z-10">
                     <div className="text-center mb-20">
-                        <span className="text-[#0F766E] font-bold tracking-widest text-sm uppercase mb-4 block">Our Partners</span>
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-[#111111]">Deep Expertise Across Sectors</h2>
+                        <span className="text-[#0F766E] font-bold tracking-widest text-sm uppercase mb-4 block">Our Expertise</span>
+                        <h2 className="text-4xl md:text-5xl font-display font-bold text-[#111111]">Sectors We Transform</h2>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-16 lg:gap-24">
-                        {[
-                            { title: "Schools", icon: School, img: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80", desc: "Empowering K-12 institutions to create modern, interactive classrooms that inspire the next generation of learners." },
-                            { title: "Universities", icon: GraduationCap, img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80", desc: "Transforming higher-ed campuses with digital-first solutions that enhance student engagement and academic research excellence." },
-                            { title: "Enterprises", icon: Building2, img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80", desc: "Scalable training platforms designed for global businesses to upskill their workforce and maintain a competitive edge." },
-                            { title: "Government", icon: Landmark, img: "https://images.unsplash.com/photo-1555529733-0e670560f7e1?auto=format&fit=crop&w=800&q=80", desc: "Robust and secure public sector training centers focused on large-scale development and specialized personnel training." }
-                        ].map((item, idx) => (
-                            <motion.div
-                                key={idx}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                className="flex flex-col sm:flex-row gap-8 items-start"
-                            >
-                                <div className="w-full sm:w-1/2 shrink-0">
-                                    <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-                                        <img
-                                            src={item.img}
-                                            alt={item.title}
-                                            className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-500"
-                                        />
-                                    </div>
+                    <div className="space-y-32">
+                        {/* K-12 Education */}
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            variants={fadeInUp}
+                            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+                        >
+                            <div className="order-2 lg:order-1">
+                                <h3 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6">K-12 Education</h3>
+                                <p className="text-[#555555] text-lg leading-relaxed font-medium mb-8">
+                                    K-12 education requires a learning environment that is engaging, structured, and easy to manage for both educators and students. A modern digital learning platform helps schools deliver interactive lessons, manage assignments, track student progress, and support communication between teachers, students, and parents. By integrating smart learning tools, attendance tracking, assessments, and collaborative resources, schools can create a connected academic ecosystem that improves learning outcomes. The platform supports digital classrooms, personalized learning paths, and real-time performance monitoring, allowing educators to focus more on teaching while simplifying administrative tasks.
+                                </p>
+                                <Link to="/services/k12" className="inline-flex items-center gap-2 px-8 py-3 bg-[#0F766E] text-white font-bold rounded-full hover:bg-teal-700 transition-all group">
+                                    Learn More <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                                </Link>
+                            </div>
+                            <div className="order-1 lg:order-2">
+                                <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 aspect-video">
+                                    <img
+                                        src="/k12_education_platform_1773305394114.png"
+                                        alt="K-12 Education Platform"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
-                                <div className="space-y-4">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center text-[#0F766E]">
-                                            <item.icon size={22} />
-                                        </div>
-                                        <h3 className="text-2xl font-bold text-[#111111]">{item.title}</h3>
-                                    </div>
-                                    <p className="text-[#555555] text-lg leading-relaxed font-medium">
-                                        {item.desc}
-                                    </p>
+                            </div>
+                        </motion.div>
+
+                        {/* Higher Education */}
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            variants={fadeInUp}
+                            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+                        >
+                            <div className="order-1">
+                                <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 aspect-video">
+                                    <img
+                                        src="/higher_education_platform_1773305410392.png"
+                                        alt="Higher Education Platform"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
-                            </motion.div>
-                        ))}
+                            </div>
+                            <div className="order-2">
+                                <h3 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6">Higher Education</h3>
+                                <p className="text-[#555555] text-lg leading-relaxed font-medium mb-8">
+                                    Higher education institutions require scalable and flexible digital systems that support advanced academic programs, research activities, and large student communities. A comprehensive learning platform enables universities and colleges to manage courses, deliver online and hybrid classes, monitor academic performance, and streamline administrative processes. Students gain access to digital course materials, virtual classrooms, assessments, and collaboration tools that enhance their learning experience. Faculty members can efficiently manage course delivery, grading, and student engagement while administrators maintain complete oversight through analytics and performance dashboards.
+                                </p>
+                                <Link to="/services/higher-education" className="inline-flex items-center gap-2 px-8 py-3 bg-[#2563EB] text-white font-bold rounded-full hover:bg-blue-700 transition-all group">
+                                    Learn More <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                                </Link>
+                            </div>
+                        </motion.div>
+
+                        {/* Corporate Learning */}
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            variants={fadeInUp}
+                            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+                        >
+                            <div className="order-2 lg:order-1">
+                                <h3 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6">Corporate Learning</h3>
+                                <p className="text-[#555555] text-lg leading-relaxed font-medium mb-8">
+                                    Corporate learning solutions help organizations enhance employee skills, improve productivity, and support continuous professional development. A digital learning platform allows companies to deliver structured training programs, onboarding courses, and skill development modules through an accessible and scalable system. Employees can participate in online training, assessments, and certification programs while managers track progress and performance through advanced analytics. With features such as virtual training sessions, knowledge sharing, and interactive learning resources, organizations can build a culture of continuous learning and innovation.
+                                </p>
+                                <Link to="/services/corporate-learning" className="inline-flex items-center gap-2 px-8 py-3 bg-[#0F766E] text-white font-bold rounded-full hover:bg-teal-700 transition-all group">
+                                    Learn More <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                                </Link>
+                            </div>
+                            <div className="order-1 lg:order-2">
+                                <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 aspect-video">
+                                    <img
+                                        src="/corporate_learning_platform_1773305426934.png"
+                                        alt="Corporate Learning Platform"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                            </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>

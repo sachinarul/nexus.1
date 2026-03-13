@@ -84,7 +84,7 @@ const K12Education = () => {
                         transition={{ delay: 0.4, duration: 0.8 }}
                         className="mt-20 relative rounded-2xl overflow-hidden border border-gray-200 shadow-xl group"
                     >
-                        
+
                         <img
                             src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
                             alt="Smart Classroom"
@@ -233,24 +233,7 @@ const K12Education = () => {
                 </div>
             </section>
 
-            {/* --- Impact Stats --- */}
-            <section className="py-20 bg-gray-50 border-y border-gray-200 relative overflow-hidden">
-                <div className="container mx-auto px-4 max-w-7xl relative z-10">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        {[
-                            { value: "500+", label: "Partner Schools" },
-                            { value: "1M+", label: "Students Impacted" },
-                            { value: "95%", label: "Satisfaction Rate" },
-                            { value: "24/7", label: "Expert Support" }
-                        ].map((stat, i) => (
-                            <div key={i} className="space-y-2">
-                                <h4 className="text-4xl md:text-5xl font-bold text-[#111111]">{stat.value}</h4>
-                                <p className="text-[#0F766E] font-bold uppercase tracking-widest text-xs">{stat.label}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+
 
             {/* --- Differentiators --- */}
             <section className="py-24 bg-[#FFFFFF]">
