@@ -70,6 +70,11 @@ export function AuthProvider({ children }) {
     const logout = () => signOut(auth);
 
     useEffect(() => {
+        if (!auth) {
+            setLoading(false);
+            return;
+        }
+        
         const unsubscribe = onAuthStateChanged(auth, async (user) => {
             if (user) {
                 // Fetch additional user data from Firestore if needed
