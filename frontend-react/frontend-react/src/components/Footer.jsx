@@ -1,65 +1,49 @@
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#F8FAFC] backdrop-blur-md border-t border-gray-200 pt-20 pb-12 text-sm">
-            <div className="container mx-auto px-4 grid md:grid-cols-4 gap-12">
-                {/* Brand */}
-                <div className="space-y-6">
-                    <div className="flex items-center gap-2">
-                        <img src="/logo.png" alt="Noble Nexus" className="w-10 h-10 object-contain" />
-                        <span className="font-display font-bold text-2xl text-[#111111] tracking-widest">
-                            NOBLE NEXUS
+        <footer className="bg-[#2B2671] text-white py-10 lg:py-16 font-body selection:bg-[#00E5FF] selection:text-black">
+            <div className="container mx-auto px-4 max-w-7xl">
+                
+                {/* Upper Section */}
+                <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-0">
+                    
+                    {/* Brand */}
+                    <div className="flex items-center gap-4">
+                        <img src="/logo.png" alt="Noble Nexus Logo" className="w-[50px] h-[50px] object-contain rounded drop-shadow-md" />
+                        <span className="font-serif text-3xl font-medium tracking-wide text-white">
+                            Noble Nexus
                         </span>
                     </div>
-                    <p className="text-[#555555] leading-relaxed max-w-xs font-medium">
-                        Pioneering the next era of educational infrastructure.
-                        AI-driven, human-centric, and built for scale.
+
+                    {/* Navigation Links */}
+                    <nav className="flex flex-wrap justify-center lg:justify-end gap-x-8 gap-y-4 max-w-2xl">
+                        <Link to="/" className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-slate-300 hover:text-white transition-colors duration-300">
+                            Noble Nexus
+                        </Link>
+                        <Link to="/products" className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-slate-300 hover:text-white transition-colors duration-300">
+                            Products
+                        </Link>
+                        <Link to="/services" className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-slate-300 hover:text-white transition-colors duration-300">
+                            Services
+                        </Link>
+                        <Link to="/elevate-coaching" className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-slate-300 hover:text-white transition-colors duration-300">
+                            Elevate Coaching
+                        </Link>
+                        <Link to="/why-noble-nexus" className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-slate-300 hover:text-white transition-colors duration-300">
+                            Why Noble Nexus
+                        </Link>
+                    </nav>
+                </div>
+
+                {/* Subtle Divider */}
+                <div className="w-full h-[1px] bg-white/10 my-10"></div>
+
+                {/* Lower Section: Copyright */}
+                <div className="text-center">
+                    <p className="text-sm font-bold text-white tracking-wide">
+                        © Copyright 2025, All Rights Reserved by Noble Nexus
                     </p>
-                    <div className="flex gap-4 text-[#555555] hover:text-[#0F766E] transition-colors">
-                        {['Twitter', 'LinkedIn', 'YouTube', 'GitHub', 'Instagram'].map(social => (
-                            <a key={social} href="#" className="hover:text-teal-600 transition-colors duration-300">
-                                <span className="sr-only">{social}</span>
-                                <div className="w-5 h-5 bg-current rounded-full opacity-50 hover:opacity-100" />
-                            </a>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Links */}
-                <div>
-                    <h4 className="font-bold text-[#111111] mb-6 uppercase tracking-wider text-xs">Product</h4>
-                    <ul className="space-y-4 text-[#555555] font-medium">
-                        {['Features', 'Integrations', 'Pricing', 'Releases', 'Global'].map(link => (
-                            <li key={link}><a href="#" className="hover:text-teal-600 transition-colors duration-200">{link}</a></li>
-                        ))}
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 className="font-bold text-[#111111] mb-6 uppercase tracking-wider text-xs">Resources</h4>
-                    <ul className="space-y-4 text-[#555555] font-medium">
-                        {['Blog', 'Whitepapers', 'Case Studies', 'API Docs', 'Community'].map(link => (
-                            <li key={link}><a href="#" className="hover:text-purple-600 transition-colors duration-200">{link}</a></li>
-                        ))}
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 className="font-bold text-[#111111] mb-6 uppercase tracking-wider text-xs">Company</h4>
-                    <ul className="space-y-4 text-[#555555] font-medium">
-                        {['About Us', 'Careers', 'Brand', 'Legal', 'Contact'].map(link => (
-                            <li key={link}><a href="#" className="hover:text-[#0F766E] transition-colors duration-200">{link}</a></li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-
-            <div className="container mx-auto px-4 mt-20 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center text-[#555555] text-xs font-medium">
-                <p>© 2026 Noble Nexus Inc</p>
-                <div className="flex gap-8 mt-4 md:mt-0">
-                    <a href="#" className="hover:text-[#0F766E]">Privacy Policy</a>
-                    <a href="#" className="hover:text-[#0F766E]">Terms of Service</a>
-                    <a href="#" className="hover:text-[#0F766E]">Cookies Settings</a>
                 </div>
             </div>
         </footer>
