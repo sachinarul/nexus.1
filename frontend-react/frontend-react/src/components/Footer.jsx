@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
 
             <div className="container mx-auto px-4 mt-20 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center text-[#555555] text-xs font-medium">
-                <p>© 2026 Noble Nexus Inc. All rights reserved.</p>
+                <p>© 2026 Noble Nexus Inc</p>
                 <div className="flex gap-8 mt-4 md:mt-0">
                     <a href="#" className="hover:text-[#0F766E]">Privacy Policy</a>
                     <a href="#" className="hover:text-[#0F766E]">Terms of Service</a>
