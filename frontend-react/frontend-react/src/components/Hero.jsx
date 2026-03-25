@@ -4,6 +4,16 @@ import SocialModal from './social/SocialModal';
 
 const Hero = () => {
     const [isSocialOpen, setIsSocialOpen] = useState(false);
+    const [activeNode, setActiveNode] = useState(null);
+
+    const nodes = [
+        { label: 'AI-POWERED LMS', dotX: 0, dotY: -150, textX: 0, textY: -100 },
+        { label: 'ENTERPRISE ERP', dotX: 130, dotY: -75, textX: 135, textY: 0 },
+        { label: 'SECURE CLOUD', dotX: -130, dotY: -75, textX: -135, textY: 0 },
+        { label: 'DIGITAL CLASSROOMS', dotX: 130, dotY: 75, textX: 135, textY: 115 },
+        { label: 'PROCESS AUTOMATION', dotX: -130, dotY: 75, textX: -135, textY: 115 },
+        { label: 'INSIGHT ANALYTICS', dotX: 0, dotY: 150, textX: 0, textY: 190 }
+    ];
 
     return (
         <section className="relative pt-20 pb-12 lg:pt-32 lg:pb-16 overflow-hidden bg-[#020617] min-h-screen flex items-center font-body selection:bg-[#00E5FF] selection:text-black">
@@ -55,52 +65,69 @@ const Hero = () => {
                     {/* Right Column: Animated Core Diagram matching the exact screenshot */}
                     <div className="relative w-full h-[500px] lg:h-[600px] hidden lg:flex items-center justify-center">
                         
-                        {/* Radar Concrentric Circles */}
-                        <div className="absolute w-[360px] h-[360px] rounded-full border border-slate-700/30"></div>
-                        <div className="absolute w-[240px] h-[240px] rounded-full border border-slate-800/40"></div>
+                        {/* Radar Concrentric Circles with Animation */}
+                        <div className="absolute w-[300px] h-[300px] rounded-full border border-slate-700/30 border-dashed animate-[spin_60s_linear_infinite]"></div>
+                        <div className="absolute w-[440px] h-[440px] rounded-full border border-slate-700/20 border-dotted animate-[spin_40s_reverse_linear_infinite] hidden xl:block"></div>
                         
-                        {/* Radar Cross Lines */}
-                        <div className="absolute h-[360px] w-[1px] bg-slate-700/30"></div>
-                        <div className="absolute w-[360px] h-[1px] bg-slate-700/30 rotate-[60deg]"></div>
-                        <div className="absolute w-[360px] h-[1px] bg-slate-700/30 -rotate-[60deg]"></div>
+                        {/* Radar Cross Lines (matching the 300px circle) */}
+                        <div className="absolute h-[320px] w-[1px] bg-slate-700/20"></div>
+                        <div className="absolute w-[320px] h-[1px] bg-slate-700/20 rotate-[60deg]"></div>
+                        <div className="absolute w-[320px] h-[1px] bg-slate-700/20 -rotate-[60deg]"></div>
 
-                        {/* Center Hexagon Core (Flat-topped matching the image exactly) */}
-                        <div className="absolute z-20 w-48 h-48 flex items-center justify-center">
-                            <svg viewBox="0 0 100 100" className="absolute w-full h-full drop-shadow-[0_0_20px_rgba(0,229,255,0.3)]">
+                        {/* Center Hexagon Core */}
+                        <div className="absolute z-20 w-[140px] h-[140px] flex items-center justify-center group cursor-pointer transition-transform duration-500 hover:scale-105">
+                            <svg viewBox="0 0 100 100" className="absolute w-full h-full drop-shadow-[0_0_20px_rgba(0,190,255,0.8)] transition-all duration-500 group-hover:drop-shadow-[0_0_40px_rgba(0,229,255,1)]">
                                 <defs>
                                     <linearGradient id="hexGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                                        <stop offset="0%" stopColor="#2563EB" />
-                                        <stop offset="100%" stopColor="#00E5FF" />
+                                        <stop offset="0%" stopColor="#0EA5E9" />
+                                        <stop offset="100%" stopColor="#06B6D4" />
                                     </linearGradient>
                                 </defs>
                                 {/* Flat-topped Hexagon */}
-                                <polygon points="25 5, 75 5, 95 50, 75 95, 25 95, 5 50" fill="#030B1C" stroke="url(#hexGrad)" strokeWidth="2.5" />
+                                <polygon points="25 5, 75 5, 95 50, 75 95, 25 95, 5 50" fill="#020617" stroke="url(#hexGrad)" strokeWidth="3" />
                             </svg>
-                            <div className="z-30 text-center font-bold text-white text-[11px] tracking-[0.2em] leading-[1.8] uppercase mt-1">
+                            <div className="z-30 text-center font-bold text-white text-[12px] tracking-[0.1em] leading-snug uppercase mt-1 drop-shadow-md group-hover:text-[#00E5FF] transition-colors duration-300">
                                 NOBLE<br/>NEXUS<br/>CORE
                             </div>
                         </div>
 
-                        {/* Orbiting Nodes mapping perfectly to the 360px circle */}
-                        {[ 
-                            { label: 'AI-POWERED LMS', x: 0, y: -180, textY: 30 },
-                            { label: 'ENTERPRISE ERP', x: 156, y: -90, textY: 30 },
-                            { label: 'SECURE CLOUD', x: -156, y: -90, textY: 30 },
-                            { label: 'DIGITAL CLASSROOMS', x: 156, y: 90, textY: -30 },
-                            { label: 'PROCESS AUTOMATION', x: -156, y: 90, textY: -30 },
-                            { label: 'INSIGHT ANALYTICS', x: 0, y: 180, textY: -30 }
-                        ].map((node, i) => (
-                            <div key={i} className="absolute z-10 flex flex-col items-center justify-center" style={{ transform: `translate(${node.x}px, ${node.y}px)` }}>
-                                {/* Glowing Dot positioned exactly on the radar intersections */}
-                                <div className="z-10 w-3.5 h-3.5 bg-[#00E5FF] rounded-full shadow-[0_0_15px_#00E5FF]"></div>
-                                
-                                {/* Label Box aligned offset towards the center */}
-                                <div className="absolute z-20 px-3 py-1.5 bg-[#0A1128]/95 border border-[#1E293B] rounded text-[9px] font-bold tracking-[0.1em] text-slate-300 backdrop-blur-md whitespace-nowrap shadow-lg transition-colors hover:border-[#00E5FF]/50" 
-                                     style={{ transform: `translateY(${node.textY}px)` }}>
-                                    {node.label}
+                        {/* Render Nodes (Dots and Text synced by Hover State) */}
+                        {nodes.map((node, i) => {
+                            const isActive = activeNode === i;
+                            return (
+                                <div key={i}>
+                                    {/* Glowing Dot */}
+                                    <div 
+                                        className={`absolute z-10 w-4 h-4 bg-[#00E5FF] rounded-full shadow-[0_0_20px_#00E5FF] transition-all duration-300 cursor-crosshair flex items-center justify-center ${isActive ? 'scale-[1.5] shadow-[0_0_35px_#00E5FF] bg-white' : ''}`}
+                                        style={{ 
+                                            top: '50%', left: '50%',
+                                            transform: `translate(calc(-50% + ${node.dotX}px), calc(-50% + ${node.dotY}px))` 
+                                        }}
+                                        onMouseEnter={() => setActiveNode(i)}
+                                        onMouseLeave={() => setActiveNode(null)}
+                                    >
+                                        {isActive && <div className="absolute inset-0 bg-white rounded-full animate-ping opacity-75"></div>}
+                                    </div>
+
+                                    {/* Label Box */}
+                                    <div 
+                                        className="absolute z-20 flex flex-col items-center justify-center transition-transform duration-300" 
+                                        style={{ 
+                                            top: '50%', left: '50%',
+                                            transform: `translate(calc(-50% + ${node.textX}px), calc(-50% + ${node.textY}px))` 
+                                        }}
+                                    >
+                                        <div 
+                                            className={`px-3 py-2 bg-[#050B19] border rounded text-[10px] font-bold tracking-[0.05em] whitespace-nowrap shadow-[0_4px_15px_rgba(0,0,0,0.5)] cursor-pointer transition-all duration-300 ${isActive ? 'border-[#00E5FF] shadow-[0_0_25px_rgba(0,229,255,0.5)] scale-110 text-white' : 'border-slate-700/60 text-cyan-50/90'}`}
+                                            onMouseEnter={() => setActiveNode(i)}
+                                            onMouseLeave={() => setActiveNode(null)}
+                                        >
+                                            {node.label}
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
             </div>
