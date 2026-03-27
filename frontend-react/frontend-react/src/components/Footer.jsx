@@ -17,7 +17,7 @@ const Footer = () => {
                     </div>
 
                     {/* Navigation Links */}
-                    <nav className="flex flex-wrap justify-center lg:justify-end gap-x-8 gap-y-4 max-w-2xl">
+                    <nav className="flex flex-wrap justify-center lg:justify-end gap-x-8 gap-y-4 lg:max-w-none max-w-3xl">
                         <Link to="/" className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-slate-300 hover:text-white transition-colors duration-300">
                             Noble Nexus
                         </Link>
@@ -42,7 +42,7 @@ const Footer = () => {
                 {/* Lower Section: Copyright */}
                 <div className="text-center">
                     <p className="text-sm font-bold text-white tracking-wide">
-                        © Copyright 2025, All Rights Reserved by Noble Nexus
+                        © Copyright 2026, All Rights Reserved by Noble Nexus
                     </p>
                 </div>
             </div>

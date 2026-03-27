@@ -39,10 +39,10 @@ const Contact = () => {
     return (
         <section id="contact" className="py-16 bg-gradient-to-br from-[#F8FAFC] to-[#FFFFFF] relative">
             <div className="container mx-auto px-4 max-w-7xl">
-                <div className="grid lg:grid-cols-2 gap-20">
-                    <div>
+                <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center">
+                    <div className="min-w-0">
                         <span className="text-teal font-medium tracking-widest text-sm uppercase mb-4 block">Get Started</span>
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-[#111111] mb-8">
+                        <h2 className="text-4xl lg:text-4xl xl:text-5xl font-display font-bold text-[#111111] mb-8 break-words">
                             Join the <br />
                             <span className="bg-gradient-to-r from-teal to-purple bg-clip-text text-transparent">Education Revolution.</span>
                         </h2>
@@ -81,7 +81,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="bg-[#F8FAFC] backdrop-blur-xl border border-gray-200 rounded-2xl p-8 lg:p-12 shadow-2xl relative overflow-hidden">
+                    <div className="bg-[#F8FAFC] backdrop-blur-xl border border-gray-200 rounded-2xl p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden min-w-0 w-full max-w-xl mx-auto lg:mx-0">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-teal/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
 
                         <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
