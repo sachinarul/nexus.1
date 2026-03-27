@@ -34,30 +34,38 @@ const ContactCTA = () => {
                         Contact us for tailored solutions.
                     </h4>
 
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-16 w-full">
+                    <div className="flex flex-col sm:flex-row items-stretch justify-center gap-6 md:gap-8 w-full max-w-4xl mx-auto">
                         
-                        {/* Email Contact */}
-                        <a href="mailto:contactus@noblenexus-ie.com" className="group flex items-center gap-5 text-slate-200 hover:text-white transition-colors w-full sm:w-auto justify-center">
-                            <div className="w-14 h-14 rounded-2xl bg-[#0A1128] border border-slate-700/60 flex items-center justify-center group-hover:border-[#00E5FF]/50 group-hover:shadow-[0_0_20px_rgba(0,229,255,0.2)] transition-all duration-300">
+                        {/* Email Contact Callout */}
+                        <a href="mailto:contactus@noblenexus-ie.com" className="group flex-1 flex items-center gap-4 md:gap-5 p-4 md:p-5 rounded-2xl bg-gradient-to-br from-[#00E5FF]/10 via-[#0A1128] to-[#0A1128] border border-[#00E5FF]/20 hover:border-[#00E5FF]/50 hover:bg-[#00E5FF]/5 transition-all duration-500 relative overflow-hidden shadow-lg shadow-black/20">
+                            <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#00E5FF]/10 rounded-full blur-[40px] group-hover:bg-[#00E5FF]/20 transition-all duration-500"></div>
+                            
+                            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-[#00E5FF]/10 flex items-center justify-center shrink-0 z-10 border border-[#00E5FF]/30 group-hover:shadow-[0_0_20px_rgba(0,229,255,0.3)] group-hover:scale-105 transition-all duration-300">
                                 <Mail size={24} className="text-[#00E5FF]" />
                             </div>
-                            <span className="font-bold text-lg md:text-xl tracking-wide group-hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)] transition-all">
-                                contactus@<br className="sm:hidden"/>noblenexus-ie.com
-                            </span>
+                            
+                            <div className="flex flex-col items-start z-10 text-left">
+                                <span className="text-xs sm:text-sm font-semibold text-[#00E5FF] uppercase tracking-wider mb-0.5">Email Us</span>
+                                <span className="font-bold text-base md:text-lg lg:text-xl text-slate-100 group-hover:text-white transition-all">
+                                    contactus@<br className="sm:hidden lg:hidden"/>noblenexus-ie.com
+                                </span>
+                            </div>
                         </a>
 
-                        {/* Divider */}
-                        <div className="hidden sm:block w-px h-16 bg-slate-800"></div>
-                        <div className="sm:hidden h-px w-32 bg-slate-800"></div>
-
-                        {/* Phone Contact */}
-                        <a href="tel:+353-871700653" className="group flex items-center gap-5 text-slate-200 hover:text-white transition-colors w-full sm:w-auto justify-center">
-                            <div className="w-14 h-14 rounded-2xl bg-[#0A1128] border border-slate-700/60 flex items-center justify-center group-hover:border-[#00E5FF]/50 group-hover:shadow-[0_0_20px_rgba(0,229,255,0.2)] transition-all duration-300">
-                                <Phone size={24} className="text-[#00E5FF]" />
+                        {/* Phone Contact Callout */}
+                        <a href="tel:+353-871700653" className="group flex-1 flex items-center gap-4 md:gap-5 p-4 md:p-5 rounded-2xl bg-gradient-to-br from-[#3B82F6]/10 via-[#0A1128] to-[#0A1128] border border-[#3B82F6]/20 hover:border-[#3B82F6]/50 hover:bg-[#3B82F6]/5 transition-all duration-500 relative overflow-hidden shadow-lg shadow-black/20">
+                            <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#3B82F6]/10 rounded-full blur-[40px] group-hover:bg-[#3B82F6]/20 transition-all duration-500"></div>
+                            
+                            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-[#3B82F6]/10 flex items-center justify-center shrink-0 z-10 border border-[#3B82F6]/30 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] group-hover:scale-105 transition-all duration-300">
+                                <Phone size={24} className="text-[#3B82F6]" />
                             </div>
-                            <span className="font-bold text-lg md:text-xl tracking-wide group-hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)] transition-all">
-                                +353-871700653
-                            </span>
+                            
+                            <div className="flex flex-col items-start z-10 text-left">
+                                <span className="text-xs sm:text-sm font-semibold text-[#3B82F6] uppercase tracking-wider mb-0.5">Call Us</span>
+                                <span className="font-bold text-base md:text-lg lg:text-xl text-slate-100 group-hover:text-white transition-all">
+                                    +353-871700653
+                                </span>
+                            </div>
                         </a>
 
                     </div>
