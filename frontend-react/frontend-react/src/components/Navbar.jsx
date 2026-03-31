@@ -60,9 +60,6 @@ const Navbar = () => {
                                     </div>
                                     {/* ClassBridge Product - Primary */}
                                     <Link to="/products/classbridge" className="flex items-center gap-4 p-3 rounded-xl hover:bg-indigo-50/50 border border-indigo-100/50 hover:border-indigo-200 transition-all duration-300 group/item bg-indigo-50/20">
-                                        <div className="w-10 h-10 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600 group-hover/item:bg-indigo-600 group-hover/item:text-white transition-all duration-300 group-hover/item:scale-110 shadow-sm border border-indigo-100">
-                                            <Network size={20} />
-                                        </div>
                                         <div className="flex-1">
                                             <h4 className="text-[#111111] text-sm font-bold group-hover/item:text-indigo-600 transition-colors">ClassBridge</h4>
                                             <p className="text-xs text-[#444444] font-medium">EdTech AI Portal</p>
@@ -71,9 +68,6 @@ const Navbar = () => {
 
                                     {/* LMS Product */}
                                     <Link to="/products/lms" className="flex items-center gap-4 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-teal-100 transition-all duration-300 group/item mt-1">
-                                        <div className="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center text-[#0F766E] group-hover/item:bg-[#0F766E] group-hover/item:text-white transition-all duration-300 group-hover/item:scale-110 shadow-sm border border-teal-100">
-                                            <LayoutDashboard size={20} />
-                                        </div>
                                         <div>
                                             <h4 className="text-[#111111] text-sm font-bold group-hover/item:text-[#0F766E] transition-colors mb-0.5">LMS Platform</h4>
                                             <p className="text-xs text-[#444444] font-medium">Core education platform</p>
@@ -98,25 +92,16 @@ const Navbar = () => {
                                 <div className="p-6 grid grid-cols-3 gap-6 relative z-10">
                                     {/* Card 1: K-12 */}
                                     <Link to="/services/k12" className="flex items-center gap-4 p-4 rounded-2xl hover:bg-gray-50 border border-transparent hover:border-gray-100 transition-all duration-300 group/card shadow-sm hover:shadow-md">
-                                        <div className="w-10 h-10 flex-shrink-0 rounded-lg bg-teal-50 flex items-center justify-center text-[#0F766E] group-hover/card:bg-[#0F766E] group-hover/card:text-white transition-all duration-300 group-hover/card:scale-110 border border-teal-100">
-                                            <BookOpen size={20} />
-                                        </div>
                                         <h4 className="text-[#111111] text-sm font-bold group-hover/card:text-[#0F766E] transition-colors">K-12 Education</h4>
                                     </Link>
 
                                     {/* Card 2: Higher Ed */}
                                     <Link to="/services/higher-education" className="flex items-center gap-4 p-4 rounded-2xl hover:bg-gray-50 border border-transparent hover:border-gray-100 transition-all duration-300 group/card shadow-sm hover:shadow-md">
-                                        <div className="w-10 h-10 flex-shrink-0 rounded-lg bg-blue-50 flex items-center justify-center text-[#2563EB] group-hover/card:bg-[#2563EB] group-hover/card:text-white transition-all duration-300 group-hover/card:scale-110 border border-blue-200">
-                                            <GraduationCap size={20} />
-                                        </div>
                                         <h4 className="text-[#111111] text-sm font-bold group-hover/card:text-[#2563EB] transition-colors">Higher Education</h4>
                                     </Link>
 
                                     {/* Card 3: Corporate */}
                                     <Link to="/services/corporate-learning" className="flex items-center gap-4 p-4 rounded-2xl hover:bg-gray-50 border border-transparent hover:border-gray-100 transition-all duration-300 group/card shadow-sm hover:shadow-md">
-                                        <div className="w-10 h-10 flex-shrink-0 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600 group-hover/card:bg-purple-600 group-hover/card:text-white transition-all duration-300 group-hover/card:scale-110 border border-purple-200">
-                                            <Briefcase size={20} />
-                                        </div>
                                         <h4 className="text-[#111111] text-sm font-bold group-hover/card:text-purple-600 transition-colors">Corporate Learning</h4>
                                     </Link>
                                 </div>
@@ -206,18 +191,12 @@ const Navbar = () => {
                                 <span className="block px-5 py-3 text-xs font-bold text-[#0F766E] uppercase tracking-widest border-b border-gray-200">Products</span>
                                 <div className="p-2 space-y-1">
                                     <Link to="/products/classbridge" onClick={() => setIsOpen(false)} className="flex items-center gap-4 p-3 rounded-xl hover:bg-white transition-all shadow-sm">
-                                        <div className="w-10 h-10 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600 shadow-sm">
-                                            <Network size={20} />
-                                        </div>
                                         <div className="flex-1">
                                             <span className="block text-base font-bold text-[#111111]">ClassBridge</span>
                                             <span className="block text-xs text-[#555555] font-medium mt-0.5">EdTech AI Portal</span>
                                         </div>
                                     </Link>
                                     <Link to="/products/lms" onClick={() => setIsOpen(false)} className="flex items-center gap-4 p-3 rounded-xl hover:bg-white transition-all shadow-sm">
-                                        <div className="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center text-[#0F766E] shadow-sm">
-                                            <LayoutDashboard size={20} />
-                                        </div>
                                         <div className="flex-1">
                                             <span className="block text-base font-bold text-[#111111]">LMS Platform</span>
                                             <span className="block text-xs text-[#555555] font-medium mt-0.5">Core education platform</span>
@@ -231,21 +210,12 @@ const Navbar = () => {
                                 <span className="block px-5 py-3 text-xs font-bold text-[#0F766E] uppercase tracking-widest border-b border-gray-200">Services</span>
                                 <div className="p-2 space-y-1">
                                     <Link to="/services/k12" onClick={() => setIsOpen(false)} className="flex items-center gap-4 p-4 rounded-xl hover:bg-white transition-all shadow-sm">
-                                        <div className="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center text-[#0F766E] shadow-sm">
-                                            <BookOpen size={20} />
-                                        </div>
                                         <span className="text-base font-bold text-[#111111]">K-12 Education</span>
                                     </Link>
                                     <Link to="/services/higher-education" onClick={() => setIsOpen(false)} className="flex items-center gap-4 p-4 rounded-xl hover:bg-white transition-all shadow-sm">
-                                        <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-[#2563EB] shadow-sm">
-                                            <GraduationCap size={20} />
-                                        </div>
                                         <span className="text-base font-bold text-[#111111]">Higher Education</span>
                                     </Link>
                                     <Link to="/services/corporate-learning" onClick={() => setIsOpen(false)} className="flex items-center gap-4 p-4 rounded-xl hover:bg-white transition-all shadow-sm">
-                                        <div className="w-10 h-10 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm">
-                                            <Briefcase size={20} />
-                                        </div>
                                         <span className="text-base font-bold text-[#111111]">Corporate Learning</span>
                                     </Link>
                                 </div>
