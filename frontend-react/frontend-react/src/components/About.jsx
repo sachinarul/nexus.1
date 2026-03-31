@@ -7,8 +7,7 @@ const About = () => {
                     {/* Content */}
                     <div className="order-2 lg:order-1 space-y-8">
                         <div>
-                            <span className="text-[#0F766E] font-bold tracking-widest text-sm uppercase mb-4 block">Our DNA</span>
-                            <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight text-[#111111] mb-6">
+                            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight text-[#111111] mb-6">
                                 Innovative <br />
                                 <span className="text-[#2563EB]">eLearning Solutions</span> <br />
                                 for Modern Education.
