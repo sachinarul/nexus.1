@@ -16,7 +16,7 @@ import {
 const services = [
     {
         icon: "https://img.icons8.com/3d-fluency/94/graduation-cap.png",
-        image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        image: "/hero-dashboard.jpg",
         title: "Online Classroom System",
         desc: "Elevate your e-learning platform with our cutting-edge Online Classroom System. Engineered to seamlessly integrate into your digital workflow, this robust solution dramatically simplifies academic and administrative management. Replace manual overhead with automated course administration, effortless progress tracking, and insightful real-time analytics. We empower educators to focus on delivering high-quality instruction by providing a highly transparent, data-driven environment for both instructors and learners. Every element of your virtual classroom is meticulously synchronized to deliver a flawless, deeply engaging, and highly scalable online learning experience.",
         gradient: "from-teal-400 to-emerald-500",
@@ -25,7 +25,7 @@ const services = [
     },
     {
         icon: "https://img.icons8.com/3d-fluency/94/design.png",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        image: "/instructional-design.jpg",
         title: "Instructional Design",
         desc: "Transform standard curricula into captivating, interactive journeys with our premium Instructional Design services. We leverage deep, learner-centric methodologies to craft highly engaging course materials tailored specifically to your platform's unique goals. Our dynamic approach weaves together rich multimedia storytelling, interactive modules, and intelligent assessment tools with personalized gamification strategies that keep learners motivated. By aligning cutting-edge educational content with cognitive science, we deliver digital learning experiences that maximize knowledge retention and empower your students to consistently succeed.",
         gradient: "from-purple-400 to-pink-500",
@@ -34,7 +34,7 @@ const services = [
     },
     {
         icon: "https://img.icons8.com/3d-fluency/94/cloud-storage.png",
-        image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        image: "/managed-elearning.jpg",
         title: "Managed eLearning",
         desc: "Eliminate technical complexities with our comprehensive Managed eLearning infrastructure. We expertly handle all intricate, behind-the-scenes operations—from complete platform staging and cloud configuration to routine maintenance and rapid system upgrades. This hands-off approach allows your team to focus exclusively on growing your educational community. Backed by 24/7 proactive technical support and an architecture built for elastic scalability, we guarantee that your e-learning platform remains remarkably robust, highly secure, and perfectly optimized to flawlessly handle surging student traffic.",
         gradient: "from-amber-400 to-orange-500",
@@ -44,7 +44,7 @@ const services = [
     },
     {
         icon: "https://img.icons8.com/3d-fluency/94/books.png",
-        image: "https://images.unsplash.com/photo-1610484826967-09c5720778c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        image: "/digital-content-mgmt.jpg",
         title: "Digital Content Mgmt",
         desc: "Organize, protect, and effortlessly distribute your vital educational resources with our centralized Digital Content Management solutions. Built upon highly secure and lightning-fast cloud architectures, our centralized libraries bring all your multimedia assets, collaborative files, and version-controlled documents into one unified hub. Your platform administrators and educators can seamlessly curate vast amounts of coursework, instantly deploy updates globally, and maintain precise control over access permissions. We guarantee an uninterrupted, intuitive experience where learners effortlessly find the exact tools they need.",
         gradient: "from-cyan-400 to-blue-500",
@@ -53,7 +53,7 @@ const services = [
     },
     {
         icon: "https://img.icons8.com/3d-fluency/94/wheelchair.png",
-        image: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        image: "/accessibility-compliance.png",
         title: "Accessibility Compliance",
         desc: "Champion a genuinely inclusive learning environment with our rigorous Accessibility Compliance services. We weave strict WCAG standards into the very fabric of your digital interfaces, flawlessly accommodating a beautifully diverse spectrum of learning needs. From robust screen reader compatibility and intuitive keyboard-only navigation to highly adaptive UI layouts designed for cognitive variability, our unwavering commitment to complete accessibility massively broadens your platform's reach. By breaking down technical barriers, we guarantee that every single learner can engage with confidence and achieve remarkable educational outcomes.",
         gradient: "from-rose-400 to-red-500",
