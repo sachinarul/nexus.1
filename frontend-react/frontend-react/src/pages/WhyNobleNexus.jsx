@@ -39,7 +39,7 @@ const WhyNobleNexus = () => {
     };
 
     return (
-        <div className="bg-[#FFFFFF] min-h-screen font-sans text-[#555555] selection:bg-[#F3F4F6] selection:text-[#0F766E] overflow-hidden">
+        <div className="bg-[#FFFFFF] min-h-screen text-slate-900 font-body overflow-x-hidden selection:bg-teal-100 selection:text-[#0F766E]">
 
             {/* --- Hero Section --- */}
             <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#FFFFFF]">
@@ -58,7 +58,7 @@ const WhyNobleNexus = () => {
                             <span className="inline-block py-1 px-3 rounded-full bg-[#F3F4F6] border border-[#E5E7EB] text-[#0F766E] text-xs font-bold tracking-widest uppercase mb-6">
                                 The Future of EdTech
                             </span>
-                            <h1 className="text-5xl lg:text-7xl font-display font-bold leading-tight mb-6 text-[#111111]">
+                            <h1 className="text-5xl lg:text-7xl font-heading font-black leading-tight mb-6 text-[#111111] tracking-[-0.02em]">
                                 Build the Future of Learning — <br />
                                 <span className="text-[#2563EB]">Together</span>
                             </h1>

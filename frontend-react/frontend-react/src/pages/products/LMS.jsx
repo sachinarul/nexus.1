@@ -216,7 +216,7 @@ const LMS = () => {
     ];
 
     return (
-        <div className="bg-[#0B0F19] min-h-screen font-sans text-gray-100 selection:bg-teal-500/30 selection:text-teal-200 overflow-hidden">
+        <div className="bg-[#0B0F19] min-h-screen font-body text-gray-100 selection:bg-teal-500/30 selection:text-teal-200 overflow-hidden">
             
             {/* --- SECTION 1: HERO --- */}
             <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
@@ -230,7 +230,7 @@ const LMS = () => {
                                 <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
                                 <span className="text-teal-300 text-xs font-bold tracking-widest uppercase">Next-Gen Education Array</span>
                             </motion.div>
-                            <motion.h1 variants={fadeInUp} className="text-5xl lg:text-7xl font-display font-extrabold leading-tight mb-8 text-white">
+                            <motion.h1 variants={fadeInUp} className="text-5xl lg:text-7xl font-heading font-black leading-tight mb-8 text-white tracking-[-0.02em]">
                                 The LMS Built for the <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400">Future of Learning</span>
                             </motion.h1>
                             <motion.p variants={fadeInUp} className="text-xl text-gray-400 leading-relaxed font-medium mb-10 max-w-2xl">
@@ -266,7 +266,7 @@ const LMS = () => {
                         </motion.div>
                         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="text-left order-1 lg:order-2">
                             <motion.span variants={fadeInUp} className="text-teal-400 font-bold tracking-widest text-sm uppercase mb-4 block">Platform Overview</motion.span>
-                            <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-display font-bold text-white mb-8">What is the <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-200">Noble Nexus LMS?</span></motion.h2>
+                            <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-8">What is the <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-200">Noble Nexus LMS?</span></motion.h2>
                             <motion.div variants={fadeInUp} className="space-y-6">
                                 <p className="text-lg text-gray-400 leading-relaxed font-medium">
                                     The Noble Nexus Learning Management System is a next-generation, AI-powered eLearning platform engineered for the scale and complexity of modern education. Designed for universities, K-12 institutions, and enterprise training organizations, it replaces outdated, siloed systems with a unified digital ecosystem that learns, adapts, and grows with your learners.
@@ -285,7 +285,7 @@ const LMS = () => {
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <motion.span variants={fadeInUp} initial="hidden" whileInView="visible" className="text-teal-400 font-bold tracking-widest text-sm uppercase mb-4 block">Core Capabilities</motion.span>
-                        <motion.h2 variants={fadeInUp} initial="hidden" whileInView="visible" className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Intelligent features for <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400">modern education</span></motion.h2>
+                        <motion.h2 variants={fadeInUp} initial="hidden" whileInView="visible" className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Intelligent features for <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400">modern education</span></motion.h2>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {lmsFeatures.map((f, i) => (
@@ -304,7 +304,7 @@ const LMS = () => {
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <motion.span variants={fadeInUp} initial="hidden" whileInView="visible" className="text-teal-400 font-bold tracking-widest text-sm uppercase mb-4 block">Targeted Solutions</motion.span>
-                        <motion.h2 variants={fadeInUp} initial="hidden" whileInView="visible" className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Built for Every <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400">Learning Environment</span></motion.h2>
+                        <motion.h2 variants={fadeInUp} initial="hidden" whileInView="visible" className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Built for Every <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400">Learning Environment</span></motion.h2>
                     </div>
                     <div className="grid lg:grid-cols-3 gap-8">
                         {whoIsItFor.map((item, i) => (
@@ -322,7 +322,7 @@ const LMS = () => {
             <section className="py-24 relative z-10 bg-[#0B0F19]">
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-white">How it <span className="text-teal-400">Works</span></h2>
+                        <h2 className="text-4xl md:text-5xl font-heading font-bold text-white">How it <span className="text-teal-400">Works</span></h2>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {howItWorks.map((step, i) => (
@@ -362,7 +362,7 @@ const LMS = () => {
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="text-center mb-16">
                         <Quote size={48} className="text-teal-500/20 mx-auto mb-6" />
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-white">Trust from <span className="text-teal-400">Leaders</span></h2>
+                        <h2 className="text-4xl md:text-5xl font-heading font-bold text-white">Trust from <span className="text-teal-400">Leaders</span></h2>
                     </div>
                     <div className="grid lg:grid-cols-3 gap-8">
                         {testimonials.map((t, i) => (
@@ -382,7 +382,7 @@ const LMS = () => {
             <section className="py-24 relative z-10 bg-[#0B0F19]">
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-white">Investment <span className="text-teal-400">Plans</span></h2>
+                        <h2 className="text-4xl md:text-5xl font-heading font-bold text-white">Investment <span className="text-teal-400">Plans</span></h2>
                     </div>
                     <div className="grid lg:grid-cols-3 gap-8 items-start">
                         {pricingPlans.map((plan, i) => (
@@ -412,7 +412,7 @@ const LMS = () => {
             <section className="py-24 relative z-10 bg-[#070b14]">
                 <div className="container mx-auto px-4 max-w-4xl">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Common <span className="text-teal-400">Questions</span></h2>
+                        <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">Common <span className="text-teal-400">Questions</span></h2>
                     </div>
                     <div className="space-y-4">
                         {faqs.map((faq, i) => (

@@ -36,7 +36,7 @@ const Hero = () => {
                         <div className="w-12 h-1 bg-[#00D2FF] mb-6 shadow-[0_0_10px_#00E5FF]"></div>
 
                         {/* Main Heading */}
-                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-black leading-[1.1] mb-6 tracking-tight text-white">
+                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-black leading-[1.1] mb-6 tracking-[-0.02em] text-white">
                             Empowering <br />
                             Education <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] to-[#3B82F6]">
@@ -46,17 +46,18 @@ const Hero = () => {
                         </h1>
 
                         {/* Subtext */}
-                        <p className="text-base text-slate-400 font-medium max-w-[500px] mb-8 leading-relaxed">
+                        {/* Subtext */}
+                        <p className="text-base text-slate-400 font-medium font-body max-w-[500px] mb-8 leading-relaxed">
                             Noble Nexus brings together AI-powered LMS, ERP, and digital classroom tools into one unified, enterprise-grade platform to unlock continuous value.
                         </p>
 
                         {/* CTA Buttons */}
                         <div className="flex flex-wrap gap-4 xl:flex-nowrap">
-                            <Link to="/contact" className="px-6 py-3 bg-[#3B82F6] hover:bg-blue-500 text-white font-bold rounded shadow-lg shadow-blue-500/20 hover:shadow-xl hover:shadow-blue-500/30 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2 uppercase tracking-wider text-xs whitespace-nowrap">
+                            <Link to="/contact" className="px-6 py-3 bg-[#3B82F6] hover:bg-blue-500 text-white font-heading font-semibold rounded shadow-lg shadow-blue-500/20 hover:shadow-xl hover:shadow-blue-500/30 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2 uppercase tracking-[0.1em] text-xs whitespace-nowrap">
                                 Get Started
                             </Link>
 
-                            <button onClick={() => setIsSocialOpen(true)} className="px-6 py-3 bg-[#0A1128] border border-slate-700 hover:border-slate-500 hover:bg-[#0F172A] text-white font-bold rounded shadow-lg transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2 uppercase tracking-wider text-xs whitespace-nowrap">
+                            <button onClick={() => setIsSocialOpen(true)} className="px-6 py-3 bg-[#0A1128] border border-slate-700 hover:border-slate-500 hover:bg-[#0F172A] text-white font-heading font-semibold rounded shadow-lg transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2 uppercase tracking-[0.1em] text-xs whitespace-nowrap">
                                 Design as a Service
                             </button>
                         </div>

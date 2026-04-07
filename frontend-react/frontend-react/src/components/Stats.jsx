@@ -51,13 +51,13 @@ const Stats = () => {
                         transition={{ delay: idx * 0.1, duration: 0.6 }}
                         className="relative"
                     >
-                        <div className="text-4xl md:text-5xl font-display font-bold text-[#0F172A] mb-2 leading-none">
+                        <div className="text-4xl md:text-5xl font-heading font-bold text-[#0F172A] mb-2 leading-none">
                             <span className="text-[#2563EB]">
                                 {isInView ? <CountUp end={stat.value} duration={2} /> : 0}
                             </span>
                             {stat.suffix}
                         </div>
-                        <p className="text-[#334155] font-bold tracking-widest text-xs uppercase mt-3">
+                        <p className="text-[#334155] font-heading font-semibold tracking-[0.1em] text-xs uppercase mt-3">
                             {stat.label}
                         </p>
                     </motion.div>

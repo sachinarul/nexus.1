@@ -127,7 +127,7 @@ const ClassBridge = () => {
     ];
 
     return (
-        <div className="bg-[#FFFFFF] min-h-screen text-slate-900 font-sans overflow-x-hidden selection:bg-teal-100">
+        <div className="bg-[#FFFFFF] min-h-screen text-slate-900 font-body overflow-x-hidden selection:bg-teal-100">
             {/* Background elements */}
             <div className="fixed inset-0 pointer-events-none z-0">
                 <div className="absolute top-[10%] right-[-10%] w-[500px] h-[500px] bg-teal-50 rounded-full blur-[120px] opacity-40"></div>
@@ -147,7 +147,7 @@ const ClassBridge = () => {
                                 <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
                                 Noble Nexus Product
                             </span>
-                            <h1 className="text-5xl lg:text-7xl font-display font-bold leading-tight mb-8 text-[#0F172A]">
+                            <h1 className="text-5xl lg:text-7xl font-heading font-bold leading-tight mb-8 text-[#0F172A] tracking-[-0.02em]">
                                 Introducing <span className="text-teal-600">ClassBridge</span>
                             </h1>
                             <h2 className="text-2xl font-medium text-slate-600 mb-6 leading-relaxed">
@@ -209,7 +209,7 @@ const ClassBridge = () => {
                         viewport={{ once: true }}
                         variants={fadeInUp}
                     >
-                        <h2 className="text-4xl lg:text-5xl font-display font-bold text-[#0F172A] mb-8">What <span className="text-teal-600">ClassBridge Does</span></h2>
+                        <h2 className="text-4xl lg:text-5xl font-heading font-bold text-[#0F172A] mb-8">What <span className="text-teal-600">ClassBridge Does</span></h2>
                         <p className="text-xl text-slate-600 leading-relaxed mb-16">
                             ClassBridge brings your entire institution into one place. From the moment a student enrolls to the day they graduate, every interaction — academic, administrative, and financial — is tracked, managed, and accessible to the right people at the right time.
                         </p>
@@ -346,7 +346,7 @@ const ClassBridge = () => {
                         >
                             <div className="absolute top-0 right-0 w-32 h-32 bg-teal-100 rounded-bl-full opacity-30"></div>
                             <GraduationCap size={48} className="mx-auto text-teal-600 mb-8" />
-                            <h3 className="text-3xl font-display font-bold mb-6">Ready to Transform Your School?</h3>
+                            <h3 className="text-3xl font-heading font-bold mb-6">Ready to Transform Your School?</h3>
                             <p className="text-slate-600 mb-10 text-lg leading-relaxed">
                                 Get a complete walkthrough of the ClassBridge ecosystem and see how it fits your institution.
                             </p>

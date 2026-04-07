@@ -7,7 +7,7 @@ const Testimonials = () => {
             <div className="container mx-auto px-4 max-w-7xl">
                 <div className="text-center mb-16">
                     <span className="text-teal-600 font-bold tracking-widest text-sm uppercase mb-4 block">Trusted Feedback</span>
-                    <h2 className="text-4xl md:text-5xl font-display font-bold text-[#0F172A] mb-6">
+                    <h2 className="text-4xl md:text-5xl font-heading font-bold text-[#0F172A] mb-6">
                         Hear From Industry <br />
                         <span className="text-blue-600">Innovators</span>
                     </h2>
@@ -44,11 +44,11 @@ const Testimonials = () => {
                                     <item.icon size={28} strokeWidth={1.5} />
                                 </div>
                                 <div>
-                                    <h4 className="text-[#0F172A] font-bold text-base">{item.name}</h4>
-                                    <span className="text-[#64748B] text-xs font-bold uppercase tracking-wide">{item.role}</span>
+                                    <h4 className="text-[#0F172A] font-heading font-bold text-base">{item.name}</h4>
+                                    <span className="text-[#64748B] font-heading font-semibold text-xs uppercase tracking-[0.05em]">{item.role}</span>
                                 </div>
                             </div>
-                            <p className="text-[#334155] italic text-lg font-medium leading-relaxed">"{item.quote}"</p>
+                            <p className="text-[#334155] font-body italic text-lg font-medium leading-relaxed">"{item.quote}"</p>
                         </div>
                     ))}
                 </div>

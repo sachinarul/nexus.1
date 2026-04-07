@@ -6,8 +6,9 @@
   --color-black: #000000;
   --color-teal: #0D9488;
   --color-purple: #5B21B6;
-  --font-display: "Space Grotesk", sans-serif;
+  --font-heading: "Geist", sans-serif;
   --font-body: "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
 
   --animate-spin-slow: spin 20s linear infinite;
   --animate-float: float 6s ease-in-out infinite;
@@ -27,8 +28,10 @@
 
 body {
   background-color: #FFFFFF;
-  color: #555555;
+  color: #334155;
   font-family: var(--font-body);
+  font-weight: 500;
+  line-height: 1.8;
   overflow-x: hidden;
 }
 

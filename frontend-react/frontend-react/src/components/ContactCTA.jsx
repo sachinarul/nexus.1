@@ -20,7 +20,7 @@ const ContactCTA = () => {
                     viewport={{ once: true }}
                     className="text-center max-w-4xl mx-auto flex flex-col items-center py-8"
                 >
-                    <h3 className="text-3xl md:text-5xl font-display font-black text-white mb-4 tracking-tight">
+                    <h3 className="text-3xl md:text-5xl font-heading font-black text-white mb-4 tracking-[-0.02em]">
                         Transforming Education <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] to-[#3B82F6]">
                             with Innovative eLearning Solutions
@@ -30,7 +30,7 @@ const ContactCTA = () => {
                     {/* Cyan Line Accent matching Hero */}
                     <div className="w-16 h-1 bg-[#00E5FF] rounded-full my-8 shadow-[0_0_15px_#00E5FF]"></div>
 
-                    <h4 className="text-xl md:text-2xl font-bold text-slate-300 mb-12">
+                    <h4 className="text-xl md:text-2xl font-heading font-semibold text-slate-300 mb-12">
                         Contact us for tailored solutions.
                     </h4>
 
@@ -45,8 +45,8 @@ const ContactCTA = () => {
                             </div>
                             
                             <div className="flex flex-col items-start z-10 text-left">
-                                <span className="text-xs sm:text-sm font-semibold text-[#00E5FF] uppercase tracking-wider mb-0.5">Email Us</span>
-                                <span className="font-bold text-base md:text-lg lg:text-xl text-slate-100 group-hover:text-white transition-all">
+                                <span className="text-xs sm:text-sm font-heading font-semibold text-[#00E5FF] uppercase tracking-[0.1em] mb-0.5">Email Us</span>
+                                <span className="font-heading font-bold text-base md:text-lg lg:text-xl text-slate-100 group-hover:text-white transition-all">
                                     contactus@<br className="sm:hidden lg:hidden"/>noblenexus-ie.com
                                 </span>
                             </div>
@@ -61,8 +61,8 @@ const ContactCTA = () => {
                             </div>
                             
                             <div className="flex flex-col items-start z-10 text-left">
-                                <span className="text-xs sm:text-sm font-semibold text-[#3B82F6] uppercase tracking-wider mb-0.5">Call Us</span>
-                                <span className="font-bold text-base md:text-lg lg:text-xl text-slate-100 group-hover:text-white transition-all">
+                                <span className="text-xs sm:text-sm font-heading font-semibold text-[#3B82F6] uppercase tracking-[0.1em] mb-0.5">Call Us</span>
+                                <span className="font-heading font-bold text-base md:text-lg lg:text-xl text-slate-100 group-hover:text-white transition-all">
                                     +353-871700653
                                 </span>
                             </div>

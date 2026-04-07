@@ -39,10 +39,10 @@ const Features = () => {
             <div className="container mx-auto px-4">
                 {/* Section Header */}
                 <div className="text-center mb-20">
-                    <span className="text-[#0F766E] font-bold tracking-widest uppercase mb-4 block">
+                    <span className="text-[#0F766E] font-heading font-semibold tracking-[0.1em] uppercase mb-4 block">
                         Core capabilities
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight text-[#0F172A]">
+                    <h2 className="text-4xl md:text-5xl font-heading font-bold leading-tight text-[#0F172A]">
                         Built for the <br />
                         <span className="text-[#2563EB]">
                             Next Generation
@@ -59,11 +59,11 @@ const Features = () => {
                                     <feature.icon className="w-8 h-8 text-[#0F172A]" />
                                 </div>
 
-                                <h3 className="text-xl font-bold font-display mb-3 text-[#0F172A]">
+                                <h3 className="text-xl font-bold font-heading mb-3 text-[#0F172A]">
                                     {feature.title}
                                 </h3>
 
-                                <p className="text-[#334155] font-medium text-sm leading-relaxed">
+                                <p className="text-[#334155] font-body font-medium text-sm leading-relaxed">
                                     {feature.desc}
                                 </p>
                             </div>

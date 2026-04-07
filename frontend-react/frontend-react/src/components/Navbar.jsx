@@ -36,7 +36,7 @@ const Navbar = () => {
                     {/* Brand Logo - Premium Effect */}
                     <Link to="/" className="flex-shrink-0 flex items-center gap-4 group relative">
                         <img src="/logo.png" alt="Noble Nexus" className="w-12 h-12 object-contain group-hover:scale-105 transition-transform duration-500 bg-transparent" />
-                        <span className="text-xl font-extrabold font-sans tracking-tight text-[#0F172A] transition-all duration-300">
+                        <span className="text-xl font-bold font-heading tracking-tight text-[#0F172A] transition-all duration-300">
                             Noble Nexus
                         </span>
                     </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
                     <div className="hidden md:flex items-center gap-8">
                         {/* Products Link */}
                         <div className="relative group/dropdown">
-                            <button className="flex items-center gap-1 text-[#0F172A] font-bold hover:text-[#2563EB] transition-colors text-sm tracking-wide py-2">
+                            <button className="flex items-center gap-1 text-[#0F172A] font-heading font-semibold hover:text-[#2563EB] transition-colors text-sm tracking-[0.05em] py-2">
                                 Products <ChevronDown size={14} className="group-hover/dropdown:rotate-180 transition-transform duration-300 opacity-90" />
                             </button>
 
@@ -55,22 +55,22 @@ const Navbar = () => {
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-teal-50 rounded-full blur-[40px] pointer-events-none"></div>
 
                                 <div className="p-2 relative z-10">
-                                    <div className="px-3 py-2 text-xs font-bold text-[#444444] uppercase tracking-widest border-b border-gray-100 mb-2">
+                                    <div className="px-3 py-2 text-xs font-semibold font-heading text-[#444444] uppercase tracking-[0.1em] border-b border-gray-100 mb-2">
                                         Core Platforms
                                     </div>
                                     {/* ClassBridge Product - Primary */}
                                     <Link to="/products/classbridge" className="flex items-center gap-4 p-3 rounded-xl hover:bg-indigo-50/50 border border-indigo-100/50 hover:border-indigo-200 transition-all duration-300 group/item bg-indigo-50/20">
                                         <div className="flex-1">
-                                            <h4 className="text-[#111111] text-sm font-bold group-hover/item:text-indigo-600 transition-colors">ClassBridge</h4>
-                                            <p className="text-xs text-[#444444] font-medium">EdTech AI Portal</p>
+                                            <h4 className="text-[#111111] text-sm font-bold font-heading group-hover/item:text-indigo-600 transition-colors">ClassBridge</h4>
+                                            <p className="text-xs text-[#444444] font-medium font-body">EdTech AI Portal</p>
                                         </div>
                                     </Link>
 
                                     {/* LMS Product */}
                                     <Link to="/products/lms" className="flex items-center gap-4 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-teal-100 transition-all duration-300 group/item mt-1">
                                         <div>
-                                            <h4 className="text-[#111111] text-sm font-bold group-hover/item:text-[#0F766E] transition-colors mb-0.5">LMS Platform</h4>
-                                            <p className="text-xs text-[#444444] font-medium">Core education platform</p>
+                                            <h4 className="text-[#111111] text-sm font-bold font-heading group-hover/item:text-[#0F766E] transition-colors mb-0.5">LMS Platform</h4>
+                                            <p className="text-xs text-[#444444] font-medium font-body">Core education platform</p>
                                         </div>
                                     </Link>
                                 </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
 
                         {/* Services Mega Menu */}
                         <div className="relative group/dropdown">
-                            <button className="flex items-center gap-1 text-[#0F172A] font-bold hover:text-[#2563EB] transition-colors text-sm tracking-wide py-2">
+                            <button className="flex items-center gap-1 text-[#0F172A] font-heading font-semibold hover:text-[#2563EB] transition-colors text-sm tracking-[0.05em] py-2">
                                 Services <ChevronDown size={14} className="group-hover/dropdown:rotate-180 transition-transform duration-300 opacity-90" />
                             </button>
 
@@ -92,17 +92,17 @@ const Navbar = () => {
                                 <div className="p-6 grid grid-cols-3 gap-6 relative z-10">
                                     {/* Card 1: K-12 */}
                                     <Link to="/services/k12" className="flex items-center gap-4 p-4 rounded-2xl hover:bg-gray-50 border border-transparent hover:border-gray-100 transition-all duration-300 group/card shadow-sm hover:shadow-md">
-                                        <h4 className="text-[#111111] text-sm font-bold group-hover/card:text-[#0F766E] transition-colors">K-12 Education</h4>
+                                        <h4 className="text-[#111111] text-sm font-bold font-heading group-hover/card:text-[#0F766E] transition-colors">K-12 Education</h4>
                                     </Link>
 
                                     {/* Card 2: Higher Ed */}
                                     <Link to="/services/higher-education" className="flex items-center gap-4 p-4 rounded-2xl hover:bg-gray-50 border border-transparent hover:border-gray-100 transition-all duration-300 group/card shadow-sm hover:shadow-md">
-                                        <h4 className="text-[#111111] text-sm font-bold group-hover/card:text-[#2563EB] transition-colors">Higher Education</h4>
+                                        <h4 className="text-[#111111] text-sm font-bold font-heading group-hover/card:text-[#2563EB] transition-colors">Higher Education</h4>
                                     </Link>
 
                                     {/* Card 3: Corporate */}
                                     <Link to="/services/corporate-learning" className="flex items-center gap-4 p-4 rounded-2xl hover:bg-gray-50 border border-transparent hover:border-gray-100 transition-all duration-300 group/card shadow-sm hover:shadow-md">
-                                        <h4 className="text-[#111111] text-sm font-bold group-hover/card:text-purple-600 transition-colors">Corporate Learning</h4>
+                                        <h4 className="text-[#111111] text-sm font-bold font-heading group-hover/card:text-purple-600 transition-colors">Corporate Learning</h4>
                                     </Link>
                                 </div>
 
@@ -116,12 +116,12 @@ const Navbar = () => {
                         </div>
 
                         {/* Elevate Coaching Link */}
-                        <Link to="/elevate-coaching" className="relative text-[#0F172A] hover:text-[#2563EB] transition-colors text-sm font-bold tracking-wide group py-2">
+                        <Link to="/elevate-coaching" className="relative text-[#0F172A] hover:text-[#2563EB] transition-colors text-sm font-heading font-semibold tracking-[0.05em] group py-2">
                             Elevate Coaching
                             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full opacity-80"></span>
                         </Link>
 
-                        <Link to="/why-noble-nexus" className="relative text-[#0F172A] hover:text-[#2563EB] transition-colors text-sm font-bold tracking-wide group py-2">
+                        <Link to="/why-noble-nexus" className="relative text-[#0F172A] hover:text-[#2563EB] transition-colors text-sm font-heading font-semibold tracking-[0.05em] group py-2">
                             Why Noble Nexus
                             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full opacity-80"></span>
                         </Link>
