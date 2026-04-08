@@ -18,7 +18,7 @@ const Testimonials = () => {
                     {[
                         { 
                             name: "Global University", 
-                            quote: "Nexus LMS increased our student engagement by 40% in just one semester.", 
+                            quote: "Veda increased our student engagement by 40% in just one semester.", 
                             role: "Dean of Digital Learning",
                             icon: School,
                             color: "from-teal-500 to-teal-700"

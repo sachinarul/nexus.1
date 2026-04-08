@@ -115,8 +115,8 @@ const ClassBridge = () => {
                     align: "right"
                 },
                 {
-                    title: "Learning Management System (LMS)",
-                    desc: "A built-in LMS to create and manage structured online courses with sections, modules, and completion tracking. Full LTI and Moodle native integration.",
+                    title: "Veda Integration",
+                    desc: "A built-in Veda module to create and manage structured online courses with sections, modules, and completion tracking. Full LTI and Moodle native integration.",
                     features: ["Module Completion Tracking", "Moodle Assignment & Grade Sync", "AI-Powered Course Chat", "Timetable & Attendance Marking"],
                     image: "/classbridge_lms.png",
                     align: "left"

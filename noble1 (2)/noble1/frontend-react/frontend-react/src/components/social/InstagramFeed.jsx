@@ -19,7 +19,7 @@ const instagramPosts = [
         image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         likes: 156,
         type: "Reel",
-        caption: "Our new LMS dashboard is live! Seamless data visualization for educators. #Innovation #SaaS"
+        caption: "Our new Veda dashboard is live! Seamless data visualization for educators. #Innovation #SaaS"
     },
     {
         id: 4,

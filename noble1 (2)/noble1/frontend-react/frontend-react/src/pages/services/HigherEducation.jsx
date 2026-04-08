@@ -160,7 +160,7 @@ const HigherEducation = () => {
                             },
                             {
                                 title: "Interactive Content",
-                                desc: "End-to-end LMS setup with gamified learning modules.",
+                                desc: "End-to-end Veda setup with gamified learning modules.",
                                 icon: MonitorSmartphone,
                                 image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
                             },

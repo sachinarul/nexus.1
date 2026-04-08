@@ -35,7 +35,7 @@ const HelpBot = ({ isOpen, onClose }) => {
         setTimeout(() => {
             const responses = [
                 "That's an excellent question. Noble Nexus specializes in scalable digital infrastructure for modern institutions.",
-                "I can certainly guide you. Our premium LMS solutions are designed for seamless integration.",
+                "I can certainly guide you. Our premium Veda solutions are designed for seamless integration.",
                 "Our team is available 24/7. Would you like to schedule a priority consultation?",
                 "You can access our exclusive resources directly from the dashboard once you sign up.",
                 "To get started with our enterprise tier, please visit the Solutions page."

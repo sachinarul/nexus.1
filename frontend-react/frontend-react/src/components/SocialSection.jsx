@@ -9,7 +9,7 @@ const SocialSection = () => {
 
     const tabs = [
         { id: 'youtube', label: 'Offerings', icon: Play },
-        { id: 'lms', label: 'LMS Platform', icon: BookOpen },
+        { id: 'lms', label: 'Veda Platform', icon: BookOpen },
         { id: 'classbridge', label: 'ClassBridge', icon: ShieldCheck },
     ];
 
@@ -108,7 +108,7 @@ const SocialSection = () => {
                                     <div className="w-12 h-12 rounded-2xl bg-teal-50 flex items-center justify-center text-teal-600 mb-8 border border-teal-100">
                                         <GraduationCap size={24} />
                                     </div>
-                                    <h3 className="text-3xl font-bold text-slate-900 mb-6">Core LMS Platform</h3>
+                                    <h3 className="text-3xl font-bold text-slate-900 mb-6">Veda Platform</h3>
                                     <p className="text-slate-600 font-medium text-lg leading-relaxed mb-8">
                                         A powerful, intuitive Learning Management System designed to handle complex educational workflows with ease. Used by elite institutions globally to deliver state-of-the-art interactive content.
                                     </p>
@@ -127,7 +127,7 @@ const SocialSection = () => {
                                         ))}
                                     </ul>
                                     <Link to="/products/lms" className="inline-flex items-center gap-2 px-8 py-4 bg-teal-600 text-white font-bold rounded-2xl hover:bg-teal-700 hover:translate-x-1 transition-all shadow-lg">
-                                        See LMS in Action <ArrowRight size={18} />
+                                        See Veda in Action <ArrowRight size={18} />
                                     </Link>
                                 </div>
                                 <div className="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group relative">

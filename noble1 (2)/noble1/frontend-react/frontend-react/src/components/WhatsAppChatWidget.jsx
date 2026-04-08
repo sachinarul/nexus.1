@@ -23,7 +23,7 @@ const institutionOptions = [
 ];
 
 const serviceOptions = [
-    { value: "LMS Platform", label: "LMS Platform" },
+    { value: "Veda", label: "Veda" },
     { value: "ERP System", label: "ERP System" },
     { value: "AI Analytics", label: "AI & Analytics" },
     { value: "Request Demo", label: "Request a Demo" },

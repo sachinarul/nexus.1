@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import SocialModal from './social/SocialModal';
 
 const ecosystemNodes = [
-    'AI-Powered LMS',
+    'Veda',
     'Enterprise ERP',
     'Digital Classrooms',
     'Insight Analytics',
@@ -51,7 +51,7 @@ const Hero = () => {
                         </h1>
 
                         <p className="text-lg md:text-xl text-blue-100/80 font-medium mb-10 max-w-xl leading-relaxed border-l-2 border-white/10 pl-6">
-                            Noble Nexus brings together AI-powered LMS, ERP, and digital classroom tools into one unified, enterprise-grade platform to unlock continuous value.
+                            Noble Nexus brings together Veda, ERP, and digital classroom tools into one unified, enterprise-grade platform to unlock continuous value.
                         </p>
 
                         <div className="flex flex-wrap items-center gap-6">

@@ -159,7 +159,7 @@ const CorporateLearning = () => {
                             },
                             {
                                 title: "SCORM-Compliant Courses",
-                                desc: "Standardized modules fully integrated with your existing LMS.",
+                                desc: "Standardized modules fully integrated with Veda.",
                                 icon: PackageCheck,
                                 image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
                             }

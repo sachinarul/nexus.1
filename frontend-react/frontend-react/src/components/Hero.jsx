@@ -7,7 +7,7 @@ const Hero = () => {
     const [activeNode, setActiveNode] = useState(null);
 
     const nodes = [
-        { label: 'AI-POWERED LMS', dotX: 0, dotY: -150, textX: 0, textY: -100 },
+        { label: 'AI-POWERED VEDA', dotX: 0, dotY: -150, textX: 0, textY: -100 },
         { label: 'ENTERPRISE ERP', dotX: 130, dotY: -75, textX: 135, textY: 0 },
         { label: 'SECURE CLOUD', dotX: -130, dotY: -75, textX: -135, textY: 0 },
         { label: 'DIGITAL CLASSROOMS', dotX: 130, dotY: 75, textX: 135, textY: 115 },
@@ -48,7 +48,7 @@ const Hero = () => {
                         {/* Subtext */}
                         {/* Subtext */}
                         <p className="text-base text-slate-400 font-medium font-body max-w-[500px] mb-8 leading-relaxed">
-                            Noble Nexus brings together AI-powered LMS, ERP, and digital classroom tools into one unified, enterprise-grade platform to unlock continuous value.
+                            Noble Nexus brings together AI-powered Veda, ERP, and digital classroom tools into one unified, enterprise-grade platform to unlock continuous value.
                         </p>
 
                         {/* CTA Buttons */}

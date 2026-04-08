@@ -10,7 +10,7 @@ const Products = () => {
         },
         {
             category: "Learning Experience",
-            name: "Nexus LMS",
+            name: "Veda",
             description: "An AI-powered learning environment that adapts content to individual student needs and learning styles.",
             gradient: "from-purple-600 to-pink-500",
             icon: "🎓"

@@ -69,7 +69,7 @@ const Navbar = () => {
                                     {/* LMS Product */}
                                     <Link to="/products/lms" className="flex items-center gap-4 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-teal-100 transition-all duration-300 group/item mt-1">
                                         <div>
-                                            <h4 className="text-[#111111] text-sm font-bold font-heading group-hover/item:text-[#0F766E] transition-colors mb-0.5">LMS Platform</h4>
+                                            <h4 className="text-[#111111] text-sm font-bold font-heading group-hover/item:text-[#0F766E] transition-colors mb-0.5">Veda Platform</h4>
                                             <p className="text-xs text-[#444444] font-medium font-body">Core education platform</p>
                                         </div>
                                     </Link>
@@ -198,7 +198,7 @@ const Navbar = () => {
                                     </Link>
                                     <Link to="/products/lms" onClick={() => setIsOpen(false)} className="flex items-center gap-4 p-3 rounded-xl hover:bg-white transition-all shadow-sm">
                                         <div className="flex-1">
-                                            <span className="block text-base font-bold text-[#111111]">LMS Platform</span>
+                                            <span className="block text-base font-bold text-[#111111]">Veda Platform</span>
                                             <span className="block text-xs text-[#555555] font-medium mt-0.5">Core education platform</span>
                                         </div>
                                     </Link>

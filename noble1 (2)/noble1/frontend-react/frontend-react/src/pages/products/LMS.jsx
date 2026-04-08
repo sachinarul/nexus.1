@@ -105,13 +105,13 @@ const LMS = () => {
                             variants={fadeInUp}
                             className="text-left"
                         >
-                            <h2 className="text-3xl md:text-5xl font-display font-bold text-[#111111] mb-8">What does <span className="text-teal-600">LMS stand for?</span></h2>
+                            <h2 className="text-3xl md:text-5xl font-display font-bold text-[#111111] mb-8">What does <span className="text-teal-600">Veda represent?</span></h2>
                             <div className="text-lg text-[#555555] leading-relaxed font-medium space-y-6">
                                 <p>
-                                    Learning management system (LMS), it is a type of software that hosts educational or training content for students or employees or customers. Using a learning management system makes it possible for businesses to transfer your training and development program into an online environment. Business leaders can organize learning programs and reduce the time required to create courses and distribute them to your colleagues or students.
+                                    Veda is our Learning Management System (LMS). It is a type of software that hosts educational or training content for students, employees, or customers. Using Veda makes it possible for organizations to transfer training and development programs into an online environment seamlessly. Business leaders can organize learning programs and reduce the time required to create courses and distribute them to colleagues or students.
                                 </p>
                                 <p>
-                                    The learning management system can vary from a basic nursery rhyme audio/video CD to any sophisticated software to advance teaching management program or business. A standard learning management system can perform a variety of e-learning tasks such as providing materials to students, discussion through chat or teleconference between learners and instructors, tests, recording scores, report and track the progress of learners.
+                                    Veda handles everything from basic interactive content to sophisticated advanced teaching management programs for businesses and educational institutions. As a standard-setting platform, Veda performs a variety of e-learning tasks such as providing materials to students, enabling discussion through chat or teleconference between learners and instructors, managing tests, recording scores, and tracking the progress of learners with detailed reporting.
                                 </p>
                             </div>
                         </motion.div>
@@ -126,7 +126,7 @@ const LMS = () => {
                             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-[#FFFFFF] p-4">
                                 <img
                                     src="/lms-definition.png"
-                                    alt="What is LMS"
+                                    alt="What is Veda"
                                     className="w-full h-auto object-cover rounded-2xl"
                                 />
                                 {/* Decorative elements */}
@@ -140,7 +140,7 @@ const LMS = () => {
                     <div className="text-center mt-16 mb-8">
                         <span className="text-teal-600 font-bold tracking-widest text-sm uppercase mb-4 block">Platform Offerings</span>
                         <h2 className="text-4xl md:text-6xl font-display font-bold text-[#111111] mb-6">
-                            Services under <span className="text-teal-600">LMS Product</span>
+                            Services under <span className="text-teal-600">Veda</span>
                         </h2>
                         <div className="w-24 h-1.5 bg-teal-600 mx-auto rounded-full"></div>
                     </div>
@@ -181,7 +181,7 @@ const LMS = () => {
                 },
                 {
                     title: "Tailored Educational Management",
-                    desc: "Tailored Educational Management solutions are designed to help educational institutions improve their operational efficiency and learning delivery through customized digital systems. These solutions include the implementation of ERP systems for school management, the development of customized courses, and instructional design services that enhance teaching effectiveness. Institutions can also benefit from managed eLearning services such as LMS setup, platform support, and digital content management. Additional services ensure accessibility compliance for inclusive learning environments while enabling the integration of virtual classrooms and mobile learning technologies that support modern educational practices.",
+                    desc: "Tailored Educational Management solutions are designed to help educational institutions improve their operational efficiency and learning delivery through customized digital systems. These solutions include the implementation of ERP systems for school management, the development of customized courses, and instructional design services that enhance teaching effectiveness. Institutions can also benefit from managed eLearning services such as Veda setup, platform support, and digital content management. Additional services ensure accessibility compliance for inclusive learning environments while enabling the integration of virtual classrooms and mobile learning technologies that support modern educational practices.",
                     features: [],
                     image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
                     align: "left"

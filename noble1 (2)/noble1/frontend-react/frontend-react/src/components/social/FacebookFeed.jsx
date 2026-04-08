@@ -11,7 +11,7 @@ const facebookPosts = [
         id: 2,
         author: "Noble Nexus",
         date: "Yesterday",
-        content: "Happy Teacher's Day! 🍎 Celebrating the heroes who shape our future. We are offering a 20% discount on all premium LMS plans this week.",
+        content: "Happy Teacher's Day! 🍎 Celebrating the heroes who shape our future. We are offering a 20% discount on all premium Veda plans this week.",
         image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         stats: "482 Reactions • 56 Shares"
     },

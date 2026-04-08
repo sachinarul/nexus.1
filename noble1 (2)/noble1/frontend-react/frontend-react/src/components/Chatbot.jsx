@@ -16,7 +16,7 @@ The company works with: Schools (K-12), Universities and colleges, Corporate org
 Core Services:
 1. School Management ERP Systems — Platforms that streamline academic administration, communication, and school operations.
 2. Instructional Design and Custom Course Development — Creation of engaging, interactive digital courses designed by learning experts.
-3. Managed eLearning Services — End-to-end support for Learning Management Systems (LMS), including setup, maintenance, and support.
+3. Managed eLearning Services — End-to-end support for Veda, including setup, maintenance, and support.
 4. Digital Content Management Solutions — Systems to organize, store, and distribute digital learning resources efficiently.
 5. Accessibility Compliance Services — Ensuring learning platforms and content are accessible to all learners, including those with disabilities.
 

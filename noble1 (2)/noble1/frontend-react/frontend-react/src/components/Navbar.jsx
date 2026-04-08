@@ -69,13 +69,13 @@ const Navbar = () => {
                                         </div>
                                     </Link>
 
-                                    {/* LMS Product */}
+                                    {/* Veda Product */}
                                     <Link to="/products/lms" className="flex items-center gap-4 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-teal-100 transition-all duration-300 group/item mt-1">
                                         <div className="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center text-[#0F766E] group-hover/item:bg-[#0F766E] group-hover/item:text-white transition-all duration-300 group-hover/item:scale-110 shadow-sm border border-teal-100">
                                             <LayoutDashboard size={20} />
                                         </div>
                                         <div>
-                                            <h4 className="text-[#111111] text-sm font-bold group-hover/item:text-[#0F766E] transition-colors mb-0.5">LMS Platform</h4>
+                                            <h4 className="text-[#111111] text-sm font-bold group-hover/item:text-[#0F766E] transition-colors mb-0.5">Veda</h4>
                                             <p className="text-xs text-[#444444] font-medium">Core education platform</p>
                                         </div>
                                     </Link>
